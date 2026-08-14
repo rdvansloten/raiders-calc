@@ -12,11 +12,11 @@ Sheet layout, "Weapon damage values" tab:
              logged by a level 50+100 player (player damage 4700, tank x3)
 
 Displayed = (PlayerDamage + BaseWeaponDamage(level)) * factor * tankMult
-so each logged cell yields an implied BaseWeaponDamage; we take the median
-per level across all weapons (they all share one damage curve) after
-rejecting outliers, e.g. mislogged cells.
+so each logged (floored) cell yields a lower bound on BaseWeaponDamage; per
+level we intersect the bounds across all weapons (they share one damage
+curve) after rejecting outliers, e.g. mislogged cells.
 """
-import csv, json, statistics, sys, urllib.request
+import csv, json, math, statistics, sys, urllib.request
 from pathlib import Path
 
 BASE = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vThDUSq-3xSdnngXijX_"
@@ -96,15 +96,28 @@ def cells():
 
 
 def solve_base(factors):
-    """Median implied base weapon damage per level, outliers rejected."""
+    """Implied base weapon damage per level. The game FLOORS displayed
+    damage, so a logged integer d implies base in [v, v + q) with
+    v = d/(f*tank) - pd and q = 1/(f*tank): every cell is a lower bound.
+    After median-based outlier rejection, intersect the intervals and take
+    the greatest lower bound; cells whose bound contradicts the consensus
+    upper bound (hand-entry typos) are dropped."""
     obs = {}
     for lvl, j, d, pd in cells():
-        obs.setdefault(lvl, []).append(d / (factors[j] * TANK) - pd)
+        v = d / (factors[j] * TANK) - pd
+        q = 1.0 / (factors[j] * TANK)
+        obs.setdefault(lvl, []).append((v, q))
     base = {}
     for lvl, vals in sorted(obs.items()):
-        med = statistics.median(vals)
-        kept = [v for v in vals if abs(v - med) <= max(0.01 * abs(med), 2)]
-        base[lvl] = statistics.median(kept)
+        med = statistics.median(v for v, _ in vals)
+        kept = [(v, q) for v, q in vals if abs(v - med) <= max(0.01 * abs(med), 2)]
+        while len(kept) > 1:
+            lo = max(v for v, _ in kept)
+            hi = min(v + q for v, q in kept)
+            if lo <= hi + 1e-9:
+                break
+            kept = [x for x in kept if x[0] < lo]  # contradicted bound: typo
+        base[lvl] = max(v for v, _ in kept)
     return base
 
 
@@ -121,7 +134,21 @@ for j, fam, label, f in attacks:
             print(f"  factor corrected: {fam} - {label}: {f} -> {fitted}", file=sys.stderr)
         factors[j] = fitted
 attacks = [(j, fam, label, factors[j]) for j, fam, label, _ in attacks]
-base = {lvl: round(v, 2) for lvl, v in solve_base(factors).items()}
+base = {lvl: math.ceil(v * 100) / 100 for lvl, v in solve_base(factors).items()}
+
+# confirmed in-game readings (data/source/calibration.json) give extra, often
+# tighter, lower bounds on the curve: displayed/totalMultiplier - playerDamage
+cal_path = data_dir / "source" / "calibration.json"
+if cal_path.exists():
+    for r in json.loads(cal_path.read_text()).get("readings", []):
+        lvl = r["weaponLevel"]
+        lb = r["displayed"] / r["totalMultiplier"] - r["playerDamage"]
+        if lb > base[lvl] + 1.0:
+            print(f"  calibration at level {lvl} implies {lb:.2f}, far above the "
+                  f"sheet bound {base[lvl]}; reading looks wrong, skipped", file=sys.stderr)
+        elif lb > base[lvl]:
+            print(f"  calibration: level {lvl} base {base[lvl]} -> {math.ceil(lb * 100) / 100}", file=sys.stderr)
+            base[lvl] = math.ceil(lb * 100) / 100
 
 missing = [l for l in range(1, 101) if l not in base]
 if missing:

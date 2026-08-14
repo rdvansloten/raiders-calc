@@ -1,7 +1,8 @@
 "use strict";
 
 const $ = id => document.getElementById(id);
-const fmt = n => Math.round(n).toLocaleString("en-US");
+// the game floors displayed damage; tiny epsilon guards float error
+const fmt = n => Math.floor(n + 1e-6).toLocaleString("en-US");
 
 const state = {
   players: null,       // player_levels.json

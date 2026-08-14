@@ -4,6 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Splatoon Raiders - Damage Calculator</title>
+    <meta property="og:title" content="Splatoon Raiders - Damage Calculator" />
+    <meta
+      property="og:description"
+      content="Build and share damage loadouts for Splatoon Raiders: weapons, relics, gadgets, and bonuses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raiders-calc.woomies.ink/" />
+    <meta
+      property="og:image"
+      content="https://raiders-calc.woomies.ink/icons/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="description"
+      content="Build and share damage loadouts for Splatoon Raiders: weapons, relics, gadgets, and bonuses."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -117,45 +135,6 @@
                 />
               </div>
             </div>
-            <div class="field">
-              <span class="lab">Weapon Upgrades</span>
-              <div class="pctwrap">
-                <input
-                  id="tankbonus"
-                  type="number"
-                  min="0"
-                  max="200"
-                  step="10"
-                  value="200"
-                  inputmode="numeric"
-                />
-                <span class="pctsign" aria-hidden="true">%</span>
-              </div>
-            </div>
-            <div class="field">
-              <span class="lab">HP Upgrades</span>
-              <div class="pctwrap">
-                <input
-                  id="hpbonus"
-                  type="number"
-                  min="0"
-                  max="400"
-                  step="20"
-                  value="400"
-                  inputmode="numeric"
-                />
-                <span class="pctsign" aria-hidden="true">%</span>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <span class="lab">Tank</span>
-            <div
-              id="tanks"
-              class="tank-grid"
-              role="radiogroup"
-              aria-label="Tank"
-            ></div>
           </div>
           <div class="field status-block">
           <div class="row">
@@ -203,6 +182,52 @@
               </select>
             </div>
           </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="chip">Tank</h2>
+          <div class="field">
+            <div
+              id="tanks"
+              class="tank-grid"
+              role="radiogroup"
+              aria-label="Tank"
+            ></div>
+          </div>
+          <div class="field status-block">
+            <div class="row">
+              <div class="field">
+                <span class="lab">Weapon Upgrades</span>
+                <div class="pctwrap">
+                  <input
+                    id="tankbonus"
+                    type="number"
+                    min="0"
+                    max="200"
+                    step="10"
+                    value="200"
+                    inputmode="numeric"
+                  />
+                  <span class="pctsign" aria-hidden="true">%</span>
+                </div>
+              </div>
+              <div class="field">
+                <span class="lab">HP</span>
+                <div class="pctwrap">
+                  <input
+                    id="hpbonus"
+                    type="number"
+                    min="0"
+                    max="400"
+                    step="20"
+                    value="400"
+                    inputmode="numeric"
+                  />
+                  <span class="pctsign" aria-hidden="true">%</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

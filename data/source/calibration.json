@@ -1,0 +1,12 @@
+{
+ "note": "Confirmed in-game readings used as extra lower bounds on the base weapon damage curve (the game floors displayed damage, so displayed/totalMultiplier - playerDamage <= true curve value). totalMultiplier = attackFactor x tankMult x bonusChain.",
+ "readings": [
+  {
+   "weaponLevel": 89,
+   "playerDamage": 4720,
+   "totalMultiplier": 9.5904,
+   "displayed": 297866,
+   "source": "player report Aug 2026: E-liter Full charge (1.8) x tank 3.0 x All Set 1.2 x Long Range weapon+relic 1.48"
+  }
+ ]
+}
