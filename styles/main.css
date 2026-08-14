@@ -39,6 +39,18 @@ body {
 .splat-tl { top: 0; left: 0; width: min(340px, 45vw); }
 .splat-br { bottom: -20px; right: -10px; width: min(260px, 40vw); opacity: 0.9; }
 
+.beta-chip {
+  position: absolute; top: 14px; right: 12px;
+  transform: rotate(12deg);
+  background: var(--teal); color: #fff;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+  padding: 0.22rem 0.7rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(80, 65, 30, 0.3);
+  z-index: 2;
+  pointer-events: none;
+}
+
 main {
   position: relative; z-index: 1;
   max-width: 720px; margin: 0 auto;
