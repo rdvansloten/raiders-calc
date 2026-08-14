@@ -1,0 +1,99 @@
+{
+ "note": "Damage-affecting relics only. Each has 3 levels; only level-3 values are confirmed, L1/L2 are guesses. mode 'mult' + group: percentages in the same group (relic + weapon bonus) SUM, then the group multiplies the total - per the research thread's stacking tests. mode 'add' joins the additive pool. requires gates on a status toggle.",
+ "maxEquipped": 5,
+ "relics": [
+  {
+   "id": "regal-scepter",
+   "name": "Regal Scepter",
+   "category": "speed",
+   "power": "Concentrated Attack",
+   "mode": "mult",
+   "group": "concentrated-attack",
+   "levels": [
+    10,
+    13,
+    16
+   ],
+   "requires": "streak",
+   "description": "Damage dealt to Salmonids is increased after 3 consecutive attacks.",
+   "icon": null
+  },
+  {
+   "id": "antique-corkscrew",
+   "name": "Antique Corkscrew",
+   "category": "speed",
+   "power": "All Set",
+   "mode": "add",
+   "levels": [
+    10,
+    15,
+    20
+   ],
+   "requires": "hpfull",
+   "description": "Damage is increased while HP is full.",
+   "icon": null
+  },
+  {
+   "id": "family-size-cutter",
+   "name": "Family-Size Cutter",
+   "category": "power",
+   "power": "Close Combat",
+   "mode": "mult",
+   "group": "close-combat",
+   "levels": [
+    8,
+    12,
+    16
+   ],
+   "requires": "close",
+   "description": "Damage dealt to nearby Salmonids is increased.",
+   "icon": null
+  },
+  {
+   "id": "bronze-press",
+   "name": "Bronze Press",
+   "category": "power",
+   "power": "Damage Up",
+   "mode": "add",
+   "levels": [
+    10,
+    15,
+    20
+   ],
+   "requires": "inkspent",
+   "description": "Weapon damage is increased for 9 sec after 30% of ink is used.",
+   "icon": null
+  },
+  {
+   "id": "distant-gazer",
+   "name": "Distant Gazer",
+   "category": "tactic",
+   "power": "Long Range",
+   "mode": "mult",
+   "group": "long-range",
+   "levels": [
+    15,
+    20,
+    24
+   ],
+   "requires": "long",
+   "description": "Damage dealt to far-off Salmonids is increased.",
+   "icon": null
+  },
+  {
+   "id": "ancient-salmon-run-slab",
+   "name": "Ancient Salmon Run Slab",
+   "category": "tactic",
+   "power": "Risky Reward",
+   "mode": "add",
+   "levels": [
+    50,
+    60,
+    70
+   ],
+   "requires": "danger",
+   "description": "Damage is increased while you are in Danger.",
+   "icon": null
+  }
+ ]
+}

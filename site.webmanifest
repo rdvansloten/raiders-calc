@@ -1,0 +1,14 @@
+{
+  "name": "Splatoon Raiders × Damage",
+  "short_name": "Raiders Damage",
+  "description": "Damage calculator for Splatoon Raiders",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F2E8D5",
+  "theme_color": "#F2E8D5",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/squid.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+ "source": "https://splatoonwiki.org/wiki/Blast_Boot",
+ "id": "blast_boot",
+ "name": "Blast Boot",
+ "tank": "speed",
+ "parts": [
+  {
+   "id": "damage-surge",
+   "name": "Damage Surge",
+   "developed": false,
+   "upgradable": true,
+   "description": "After using this gadget, weapon damage increases for 5 seconds.",
+   "variants": [
+    {
+     "stars": 1,
+     "slots": 2,
+     "pct": 10.0
+    },
+    {
+     "stars": 2,
+     "slots": 3,
+     "pct": 20.0
+    },
+    {
+     "stars": 1,
+     "slots": 5,
+     "pct": 25.0
+    },
+    {
+     "stars": 3,
+     "slots": 4,
+     "pct": 33.0
+    },
+    {
+     "stars": 2,
+     "slots": 6,
+     "pct": 40.0
+    },
+    {
+     "stars": 4,
+     "slots": 5,
+     "pct": 50.0
+    },
+    {
+     "stars": 3,
+     "slots": 7,
+     "pct": 60.0
+    },
+    {
+     "stars": 5,
+     "slots": 8,
+     "pct": 100.0
+    }
+   ]
+  }
+ ]
+}

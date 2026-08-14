@@ -1,0 +1,26 @@
+[
+ {
+  "id": "blast_boot",
+  "name": "Blast Boot",
+  "tank": "speed",
+  "parts": 1
+ },
+ {
+  "id": "dash_bomb",
+  "name": "Dash Bomb",
+  "tank": "speed",
+  "parts": 1
+ },
+ {
+  "id": "jump_bomb",
+  "name": "Jump Bomb",
+  "tank": "speed",
+  "parts": 1
+ },
+ {
+  "id": "flywire",
+  "name": "Flywire",
+  "tank": "speed",
+  "parts": 2
+ }
+]

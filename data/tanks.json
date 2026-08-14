@@ -1,0 +1,47 @@
+{
+ "note": "relicRules.banned categories cannot be equipped at all; relicRules.limits caps how many relics of a category can be equipped. Tank ids stay 'power'/'speed'/'tactic' for saved-build compatibility; display names match the game. gadgetBorrow: at Ultra status a tank can equip ONE gadget from that category (Speed<-Tactical, Power<-Speed, Tactical<-Power).",
+ "tanks": [
+  {
+   "id": "power",
+   "name": "Power Tank",
+   "icon": "icons/tank-power.png",
+   "relicRules": {
+    "banned": [
+     "tactic"
+    ],
+    "limits": {
+     "speed": 1
+    }
+   },
+   "gadgetBorrow": "speed"
+  },
+  {
+   "id": "speed",
+   "name": "Speed Tank",
+   "icon": "icons/tank-speed.png",
+   "relicRules": {
+    "banned": [
+     "power"
+    ],
+    "limits": {
+     "tactic": 1
+    }
+   },
+   "gadgetBorrow": "tactic"
+  },
+  {
+   "id": "tactic",
+   "name": "Tactical Tank",
+   "icon": "icons/tank-tactical.png",
+   "relicRules": {
+    "banned": [
+     "speed"
+    ],
+    "limits": {
+     "power": 1
+    }
+   },
+   "gadgetBorrow": "power"
+  }
+ ]
+}

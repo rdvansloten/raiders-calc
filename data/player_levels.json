@@ -1,0 +1,264 @@
+{
+ "source": "Laugh_Lover's spreadsheet, gamefaqs.gamespot.com/boards/540184-splatoon-raiders/81174710",
+ "levels": [
+  {
+   "level": 1,
+   "hp": 100.0,
+   "damage": 70
+  },
+  {
+   "level": 2,
+   "hp": 103.0,
+   "damage": 100
+  },
+  {
+   "level": 3,
+   "hp": 105.0,
+   "damage": 115
+  },
+  {
+   "level": 4,
+   "hp": 109.0,
+   "damage": 124
+  },
+  {
+   "level": 5,
+   "hp": 113.0,
+   "damage": 134
+  },
+  {
+   "level": 6,
+   "hp": 116.0,
+   "damage": 145
+  },
+  {
+   "level": 7,
+   "hp": 121.0,
+   "damage": 157
+  },
+  {
+   "level": 8,
+   "hp": 125.0,
+   "damage": 170
+  },
+  {
+   "level": 9,
+   "hp": 129.0,
+   "damage": 184
+  },
+  {
+   "level": 10,
+   "hp": 133.0,
+   "damage": 199
+  },
+  {
+   "level": 11,
+   "hp": 137.0,
+   "damage": 215
+  },
+  {
+   "level": 12,
+   "hp": 142.0,
+   "damage": 232
+  },
+  {
+   "level": 13,
+   "hp": 147.0,
+   "damage": 251
+  },
+  {
+   "level": 14,
+   "hp": 152.0,
+   "damage": 271
+  },
+  {
+   "level": 15,
+   "hp": 157.0,
+   "damage": 293
+  },
+  {
+   "level": 16,
+   "hp": 162.0,
+   "damage": 316
+  },
+  {
+   "level": 17,
+   "hp": 167.0,
+   "damage": 341
+  },
+  {
+   "level": 18,
+   "hp": 173.0,
+   "damage": 368
+  },
+  {
+   "level": 19,
+   "hp": 179.0,
+   "damage": 397
+  },
+  {
+   "level": 20,
+   "hp": 185.0,
+   "damage": 429
+  },
+  {
+   "level": 21,
+   "hp": 191.0,
+   "damage": 463
+  },
+  {
+   "level": 22,
+   "hp": 197.0,
+   "damage": 500
+  },
+  {
+   "level": 23,
+   "hp": 204.0,
+   "damage": 540
+  },
+  {
+   "level": 24,
+   "hp": 211.0,
+   "damage": 583
+  },
+  {
+   "level": 25,
+   "hp": 218.0,
+   "damage": 630
+  },
+  {
+   "level": 26,
+   "hp": 225.0,
+   "damage": 680
+  },
+  {
+   "level": 27,
+   "hp": 232.0,
+   "damage": 734
+  },
+  {
+   "level": 28,
+   "hp": 240.0,
+   "damage": 793
+  },
+  {
+   "level": 29,
+   "hp": 248.0,
+   "damage": 856
+  },
+  {
+   "level": 30,
+   "hp": 256.0,
+   "damage": 924
+  },
+  {
+   "level": 31,
+   "hp": 264.0,
+   "damage": 997
+  },
+  {
+   "level": 32,
+   "hp": 273.0,
+   "damage": 1078
+  },
+  {
+   "level": 33,
+   "hp": 282.0,
+   "damage": 1164
+  },
+  {
+   "level": 34,
+   "hp": 291.0,
+   "damage": 1257
+  },
+  {
+   "level": 35,
+   "hp": 301.0,
+   "damage": 1358
+  },
+  {
+   "level": 36,
+   "hp": 311.0,
+   "damage": 1467
+  },
+  {
+   "level": 37,
+   "hp": 321.0,
+   "damage": 1584
+  },
+  {
+   "level": 38,
+   "hp": 332.0,
+   "damage": 1711
+  },
+  {
+   "level": 39,
+   "hp": 343.0,
+   "damage": 1848
+  },
+  {
+   "level": 40,
+   "hp": 354.0,
+   "damage": 1995
+  },
+  {
+   "level": 41,
+   "hp": 366.0,
+   "damage": 2156
+  },
+  {
+   "level": 42,
+   "hp": 378.0,
+   "damage": 2328
+  },
+  {
+   "level": 43,
+   "hp": 390.0,
+   "damage": 2514
+  },
+  {
+   "level": 44,
+   "hp": 403.0,
+   "damage": 2715
+  },
+  {
+   "level": 45,
+   "hp": 416.0,
+   "damage": 2932
+  },
+  {
+   "level": 46,
+   "hp": 430.0,
+   "damage": 3167
+  },
+  {
+   "level": 47,
+   "hp": 444.0,
+   "damage": 3420
+  },
+  {
+   "level": 48,
+   "hp": 459.0,
+   "damage": 3693
+  },
+  {
+   "level": 49,
+   "hp": 474.0,
+   "damage": 3990
+  },
+  {
+   "level": 50,
+   "hp": 500.0,
+   "damage": 4500
+  }
+ ],
+ "postSoftcap": {
+  "hpPerLevel": 0.5,
+  "damagePerLevel": 2,
+  "maxExtra": 9999
+ },
+ "tankBonuses": {
+  "weaponDamageMaxPct": 200,
+  "hpMaxPct": 400
+ }
+}

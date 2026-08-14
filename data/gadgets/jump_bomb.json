@@ -1,0 +1,38 @@
+{
+ "source": "https://splatoonwiki.org/wiki/Jump_Bomb",
+ "id": "jump_bomb",
+ "name": "Jump Bomb",
+ "tank": "speed",
+ "parts": [
+  {
+   "id": "airborne-damage-up",
+   "name": "Airborne Damage Up",
+   "developed": false,
+   "upgradable": true,
+   "description": "Increases all damage while you're in the air after using this gadget.",
+   "variants": [
+    {
+     "stars": 1,
+     "slots": 2,
+     "pct": 6.0
+    },
+    {
+     "stars": 1,
+     "slots": 5,
+     "pct": 15.0
+    },
+    {
+     "stars": 3,
+     "slots": 4,
+     "pct": 20.0
+    },
+    {
+     "stars": 3,
+     "slots": 7,
+     "pct": 35.0
+    }
+   ],
+   "requires": "airborne"
+  }
+ ]
+}

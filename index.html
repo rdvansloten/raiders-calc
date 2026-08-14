@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splatoon Raiders × Damage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icons/squid.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#F2E8D5">
+</head>
+<body>
+
+<svg class="splat splat-tl" viewBox="0 0 200 120" aria-hidden="true">
+  <path fill="var(--teal-wash)" d="M-10-10h150c20 25-8 34-28 30-32-6-20 28-52 24C28 40 42 66 18 68-2 70-10 50-10 50Z"/>
+  <circle fill="var(--teal-wash)" cx="150" cy="14" r="9"/>
+  <circle fill="var(--teal-wash)" cx="120" cy="52" r="5"/>
+</svg>
+<svg class="splat splat-br" viewBox="0 0 160 160" aria-hidden="true">
+  <path fill="var(--orange-splat)" d="M96 70c14-6 22 8 12 16 14 0 20 18 6 24-12 5-22-4-20 12 2 14-20 16-24 4-5-14-24-2-26-16-2-12 10-14 6-24-5-12 10-22 20-14 8 6 14 4 26-2Z"/>
+  <circle fill="var(--orange-splat)" cx="132" cy="52" r="6"/>
+  <circle fill="var(--teal-splat)" cx="30" cy="132" r="10"/>
+  <circle fill="var(--lime-splat)" cx="60" cy="24" r="7"/>
+</svg>
+
+<main>
+  <header>
+    <h1>Splatoon Raiders <span class="x">×</span> Damage</h1>
+    <p class="tagline">Damage calculator for Splatoon Raiders</p>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <button type="button" id="tab-create" class="tab active">Create</button>
+    <button type="button" id="tab-presets" class="tab">Presets</button>
+  </nav>
+
+  <div id="view-create" class="view">
+
+  <section class="card">
+    <h2 class="chip chip-name">
+      <button type="button" id="pname-btn" title="Click to set your character name">Player</button>
+      <input id="pname-input" maxlength="20" hidden aria-label="Character name">
+    </h2>
+    <div class="stat-row">
+      <div class="stat stat-duo">
+        <div class="stat-half">
+          <span class="lab">Damage</span>
+          <span class="stat-value" id="stat-damage">—</span>
+          <span class="stat-note" id="stat-dmg-note"></span>
+        </div>
+        <div class="stat-half">
+          <span class="lab">HP</span>
+          <span class="stat-value hp-value" id="stat-hp">—</span>
+          <span class="stat-note" id="stat-hp-base"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <span class="lab">Player level</span>
+        <div class="pairbox">
+          <input id="pbase" type="number" min="1" max="50" value="50" inputmode="numeric" aria-label="Player base level">
+          <span class="plus">+</span>
+          <input id="pextra" type="number" min="0" max="9999" value="0" inputmode="numeric" aria-label="Player extra levels">
+        </div>
+      </div>
+      <div class="field">
+        <span class="lab">Weapon Upgrades</span>
+        <div class="pctwrap">
+          <input id="tankbonus" type="number" min="0" max="200" step="10" value="200" inputmode="numeric">
+          <span class="pctsign" aria-hidden="true">%</span>
+        </div>
+      </div>
+      <div class="field">
+        <span class="lab">HP Upgrades</span>
+        <div class="pctwrap">
+          <input id="hpbonus" type="number" min="0" max="400" step="20" value="400" inputmode="numeric">
+          <span class="pctsign" aria-hidden="true">%</span>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <span class="lab">Tank</span>
+      <div id="tanks" class="tank-grid" role="radiogroup" aria-label="Tank"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Weapon</h2>
+    <div class="row">
+      <div class="field grow">
+        <span class="lab">Weapon</span>
+        <select id="weapon"></select>
+      </div>
+      <div class="field" id="attack-wrap">
+        <span class="lab">Attack</span>
+        <select id="attack"></select>
+      </div>
+      <div class="field">
+        <span class="lab">Level</span>
+        <div class="pairbox">
+          <input id="wbase" type="number" min="1" max="50" value="50" inputmode="numeric" aria-label="Weapon base level">
+          <span class="plus">+</span>
+          <input id="wplus" type="number" min="0" max="50" value="50" inputmode="numeric" aria-label="Weapon upgrades">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Weapon bonuses <span id="wbonus-count" class="count"></span></h2>
+    <div id="wbonuses" class="variant-list"></div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Relics <span id="relic-count" class="count"></span></h2>
+    <div id="relics"></div>
+    <p class="hint" id="relic-rule-hint"></p>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Gadget power-ups</h2>
+    <div id="gadgets" class="gadget-groups"></div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Player status</h2>
+    <div class="row">
+      <div class="field">
+        <span class="lab">Range</span>
+        <select id="range">
+          <option value="" selected>—</option>
+          <option value="close">Close range</option>
+          <option value="long">Long range</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">In Danger</span>
+        <select id="danger">
+          <option value="0" selected>Off</option>
+          <option value="1">On</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">Airborne</span>
+        <select id="airborne">
+          <option value="0" selected>Off</option>
+          <option value="1">On</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">Consecutive attacks</span>
+        <select id="streak">
+          <option value="0" selected>0</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">HP full</span>
+        <select id="hpfull">
+          <option value="0" selected>Off</option>
+          <option value="1">On</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">30% ink used</span>
+        <select id="inkspent">
+          <option value="0" selected>Off</option>
+          <option value="1">On</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">Enemy status</h2>
+    <div class="row">
+      <div class="field">
+        <span class="lab">Frozen</span>
+        <select id="frozen">
+          <option value="0" selected>Off</option>
+          <option value="1">On</option>
+        </select>
+        <span class="hint">Required for Ice&#8209;Breaker to apply</span>
+      </div>
+      <div class="field">
+        <span class="lab">Ferment</span>
+        <select id="ferment">
+          <option value="0" selected>Off</option>
+          <option value="1">On (×1.2)</option>
+        </select>
+        <span class="hint" id="ferment-hint">Enemy debuff, +20% damage</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="chip">All attacks</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Attack</th><th class="num">Factor</th><th class="num">Damage</th></tr></thead>
+        <tbody id="attack-table"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card result-card">
+    <div class="result-line">
+      <h2 class="chip chip-orange">Damage</h2>
+      <p class="result-figure"><span class="fig-label">total</span> <span id="result">—</span></p>
+      <p class="result-base"><span class="fig-label">base</span> <span class="boosted" id="basedmg"></span></p>
+    </div>
+    <p class="result-sub formula"><code id="breakdown"></code></p>
+  </section>
+
+  </div>
+
+  <div id="view-presets" class="view" hidden>
+    <section class="card">
+      <h2 class="chip">Presets</h2>
+      <div class="export-row">
+        <button type="button" id="save-preset" class="action-btn">Save current build as preset</button>
+        <button type="button" id="copy-link" class="action-btn">Copy link to current build</button>
+      </div>
+      <p class="hint">Presets are stored in this browser. Share links carry the whole build in the URL.</p>
+      <div id="preset-list" class="preset-list"></div>
+      <p class="hint" id="preset-empty">No presets yet — build a loadout on the Create tab, then save it here.</p>
+    </section>
+  </div>
+
+  <footer>
+    <button type="button" id="reset" class="reset-btn">Reset all</button>
+    <p>Found a bug or wrong number?
+       <a href="https://github.com/rdvansloten/raiders-calc/issues">Open a GitHub issue</a> or
+       DM <a href="https://www.reddit.com/message/compose/?to=esuna_codes">u/esuna_codes</a> on Reddit.</p>
+    <p>Damage research and data by Laugh_Lover/Delpolo —
+       <a href="https://gamefaqs.gamespot.com/boards/540184-splatoon-raiders/81174710">GameFAQs thread</a> ·
+       <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vThDUSq-3xSdnngXijX_8sPtEPU2vnnj26uWvLFn5qZmlwnKbl-KDOnJ_2Z0Ix-pdax6XFCW-sl8NmV/pubhtml">spreadsheet</a>.
+       Fan-made tool; not affiliated with Nintendo.</p>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
