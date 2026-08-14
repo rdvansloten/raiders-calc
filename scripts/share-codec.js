@@ -27,7 +27,7 @@ const SHARE_PARTS = ["blast_boot/damage-surge", "dash_bomb/damage-surge",
                      "flywire/airborne-damage-up"];
 // streak is last; it decodes to inputs.streak "3"/"0" instead of "1"/"0"
 const SHARE_FLAGS = ["danger", "airborne", "hpfull", "inkspent", "frozen",
-                     "ferment", "streak"];
+                     "ferment", "streak", "tankpower"];
 
 // table sizes at the time v1/v2 links were minted; frozen forever so those
 // links keep decoding after the live tables grow

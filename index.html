@@ -196,6 +196,13 @@
             ></div>
           </div>
           <div class="field status-block">
+            <span class="lab">Activate Tank Power</span>
+            <select id="tankpower">
+              <option value="0" selected>Off</option>
+              <option value="1">On (+20%)</option>
+            </select>
+          </div>
+          <div class="field status-block">
             <div class="row">
               <div class="field">
                 <span class="lab">Weapon Upgrades</span>
@@ -373,7 +380,12 @@
       </div>
 
       <footer>
-        <button type="button" id="reset" class="reset-btn">Reset all</button>
+        <div class="footer-actions">
+          <button type="button" id="copy-link-create" class="reset-btn">
+            Copy share link
+          </button>
+          <button type="button" id="reset" class="reset-btn">Reset all</button>
+        </div>
         <p>
           Found a bug or wrong number?
           <a href="https://github.com/woomies-ink/raiders-calc/issues"

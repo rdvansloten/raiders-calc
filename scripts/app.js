@@ -26,7 +26,7 @@ const state = {
 const STORAGE_KEY = "raiders-calc-v1";
 const SAVED_INPUTS = ["pbase", "pextra", "wbase", "wplus", "tankbonus", "hpbonus",
                       "range", "danger", "airborne", "streak", "hpfull", "inkspent",
-                      "frozen", "ferment", "attack"];
+                      "frozen", "ferment", "tankpower", "attack"];
 
 function snapshot() {
   const s = { inputs: {}, weapon: $("weapon").value, tankId: state.tankId,
@@ -496,9 +496,22 @@ function update() {
     hpfull: $("hpfull").value === "1",
     inkspent: $("inkspent").value === "1",
   };
+  // tank powers: Power adds damage, Tactical inflicts Ferment, Speed nothing
+  const tp = $("tankpower");
+  if (state.tankId === "speed") tp.value = "0";
+  tp.disabled = state.tankId === "speed";
+  tp.options[1].textContent = state.tankId === "tactic" ? "On (Ferment)" : "On (+20%)";
+  if (state.tankId === "tactic" && tp.value === "1") {
+    $("ferment").value = "1";       // the Tactical power guarantees Ferment
+    $("ferment").disabled = true;
+  } else {
+    $("ferment").disabled = false;
+  }
   // additive pool sums once; multiplier groups sum WITHIN the group
   // (weapon bonus + matching relic), then each group multiplies the total
   let add = 0;
+  if (state.tankId === "power" && $("tankpower").value === "1")
+    add += 20;  // Power Tank Surge, additive pool
   const groups = {};
   const applyBonus = b => {
     if (b.mode === "mult") groups[b.group || b.id] = (groups[b.group || b.id] || 0) + b.pct;
@@ -557,7 +570,7 @@ function update() {
 const INPUT_DEFAULTS = { pbase: "50", pextra: "0", wbase: "50", wplus: "50",
                          tankbonus: "200", hpbonus: "400", range: "", danger: "0",
                          airborne: "0", streak: "0", hpfull: "1", inkspent: "0",
-                         frozen: "0", ferment: "0", attack: "0" };
+                         frozen: "0", ferment: "0", tankpower: "0", attack: "0" };
 
 async function applySnapshot(saved) {
   // reset to defaults, then layer the snapshot on top (validating everything)
@@ -728,6 +741,7 @@ async function boot() {
   });
 
   $("reset").addEventListener("click", () => {
+    if (!window.confirm("Reset the whole form to defaults?")) return;
     try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* ignore */ }
     window.location.reload();
   });
@@ -743,11 +757,13 @@ async function boot() {
     renderPresets();
   });
 
-  $("copy-link").addEventListener("click", async e => {
+  const copyCurrentLink = async e => {
     const url = shareURL(snapshot());
     try { await navigator.clipboard.writeText(url); flash(e.target, "Copied ✓"); }
     catch (err) { window.prompt("Copy this link:", url); }
-  });
+  };
+  $("copy-link").addEventListener("click", copyCurrentLink);
+  $("copy-link-create").addEventListener("click", copyCurrentLink);
   $("danger").addEventListener("input", () => {
     if ($("danger").value === "1") $("hpfull").value = "0";
   });
@@ -756,7 +772,7 @@ async function boot() {
   });
   $("weapon").addEventListener("change", async () => { await loadWeapon($("weapon").value); update(); });
   ["attack", "pbase", "pextra", "wbase", "wplus", "tankbonus", "hpbonus", "range",
-   "danger", "airborne", "streak", "hpfull", "inkspent", "frozen", "ferment"]
+   "danger", "airborne", "streak", "hpfull", "inkspent", "frozen", "ferment", "tankpower"]
     .forEach(id => $(id).addEventListener("input", update));
 }
 
