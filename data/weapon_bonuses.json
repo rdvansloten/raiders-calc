@@ -1,5 +1,5 @@
 {
- "note": "Weapon bonuses: a weapon holds up to 3, each has 3 levels. levels = damage % at level 1/2/3 ('mult' entries multiply on top: 100 = x2). Confirmed values: Long Range 15@L1/24@L3, Concentrated Attack 10@L1, Risky Reward 50, Ice-Breaker x2..x5 range. Guesses to correct in-game: Long Range L2 (20), Close Combat levels, Concentrated L2/L3 (13/16), Risky Reward L2/L3 (60/70), Ice-Breaker L2 (x3.5).",
+ "note": "Weapon bonuses: a weapon holds up to 3, each has 3 levels. levels = damage % at level 1/2/3 ('mult' entries multiply on top: 100 = x2). Confirmed values: Long Range 15@L1/24@L3, Concentrated Attack 10@L1, Risky Reward 50, Ice Breaker x3@L1 and x5@L3. Guesses to correct in-game: Long Range L2 (20), Close Combat levels, Concentrated L2/L3 (13/16), Risky Reward L2/L3 (60/70), Ice Breaker L2 (x4).",
  "maxEquipped": 3,
  "bonuses": [
   {
@@ -32,11 +32,11 @@
   },
   {
    "id": "ice-breaker",
-   "name": "Ice-Breaker",
+   "name": "Ice Breaker",
    "mode": "mult",
    "levels": [
-    100,
-    250,
+    200,
+    300,
     400
    ],
    "requires": "frozen",

@@ -94,9 +94,13 @@ def cell_size(w, h, px):
 
 
 def to_svg(w, h, px, path):
+    """Square sand tile with rounded corners behind the art, so browsers
+    never paint their own (white) background behind a transparent icon."""
     cs = cell_size(w, h, px)
     gw, gh = w // cs, h // cs
-    rects = []
+    size = max(gw, gh) + 2                # one-cell margin around the art
+    ox, oy = (size - gw) / 2, (size - gh) / 2
+    rects = [f'<rect width="{size}" height="{size}" rx="{size * 0.18:.2f}" fill="#F2E8D5"/>']
     for gy in range(gh):
         gx = 0
         while gx < gw:
@@ -106,8 +110,8 @@ def to_svg(w, h, px, path):
             while gx < gw and px[gy * cs][gx * cs] == p: gx += 1
             fill = f"#{p[0]:02X}{p[1]:02X}{p[2]:02X}"
             op = "" if p[3] == 255 else f' fill-opacity="{p[3]/255:.3f}"'
-            rects.append(f'<rect x="{x0}" y="{gy}" width="{gx - x0}" height="1" fill="{fill}"{op}/>')
-    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {gw} {gh}" '
+            rects.append(f'<rect x="{x0 + ox:g}" y="{gy + oy:g}" width="{gx - x0}" height="1" fill="{fill}"{op}/>')
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size} {size}" '
            f'shape-rendering="crispEdges">\n' + "\n".join(rects) + "\n</svg>\n")
     path.write_text(svg)
     print(f"wrote {path} ({len(svg)} bytes, {gw}x{gh} grid, cell {cs}px)", file=sys.stderr)
@@ -129,9 +133,10 @@ def compose(w, h, px, size, content, bg, path):
     encode_png(size, size, canvas, path)
 
 
-w, h, px = decode_png(icons / "squid-big.png")
-to_svg(w, h, px, icons / "squid.svg")
-compose(w, h, px, 32, 30, (0, 0, 0, 0), icons / "favicon-32.png")
-compose(w, h, px, 180, 132, SAND, icons / "apple-touch-icon.png")
-compose(w, h, px, 192, 140, SAND, icons / "icon-192.png")
-compose(w, h, px, 512, 376, SAND, icons / "icon-512.png")
+if __name__ == "__main__":
+    w, h, px = decode_png(icons / "squid-big.png")
+    to_svg(w, h, px, icons / "squid.svg")
+    compose(w, h, px, 32, 28, SAND, icons / "favicon-32.png")
+    compose(w, h, px, 180, 132, SAND, icons / "apple-touch-icon.png")
+    compose(w, h, px, 192, 140, SAND, icons / "icon-192.png")
+    compose(w, h, px, 512, 376, SAND, icons / "icon-512.png")

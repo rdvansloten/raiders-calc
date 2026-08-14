@@ -19,7 +19,7 @@ To rebuild data: `python3 tools/extract.py`
 
 Serves the repo root with nginx, the same way GitHub Pages hosts it:
 
-`docker compose up -d`
+`docker compose up -d --build`
 
 Open <http://localhost:26692>
 
