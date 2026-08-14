@@ -1,0 +1,19 @@
+services:
+  raiders-calc:
+    build: .
+    ports:
+      - "26692:8080"
+    restart: unless-stopped
+
+  # data/icon tooling, stdlib-only Python; run on demand:
+  #   docker compose run --rm tools tools/extract.py
+  #   docker compose run --rm tools tools/scrape_gadgets.py
+  #   docker compose run --rm tools tools/make_icons.py
+  tools:
+    image: python:3.12-alpine
+    profiles: ["tools"]
+    working_dir: /repo
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/repo
+    entrypoint: ["python3"]

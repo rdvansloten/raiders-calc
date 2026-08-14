@@ -26,7 +26,7 @@ GADGETS = {
 }
 
 # The calculator models PLAYER WEAPON damage, so only parts that boost the
-# player's damage qualify — the wiki descriptions say "weapon damage" or
+# player's damage qualify; the wiki descriptions say "weapon damage" or
 # "all damage" for those. Parts that boost the gadget's own damage
 # ("Increases Spinwheel damage", "shot damage", etc.) are out of scope.
 PLAYER_DAMAGE_RE = re.compile(r"weapon damage|all damage", re.I)

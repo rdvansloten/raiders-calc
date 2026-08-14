@@ -39,7 +39,7 @@ function snapshot() {
 
 function saveState() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot())); }
-  catch (e) { /* storage unavailable (private mode etc.) — run without memory */ }
+  catch (e) { /* storage unavailable (private mode etc.); run without memory */ }
 }
 
 function loadSavedState() {
@@ -59,7 +59,7 @@ function savePresets(list) {
   try { localStorage.setItem(PRESETS_KEY, JSON.stringify(list)); } catch (e) { /* ignore */ }
 }
 
-// base64url of UTF-8 JSON — the whole build lives in the URL, no server needed
+// base64url of UTF-8 JSON; the whole build lives in the URL, no server needed
 function encodeBuild(obj) {
   return btoa(unescape(encodeURIComponent(JSON.stringify(obj))))
     .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
@@ -718,5 +718,5 @@ async function boot() {
 boot().catch(err => {
   $("result").textContent = "Failed to load";
   $("breakdown").textContent = String(err) +
-    " — serve this folder over HTTP (e.g. `python3 -m http.server`); file:// blocks data loading.";
+    ". Serve this folder over HTTP (e.g. `python3 -m http.server`); file:// blocks data loading.";
 });

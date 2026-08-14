@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Build favicon/app icons from icons/squid-big.png (pixel art).
-
-- icons/squid.svg: exact lossless vector version (one rect per pixel cell,
-  crispEdges) - the primary favicon.
-- icons/favicon-32.png: transparent 32px fallback favicon.
-- icons/apple-touch-icon.png (180), icons/icon-192.png, icons/icon-512.png:
-  squid centered on the site's sand background with a margin, scaled
-  nearest-neighbor so the pixel art stays crisp.
-
+"""Build favicon/app icons from pixel art.
 Pure stdlib (zlib/struct) - no PIL required.
 """
 import struct, sys, zlib
