@@ -7,6 +7,7 @@
   "ABC Splatling",
   "LN2 Splatling"
  ],
+ "longRange": true,
  "attacks": [
   {
    "label": "Shot",

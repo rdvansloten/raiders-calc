@@ -7,6 +7,7 @@
   "Sippy-Cup Dualies",
   "Sport-Bottle Dualies"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Shot",

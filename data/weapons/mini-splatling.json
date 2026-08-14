@@ -7,6 +7,7 @@
   "Buoy Splatling",
   "Water-Jug Splatling"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Shot",

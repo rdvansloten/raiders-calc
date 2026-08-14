@@ -6,7 +6,8 @@
    "Plastic-Bottle Splattershot",
    "Soap-Bottle Splattershot",
    "Glass-Bottle Splattershot"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "splattershot-jr",
@@ -15,7 +16,8 @@
    "Water-Wing Splattershot Jr.",
    "Flamingo Splattershot Jr.",
    "Lifeguard Splattershot Jr."
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "squelcher",
@@ -24,7 +26,8 @@
    "Jam Squelcher",
    "Perfume Squelcher",
    "Olive-Oil Squelcher"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "splat-roller",
@@ -33,7 +36,8 @@
    "Balloon Roller",
    "Shrimp Roller",
    "Inner-Tube Roller"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "dynamo-roller",
@@ -42,7 +46,8 @@
    "Duct Roller",
    "Turbine Roller",
    "Engine Roller"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "e-liter",
@@ -51,7 +56,8 @@
    "Diesel 4K",
    "Unleaded 4K",
    "High-Octane 4K"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "squiffer",
@@ -60,7 +66,8 @@
    "Detergent Charger",
    "Cleaner Charger",
    "Bleach Charger"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "slosher",
@@ -69,7 +76,8 @@
    "Polyethylene Slosher",
    "Sand Slosher",
    "Camo Slosher"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "sloshing-machine",
@@ -78,7 +86,8 @@
    "Oil-Drum Pow Slosher",
    "Shichirin Pow Slosher",
    "Clay-Pot Pow Slosher"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "heavy-splatling",
@@ -87,7 +96,8 @@
    "LPG Splatling",
    "ABC Splatling",
    "LN2 Splatling"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "mini-splatling",
@@ -96,7 +106,8 @@
    "Gas-Can Splatling",
    "Buoy Splatling",
    "Water-Jug Splatling"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "splat-dualies",
@@ -105,7 +116,8 @@
    "Diner Dualies",
    "Sippy-Cup Dualies",
    "Sport-Bottle Dualies"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "glooga-dualies",
@@ -114,7 +126,8 @@
    "Aluminum Twincans",
    "Steel Twincans",
    "Titanium Twincans"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "splat-brella",
@@ -123,7 +136,8 @@
    "Palm Brella",
    "Flower Brella",
    "Fruit Brella"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "tenta-brella",
@@ -132,7 +146,8 @@
    "Tarp Brella",
    "Food-Stall Brella",
    "Thermal Brella"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "blaster",
@@ -141,7 +156,8 @@
    "Oil Blaster",
    "Steam Blaster",
    "Butane Blaster"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "rapid-blaster-pro",
@@ -150,7 +166,8 @@
    "Toy-Claw Blaster",
    "Toy-Horn Blaster",
    "Toy-Shark Blaster"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "octobrush",
@@ -159,7 +176,8 @@
    "Cycle Brush",
    "Pulley Brush",
    "Touring Brush"
-  ]
+  ],
+  "longRange": false
  },
  {
   "slug": "tri-stringer",
@@ -168,7 +186,8 @@
    "Bamboo Stringer",
    "Racket Stringer",
    "Alpine Stringer"
-  ]
+  ],
+  "longRange": true
  },
  {
   "slug": "splatana-stamper",
@@ -177,6 +196,7 @@
    "Wooden Splatana",
    "Plastic Splatana",
    "Rail Splatana"
-  ]
+  ],
+  "longRange": false
  }
 ]

@@ -7,6 +7,7 @@
   "Food-Stall Brella",
   "Thermal Brella"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "All shots hit",

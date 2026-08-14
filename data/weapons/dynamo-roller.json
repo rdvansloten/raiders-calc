@@ -7,6 +7,7 @@
   "Turbine Roller",
   "Engine Roller"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Horizontal swing",

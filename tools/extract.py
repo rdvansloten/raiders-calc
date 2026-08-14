@@ -185,6 +185,11 @@ for j, fam, label, f in attacks:
 
 SOURCE = "Laugh_Lover's spreadsheet, gamefaqs.gamespot.com/boards/540184-splatoon-raiders/81174710"
 
+# families that can reach the Long Range damage band (user-confirmed in game);
+# everything else fights inside it and can only use Close Combat
+LONG_RANGE_FAMILIES = {"e-liter", "squiffer", "squelcher", "heavy-splatling",
+                       "sloshing-machine", "rapid-blaster-pro", "tri-stringer"}
+
 
 def slugify(name):
     return "".join(c if c.isalnum() else "-" for c in name.lower()).strip("-").replace("--", "-")
@@ -203,12 +208,14 @@ index = []
 curve = [base[l] for l in range(1, 101)]
 for famd in families:
     slug = slugify(famd["name"])
-    index.append({"slug": slug, "name": famd["name"], "variants": famd["variants"]})
+    index.append({"slug": slug, "name": famd["name"], "variants": famd["variants"],
+                  "longRange": slug in LONG_RANGE_FAMILIES})
     (weapons_dir / f"{slug}.json").write_text(json.dumps({
         "source": SOURCE,
         "slug": slug,
         "name": famd["name"],
         "variants": famd["variants"],
+        "longRange": slug in LONG_RANGE_FAMILIES,
         "attacks": famd["attacks"],
         "maxLevel": 100,
         "baseDamage": curve,

@@ -7,6 +7,7 @@
   "Shrimp Roller",
   "Inner-Tube Roller"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Horizontal swing",

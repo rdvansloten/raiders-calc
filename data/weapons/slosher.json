@@ -7,6 +7,7 @@
   "Sand Slosher",
   "Camo Slosher"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Single slosh",

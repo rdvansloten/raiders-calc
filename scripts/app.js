@@ -376,6 +376,11 @@ async function loadWeapon(slug) {
   });
   $("attack-wrap").style.display = state.weapon.attacks.length > 1 ? "" : "none";
   $("attacks-card").hidden = state.weapon.attacks.length < 2;
+  // short-range weapons cannot reach the Long Range damage band
+  const longOpt = $("range").querySelector('option[value="long"]');
+  longOpt.disabled = !state.weapon.longRange;
+  longOpt.title = state.weapon.longRange ? "" : `${state.weapon.name} cannot reach the Long Range band`;
+  if (!state.weapon.longRange && $("range").value === "long") $("range").value = "";
 }
 
 /* ---------- input handling ---------- */
@@ -563,6 +568,115 @@ function update() {
   });
 
   saveState();
+}
+
+/* ---------- build optimizer ---------- */
+
+// Finds the highest-damage legal build for the current weapon, attack, and
+// levels by brute force over tanks, weapon bonuses, relics, and gadget parts.
+// Statuses are assumed best-case and consistent (Danger beats HP full when
+// Risky Reward is equipped; Frozen assumed reachable via Freeze effects;
+// Ferment only via the Tactical tank power).
+function optimizeBuild() {
+  const pbase = Math.min(50, Math.max(1, Math.round(+$("pbase").value || 1)));
+  const pextra = pbase < 50 ? 0 : Math.min(9999, Math.max(0, Math.round(+$("pextra").value || 0)));
+  const wbase = Math.min(50, Math.max(1, Math.round(+$("wbase").value || 1)));
+  const wplus = wbase < 50 ? 0 : Math.min(50, Math.max(0, Math.round(+$("wplus").value || 0)));
+  const atkIdx = Math.min(+$("attack").value || 0, state.weapon.attacks.length - 1);
+  const pd = playerDamage(pbase, pextra);
+  const bwd = state.weapon.baseDamage[Math.min(100, wbase + wplus) - 1];
+  const tankMult = 1 + Math.min(200, Math.max(0, +$("tankbonus").value || 0)) / 100;
+  const dmg = (pd + bwd) * state.weapon.attacks[atkIdx].factor * tankMult;
+
+  const subsets = arr => arr.reduce((acc, x) => acc.concat(acc.map(s => s.concat([x]))), [[]]);
+  let best = null;
+
+  for (const tank of state.tanks.tanks) {
+    // relic combos legal for this tank
+    const eligible = state.relics.relics.filter(r => !tank.relicRules.banned.includes(r.category));
+    const relicCombos = subsets(eligible).filter(set => {
+      if (set.length > state.relics.maxEquipped) return false;
+      for (const [cat, limit] of Object.entries(tank.relicRules.limits))
+        if (set.filter(r => r.category === cat).length > limit) return false;
+      return true;
+    });
+    // gadget combos: max 3, at most 1 borrowed; taking a gadget takes all its parts
+    const accessible = state.gadgetsIndex.filter(g => g.tank === tank.id || g.tank === tank.gadgetBorrow);
+    const gadgetCombos = subsets(accessible).filter(set =>
+      set.length <= MAX_GADGETS &&
+      set.filter(g => g.tank !== tank.id).length <= 1);
+    const bonusCombos = subsets(state.weaponBonuses.bonuses)
+      .filter(set => set.length <= state.weaponBonuses.maxEquipped);
+
+    for (const bonuses of bonusCombos) {
+      for (const relicSet of relicCombos) {
+        for (const gadgetSet of gadgetCombos) {
+          const hasRisky = bonuses.some(b => b.id === "risky-reward") ||
+                           relicSet.some(r => r.id === "ancient-salmon-run-slab");
+          const rangeOptions = state.weapon.longRange ? ["", "close", "long"] : ["", "close"];
+          for (const range of rangeOptions) {
+            const conditions = {
+              danger: hasRisky, hpfull: !hasRisky,
+              close: range === "close", long: range === "long",
+              frozen: true, streak: true, inkspent: true, airborne: true,
+            };
+            let add = 0;
+            const groups = {};
+            if (tank.id === "power") add += 20;  // tank power surge
+            const apply = item => {
+              if (item.mode === "mult") groups[item.group || item.id] = (groups[item.group || item.id] || 0) + item.pct;
+              else add += item.pct;
+            };
+            for (const b of bonuses)
+              if (!b.requires || conditions[b.requires]) apply({ ...b, pct: b.levels[2] });
+            for (const r of relicSet)
+              if (!r.requires || conditions[r.requires]) apply({ ...r, pct: r.levels[2] });
+            const partSel = {};
+            for (const g of gadgetSet) {
+              for (const part of state.gadgetData[g.id].parts) {
+                if (part.requires && !conditions[part.requires]) continue;
+                const bestIdx = part.variants.reduce((m, v, i) => v.pct > part.variants[m].pct ? i : m, 0);
+                partSel[`${g.id}/${part.id}`] = bestIdx;
+                add += part.variants[bestIdx].pct;
+              }
+            }
+            let mult = 1;
+            for (const pct of Object.values(groups)) mult *= 1 + pct / 100;
+            const ferment = tank.id === "tactic" ? 1.2 : 1;  // via tank power
+            const total = dmg * (1 + add / 100) * mult * ferment;
+            if (!best || total > best.total)
+              best = { total, tank, bonuses, relicSet, partSel, range, hasRisky };
+          }
+        }
+      }
+    }
+  }
+  return best;
+}
+
+async function applyOptimalBuild() {
+  const best = optimizeBuild();
+  if (!best) return;
+  state.tankId = best.tank.id;
+  state.weaponBonusLevels = {};
+  for (const b of best.bonuses) state.weaponBonusLevels[b.id] = 3;
+  state.relicLevels = {};
+  for (const r of best.relicSet) state.relicLevels[r.id] = 3;
+  state.gadgetPartSel = { ...best.partSel };
+  $("range").value = best.range;
+  $("danger").value = best.hasRisky ? "1" : "0";
+  $("hpfull").value = best.hasRisky ? "0" : "1";
+  $("frozen").value = best.bonuses.some(b => b.id === "ice-breaker") ? "1" : "0";
+  $("streak").value = "3";
+  $("inkspent").value = best.relicSet.some(r => r.id === "bronze-press") ? "1" : "0";
+  $("airborne").value = Object.keys(best.partSel).some(k => k.includes("airborne")) ? "1" : "0";
+  $("ferment").value = best.tank.id === "tactic" ? "1" : "0";
+  $("tankpower").value = best.tank.id === "speed" ? "0" : "1";
+  renderTanks(); renderRelics(); renderGadgets(); renderWeaponBonuses();
+  update();
+  showNotice(`Optimal build applied: ${best.tank.name}, dealing ${fmt(best.total)}. ` +
+    "Assumes best-case statuses (Frozen and 3 consecutive hits reachable; " +
+    "Ferment only counted on the Tactical Tank power).");
 }
 
 /* ---------- apply a saved/linked build ---------- */
@@ -763,6 +877,7 @@ async function boot() {
     catch (err) { window.prompt("Copy this link:", url); }
   };
   $("copy-link").addEventListener("click", copyCurrentLink);
+  $("optimize").addEventListener("click", applyOptimalBuild);
   $("copy-link-create").addEventListener("click", copyCurrentLink);
   $("danger").addEventListener("input", () => {
     if ($("danger").value === "1") $("hpfull").value = "0";

@@ -7,6 +7,7 @@
   "Pulley Brush",
   "Touring Brush"
  ],
+ "longRange": false,
  "attacks": [
   {
    "label": "Brush swing",

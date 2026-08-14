@@ -7,6 +7,7 @@
   "Perfume Squelcher",
   "Olive-Oil Squelcher"
  ],
+ "longRange": true,
  "attacks": [
   {
    "label": "Shot",
