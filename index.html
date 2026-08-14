@@ -77,13 +77,17 @@
           <div class="stat-row">
             <div class="stat stat-duo">
               <div class="stat-half">
-                <span class="lab">Damage</span>
-                <span class="stat-value" id="stat-damage"></span>
+                <div class="stat-line">
+                  <span class="stat-value" id="stat-damage"></span>
+                  <span class="lab">Dmg</span>
+                </div>
                 <span class="stat-note" id="stat-dmg-note"></span>
               </div>
               <div class="stat-half">
-                <span class="lab">HP</span>
-                <span class="stat-value hp-value" id="stat-hp"></span>
+                <div class="stat-line">
+                  <span class="stat-value hp-value" id="stat-hp"></span>
+                  <span class="lab">HP</span>
+                </div>
                 <span class="stat-note" id="stat-hp-base"></span>
               </div>
             </div>
@@ -153,6 +157,53 @@
               aria-label="Tank"
             ></div>
           </div>
+          <div class="field status-block">
+          <div class="row">
+            <div class="field">
+              <span class="lab">Range</span>
+              <select id="range">
+                <option value="" selected>None</option>
+                <option value="close">Close range</option>
+                <option value="long">Long range</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">HP full</span>
+              <select id="hpfull">
+                <option value="0">Off</option>
+                <option value="1" selected>On</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">In Danger</span>
+              <select id="danger">
+                <option value="0" selected>Off</option>
+                <option value="1">On</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">Airborne</span>
+              <select id="airborne">
+                <option value="0" selected>Off</option>
+                <option value="1">On</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">Consecutive attacks</span>
+              <select id="streak">
+                <option value="0" selected>None</option>
+                <option value="3">3+</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">30% ink used</span>
+              <select id="inkspent">
+                <option value="0" selected>Off</option>
+                <option value="1">On</option>
+              </select>
+            </div>
+          </div>
+          </div>
         </section>
 
         <section class="card">
@@ -220,55 +271,6 @@
         </section>
 
         <section class="card">
-          <h2 class="chip">Player status</h2>
-          <div class="row">
-            <div class="field">
-              <span class="lab">Range</span>
-              <select id="range">
-                <option value="" selected>None</option>
-                <option value="close">Close range</option>
-                <option value="long">Long range</option>
-              </select>
-            </div>
-            <div class="field">
-              <span class="lab">HP full</span>
-              <select id="hpfull">
-                <option value="0">Off</option>
-                <option value="1" selected>On</option>
-              </select>
-            </div>
-            <div class="field">
-              <span class="lab">In Danger</span>
-              <select id="danger">
-                <option value="0" selected>Off</option>
-                <option value="1">On</option>
-              </select>
-            </div>
-            <div class="field">
-              <span class="lab">Airborne</span>
-              <select id="airborne">
-                <option value="0" selected>Off</option>
-                <option value="1">On</option>
-              </select>
-            </div>
-            <div class="field">
-              <span class="lab">Consecutive attacks</span>
-              <select id="streak">
-                <option value="0" selected>0</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-            <div class="field">
-              <span class="lab">30% ink used</span>
-              <select id="inkspent">
-                <option value="0" selected>Off</option>
-                <option value="1">On</option>
-              </select>
-            </div>
-          </div>
-        </section>
-
-        <section class="card">
           <h2 class="chip">Enemy status</h2>
           <div class="row">
             <div class="field">
@@ -292,7 +294,7 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="attacks-card">
           <h2 class="chip">All attacks</h2>
           <div class="tablewrap">
             <table>

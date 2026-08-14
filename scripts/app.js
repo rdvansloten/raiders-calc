@@ -374,6 +374,7 @@ async function loadWeapon(slug) {
     atk.appendChild(o);
   });
   $("attack-wrap").style.display = state.weapon.attacks.length > 1 ? "" : "none";
+  $("attacks-card").hidden = state.weapon.attacks.length < 2;
 }
 
 /* ---------- input handling ---------- */
@@ -450,7 +451,7 @@ function update() {
     $("stat-dmg-note").textContent =
       `+${fmt(gain)} from +${fmt(pextra)} levels (+${(100 * gain / (softcapDmg + bwd)).toFixed(2)}% dealt)`;
   } else {
-    $("stat-dmg-note").textContent = "";
+    $("stat-dmg-note").textContent = "base character damage";
   }
 
   // In Danger and HP full are mutually exclusive: turning one on clears
