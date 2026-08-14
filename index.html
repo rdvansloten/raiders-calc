@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Splatoon Raiders × Damage</title>
+<title>Splatoon Raiders - Damage Calculator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/main.css">
 <link rel="icon" href="icons/squid.svg" type="image/svg+xml">
 <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -31,7 +31,8 @@
 <main>
   <header>
     <h1>Splatoon Raiders <span class="x">×</span> Damage</h1>
-    <p class="tagline">Damage calculator for Splatoon Raiders</p>
+    <p class="tagline">Damage calculator for Splatoon Raiders.</p>
+    <p class="tagline">Data may be missing due to the scarcity of available data.</p>
   </header>
 
   <nav class="tabs" aria-label="Views">
@@ -110,16 +111,19 @@
         </div>
       </div>
     </div>
+    <p class="hint">Primo variants deal the same damage as their base weapon, so they are not listed separately.</p>
   </section>
 
   <section class="card">
     <h2 class="chip">Weapon bonuses <span id="wbonus-count" class="count"></span></h2>
     <div id="wbonuses" class="variant-list"></div>
+    <p class="hint">Tap the box to increase or reset bonus level.</p>
   </section>
 
   <section class="card">
     <h2 class="chip">Relics <span id="relic-count" class="count"></span></h2>
     <div id="relics"></div>
+    <p class="hint">Tap the box to increase or reset bonus level.</p>
     <p class="hint" id="relic-rule-hint"></p>
   </section>
 
@@ -137,6 +141,13 @@
           <option value="" selected>None</option>
           <option value="close">Close range</option>
           <option value="long">Long range</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lab">HP full</span>
+        <select id="hpfull">
+          <option value="0">Off</option>
+          <option value="1" selected>On</option>
         </select>
       </div>
       <div class="field">
@@ -161,13 +172,6 @@
         </select>
       </div>
       <div class="field">
-        <span class="lab">HP full</span>
-        <select id="hpfull">
-          <option value="0" selected>Off</option>
-          <option value="1">On</option>
-        </select>
-      </div>
-      <div class="field">
         <span class="lab">30% ink used</span>
         <select id="inkspent">
           <option value="0" selected>Off</option>
@@ -186,13 +190,13 @@
           <option value="0" selected>Off</option>
           <option value="1">On</option>
         </select>
-        <span class="hint">Required for Ice&#8209;Breaker to apply</span>
+        <span class="hint">Required for Ice Breaker to apply</span>
       </div>
       <div class="field">
         <span class="lab">Ferment</span>
         <select id="ferment">
           <option value="0" selected>Off</option>
-          <option value="1">On (×1.2)</option>
+          <option value="1">On (+20%)</option>
         </select>
         <span class="hint" id="ferment-hint">Enemy debuff, +20% damage</span>
       </div>
@@ -211,9 +215,8 @@
 
   <section class="card result-card">
     <div class="result-line">
-      <h2 class="chip chip-orange">Damage</h2>
-      <p class="result-figure"><span class="fig-label">total</span> <span id="result"></span></p>
-      <p class="result-base"><span class="fig-label">base</span> <span class="boosted" id="basedmg"></span></p>
+      <p class="result-figure"><span class="fig-label">total dmg</span> <span id="result"></span></p>
+      <p class="result-base"><span class="fig-label">base dmg</span> <span class="boosted" id="basedmg"></span></p>
     </div>
     <p class="result-sub formula"><code id="breakdown"></code></p>
   </section>
@@ -236,7 +239,7 @@
   <footer>
     <button type="button" id="reset" class="reset-btn">Reset all</button>
     <p>Found a bug or wrong number?
-       <a href="https://github.com/rdvansloten/raiders-calc/issues">Open a GitHub issue</a> or
+       <a href="https://github.com/woomies-ink/raiders-calc/issues">Open a GitHub issue</a> or
        DM <a href="https://www.reddit.com/message/compose/?to=esuna_codes">u/esuna_codes</a> on Reddit.</p>
     <p>Damage research and data by Laugh_Lover/Delpolo:
        <a href="https://gamefaqs.gamespot.com/boards/540184-splatoon-raiders/81174710">GameFAQs thread</a> ·
@@ -245,6 +248,7 @@
   </footer>
 </main>
 
-<script src="app.js"></script>
+<script src="scripts/share-codec.js"></script>
+<script src="scripts/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
- "note": "Damage-affecting relics only. Each has 3 levels; only level-3 values are confirmed, L1/L2 are guesses. mode 'mult' + group: percentages in the same group (relic + weapon bonus) SUM, then the group multiplies the total - per the research thread's stacking tests. mode 'add' joins the additive pool. requires gates on a status toggle.",
+ "note": "Damage-affecting relics only. Each has 3 levels; only level-3 values are confirmed (Bronze Press Damage Up 40@L3 user-verified in game), L1/L2 are guesses. mode 'mult' + group: percentages in the same group (relic + weapon bonus) SUM, then the group multiplies the total - per the research thread's stacking tests. mode 'add' joins the additive pool. requires gates on a status toggle.",
  "maxEquipped": 5,
  "relics": [
   {
@@ -56,9 +56,9 @@
    "power": "Damage Up",
    "mode": "add",
    "levels": [
-    10,
-    15,
-    20
+    20,
+    30,
+    40
    ],
    "requires": "inkspent",
    "description": "Weapon damage is increased for 9 sec after 30% of ink is used.",

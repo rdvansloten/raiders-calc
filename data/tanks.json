@@ -16,20 +16,6 @@
    "gadgetBorrow": "speed"
   },
   {
-   "id": "speed",
-   "name": "Speed Tank",
-   "icon": "icons/tank-speed.png",
-   "relicRules": {
-    "banned": [
-     "power"
-    ],
-    "limits": {
-     "tactic": 1
-    }
-   },
-   "gadgetBorrow": "tactic"
-  },
-  {
    "id": "tactic",
    "name": "Tactical Tank",
    "icon": "icons/tank-tactical.png",
@@ -42,6 +28,20 @@
     }
    },
    "gadgetBorrow": "power"
+  },
+  {
+   "id": "speed",
+   "name": "Speed Tank",
+   "icon": "icons/tank-speed.png",
+   "relicRules": {
+    "banned": [
+     "power"
+    ],
+    "limits": {
+     "tactic": 1
+    }
+   },
+   "gadgetBorrow": "tactic"
   }
  ]
 }

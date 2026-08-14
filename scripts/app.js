@@ -59,6 +59,22 @@ function savePresets(list) {
   try { localStorage.setItem(PRESETS_KEY, JSON.stringify(list)); } catch (e) { /* ignore */ }
 }
 
+function showNotice(msg) {
+  const n = document.createElement("div");
+  n.className = "notice";
+  const text = document.createElement("span");
+  text.textContent = msg;
+  const close = document.createElement("button");
+  close.type = "button";
+  close.className = "notice-close";
+  close.textContent = "×";
+  close.setAttribute("aria-label", "Dismiss");
+  close.addEventListener("click", () => n.remove());
+  n.append(text, close);
+  const main = document.querySelector("main");
+  main.insertBefore(n, main.querySelector(".tabs"));
+}
+
 function flash(btn, text) {
   const orig = btn.textContent;
   btn.textContent = text;
@@ -174,6 +190,7 @@ function renderTanks() {
 
 const RELIC_CATS = [["speed", "Speed"], ["power", "Power"], ["tactic", "Tactical"]];
 
+
 function renderRelics() {
   const wrap = $("relics");
   wrap.innerHTML = "";
@@ -270,10 +287,8 @@ function renderGadgets() {
         row.disabled = blockReason !== null;
         if (row.disabled) row.title = blockReason;
         row.setAttribute("aria-pressed", String(sel));
-        const starPips = [1, 2, 3, 4, 5]
-          .map(n => `<i${n <= v.stars ? ' class="on"' : ""}></i>`).join("");
         row.innerHTML =
-          `<span class="pips star-pips" aria-label="${v.stars} of 5 stars">${starPips}</span>` +
+          `<span class="stars r${v.stars}" aria-label="${v.stars} of 5 stars">${"★".repeat(v.stars)}</span>` +
           `<span class="vpct">+${v.pct}%</span>` +
           `<span class="vslots">${v.slots} slot${v.slots > 1 ? "s" : ""}</span>`;
         row.addEventListener("click", () => {
@@ -305,7 +320,9 @@ function renderWeaponBonuses() {
     const level = state.weaponBonusLevels[bonus.id] || 0;
     const full = level === 0 && equipped >= max;
     const pct = level > 0 ? bonus.levels[level - 1] : bonus.levels[2];
-    const val = bonus.mode === "mult" ? "×" + (1 + pct / 100).toFixed(2) : "+" + pct + "%";
+    const val = bonus.id === "ice-breaker"
+      ? "\u00d7" + Number((1 + pct / 100).toFixed(2))
+      : "+" + pct + "%";
     const valueText = level > 0 ? val : `up to ${val}`;
     const pips = [1, 2, 3].map(n => `<i${n <= level ? ' class="on"' : ""}></i>`).join("");
     const b = document.createElement("button");
@@ -378,6 +395,21 @@ function clampInputs() {
   if ((+$("wplus").value || 0) !== wplus) $("wplus").value = wplus;
   return { pbase, pextra, wbase, wplus };
 }
+
+// shrink the total/base figures so both always share one line
+function fitResultLine() {
+  const line = document.querySelector(".result-line");
+  if (!line) return;
+  const nums = [$("result"), $("basedmg")];
+  nums.forEach(n => { n.style.fontSize = ""; });
+  for (let i = 0; i < 10 && line.scrollWidth > line.clientWidth; i++) {
+    for (const n of nums) {
+      const cur = parseFloat(getComputedStyle(n).fontSize);
+      n.style.fontSize = Math.max(12, cur * 0.92) + "px";
+    }
+  }
+}
+window.addEventListener("resize", fitResultLine);
 
 // shrink the formula's font so it always fits its card on one line
 function fitBreakdown() {
@@ -467,7 +499,7 @@ function update() {
   }
   let multFactor = 1;
   for (const pct of Object.values(groups)) multFactor *= 1 + pct / 100;
-  const ferment = $("ferment").value === "1" ? 1.2 : 1;  // stacks with Ice-Breaker
+  const ferment = $("ferment").value === "1" ? 1.2 : 1;  // stacks with Ice Breaker
   const bonusFactor = (1 + add / 100) * multFactor * ferment;
 
   $("result").textContent = fmt(dmg * bonusFactor);
@@ -476,6 +508,7 @@ function update() {
     `(${fmt(pd)} + ${fmt(bwd)}) × ${atk.factor} × ${tankMult.toFixed(1)} = ${fmt(dmg)}` +
     (bonusFactor !== 1 ? `, × ${bonusFactor.toFixed(3)} bonuses = ${fmt(dmg * bonusFactor)}` : "");
   fitBreakdown();
+  fitResultLine();
 
   const tbody = $("attack-table");
   tbody.innerHTML = "";
@@ -494,7 +527,7 @@ function update() {
 
 const INPUT_DEFAULTS = { pbase: "50", pextra: "0", wbase: "50", wplus: "50",
                          tankbonus: "200", hpbonus: "400", range: "", danger: "0",
-                         airborne: "0", streak: "0", hpfull: "0", inkspent: "0",
+                         airborne: "0", streak: "0", hpfull: "1", inkspent: "0",
                          frozen: "0", ferment: "0", attack: "0" };
 
 async function applySnapshot(saved) {
@@ -641,6 +674,9 @@ async function boot() {
     history.replaceState({}, "", location.pathname);
   }
   await applySnapshot(fromLink || loadSavedState());
+  if (fromLink && fromLink.olderVersion)
+    showNotice("This build link was made with an older version of the calculator. " +
+               "Options added since then are unselected.");
 
   const nameBtn = $("pname-btn"), nameInput = $("pname-input");
   nameBtn.addEventListener("click", () => {
