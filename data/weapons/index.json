@@ -1,0 +1,182 @@
+[
+ {
+  "slug": "splattershot",
+  "name": "Splattershot",
+  "variants": [
+   "Plastic-Bottle Splattershot",
+   "Soap-Bottle Splattershot",
+   "Glass-Bottle Splattershot"
+  ]
+ },
+ {
+  "slug": "splattershot-jr",
+  "name": "Splattershot Jr.",
+  "variants": [
+   "Water-Wing Splattershot Jr.",
+   "Flamingo Splattershot Jr.",
+   "Lifeguard Splattershot Jr."
+  ]
+ },
+ {
+  "slug": "squelcher",
+  "name": "Squelcher",
+  "variants": [
+   "Jam Squelcher",
+   "Perfume Squelcher",
+   "Olive-Oil Squelcher"
+  ]
+ },
+ {
+  "slug": "splat-roller",
+  "name": "Splat Roller",
+  "variants": [
+   "Balloon Roller",
+   "Shrimp Roller",
+   "Inner-Tube Roller"
+  ]
+ },
+ {
+  "slug": "dynamo-roller",
+  "name": "Dynamo Roller",
+  "variants": [
+   "Duct Roller",
+   "Turbine Roller",
+   "Engine Roller"
+  ]
+ },
+ {
+  "slug": "e-liter",
+  "name": "E-liter",
+  "variants": [
+   "Diesel 4K",
+   "Unleaded 4K",
+   "High-Octane 4K"
+  ]
+ },
+ {
+  "slug": "squiffer",
+  "name": "Squiffer",
+  "variants": [
+   "Detergent Charger",
+   "Cleaner Charger",
+   "Bleach Charger"
+  ]
+ },
+ {
+  "slug": "slosher",
+  "name": "Slosher",
+  "variants": [
+   "Polyethylene Slosher",
+   "Sand Slosher",
+   "Camo Slosher"
+  ]
+ },
+ {
+  "slug": "sloshing-machine",
+  "name": "Sloshing Machine",
+  "variants": [
+   "Oil-Drum Pow Slosher",
+   "Shichirin Pow Slosher",
+   "Clay-Pot Pow Slosher"
+  ]
+ },
+ {
+  "slug": "heavy-splatling",
+  "name": "Heavy Splatling",
+  "variants": [
+   "LPG Splatling",
+   "ABC Splatling",
+   "LN2 Splatling"
+  ]
+ },
+ {
+  "slug": "mini-splatling",
+  "name": "Mini Splatling",
+  "variants": [
+   "Gas-Can Splatling",
+   "Buoy Splatling",
+   "Water-Jug Splatling"
+  ]
+ },
+ {
+  "slug": "splat-dualies",
+  "name": "Splat Dualies",
+  "variants": [
+   "Diner Dualies",
+   "Sippy-Cup Dualies",
+   "Sport-Bottle Dualies"
+  ]
+ },
+ {
+  "slug": "glooga-dualies",
+  "name": "Glooga Dualies",
+  "variants": [
+   "Aluminum Twincans",
+   "Steel Twincans",
+   "Titanium Twincans"
+  ]
+ },
+ {
+  "slug": "splat-brella",
+  "name": "Splat Brella",
+  "variants": [
+   "Palm Brella",
+   "Flower Brella",
+   "Fruit Brella"
+  ]
+ },
+ {
+  "slug": "tenta-brella",
+  "name": "Tenta Brella",
+  "variants": [
+   "Tarp Brella",
+   "Food-Stall Brella",
+   "Thermal Brella"
+  ]
+ },
+ {
+  "slug": "blaster",
+  "name": "Blaster",
+  "variants": [
+   "Oil Blaster",
+   "Steam Blaster",
+   "Butane Blaster"
+  ]
+ },
+ {
+  "slug": "rapid-blaster-pro",
+  "name": "Rapid Blaster Pro",
+  "variants": [
+   "Toy-Claw Blaster",
+   "Toy-Horn Blaster",
+   "Toy-Shark Blaster"
+  ]
+ },
+ {
+  "slug": "octobrush",
+  "name": "Octobrush",
+  "variants": [
+   "Cycle Brush",
+   "Pulley Brush",
+   "Touring Brush"
+  ]
+ },
+ {
+  "slug": "tri-stringer",
+  "name": "Tri-Stringer",
+  "variants": [
+   "Bamboo Stringer",
+   "Racket Stringer",
+   "Alpine Stringer"
+  ]
+ },
+ {
+  "slug": "splatana-stamper",
+  "name": "Splatana Stamper",
+  "variants": [
+   "Wooden Splatana",
+   "Plastic Splatana",
+   "Rail Splatana"
+  ]
+ }
+]

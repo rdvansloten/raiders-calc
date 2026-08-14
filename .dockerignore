@@ -1,0 +1,7 @@
+.git
+.github
+.gitignore
+.dockerignore
+.claude
+.DS_Store
+Dockerfile

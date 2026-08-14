@@ -1,0 +1,3559 @@
+player_damage,weapon_level,family,attack,displayed_damage
+4500,1,Splattershot Jr.,Shot,1246
+4500,2,Splattershot Jr.,Shot,1265
+4500,3,Splattershot,Shot,1541
+4500,3,Splattershot Jr.,Shot,1284
+4500,3,Squiffer,Full charge,10702
+4500,3,Squiffer,Minimum charge,2140
+4500,3,Slosher,Single slosh,6849
+4500,4,Splattershot,Shot,1551
+4500,4,Splattershot Jr.,Shot,1293
+4500,4,Splat Roller,Horizontal swing,6465
+4500,4,Splat Roller,Vertical swing,8620
+4500,4,Splat Roller,Inkling on the go,5172
+4500,4,Squiffer,Full charge,10776
+4500,4,Squiffer,Minimum charge,2155
+4500,4,Slosher,Single slosh,6896
+4500,5,Splattershot,Shot,1559
+4500,5,Splattershot Jr.,Shot,1299
+4500,5,Splat Roller,Horizontal swing,6497
+4500,5,Splat Roller,Vertical swing,8862
+4500,5,Splat Roller,Inkling on the go,5197
+4500,5,Squiffer,Full charge,10828
+4500,5,Squiffer,Minimum charge,2165
+4500,5,Slosher,Single slosh,6930
+4500,6,Splattershot,Shot,1567
+4500,6,Splattershot Jr.,Shot,1306
+4500,6,Splat Roller,Horizontal swing,6531
+4500,6,Splat Roller,Vertical swing,8709
+4500,6,Splat Roller,Inkling on the go,5225
+4500,6,Squiffer,Full charge,10886
+4500,6,Squiffer,Minimum charge,2177
+4500,6,Slosher,Single slosh,6967
+4500,6,Octobrush,Brush swing,2612
+4500,6,Octobrush,Inking on the go,1741
+4500,7,Splattershot,Shot,1576
+4500,7,Splattershot Jr.,Shot,1313
+4500,7,Splat Roller,Horizontal swing,6569
+4500,7,Splat Roller,Vertical swing,8759
+4500,7,Splat Roller,Inkling on the go,5255
+4500,7,Squiffer,Full charge,10949
+4500,7,Squiffer,Minimum charge,2189
+4500,7,Slosher,Single slosh,7007
+4500,7,Blaster,Direct hit,9635
+4500,7,Blaster,Explosion (max),6744
+4500,7,Blaster,Explosion (min),4817
+4500,7,Octobrush,Brush swing,2627
+4500,7,Octobrush,Inking on the go,1751
+4500,8,Splattershot,Shot,1586
+4500,8,Splattershot Jr.,Shot,1322
+4500,8,Splat Roller,Horizontal swing,6610
+4500,8,Splat Roller,Vertical swing,8814
+4500,8,Splat Roller,Inkling on the go,5288
+4500,8,Squiffer,Full charge,11017
+4500,8,Squiffer,Minimum charge,2203
+4500,8,Slosher,Single slosh,7051
+4500,8,Blaster,Direct hit,9695
+4500,8,Blaster,Explosion (max),6786
+4500,8,Blaster,Explosion (min),4847
+4500,8,Octobrush,Brush swing,2644
+4500,8,Octobrush,Inking on the go,1762
+4500,9,Splattershot,Shot,1597
+4500,9,Splattershot Jr.,Shot,1330
+4500,9,Splat Roller,Horizontal swing,6654
+4500,9,Splat Roller,Vertical swing,8872
+4500,9,Splat Roller,Inkling on the go,5323
+4500,9,Squiffer,Full charge,11091
+4500,9,Squiffer,Minimum charge,2218
+4500,9,Splat Brella,All shots hit,7895
+4500,9,Splat Brella,Single shot,1597
+4500,9,Splat Brella,Launched brella,6654
+4500,9,Blaster,Direct hit,9760
+4500,9,Blaster,Explosion (max),6832
+4500,9,Blaster,Explosion (min),4880
+4500,9,Octobrush,Brush swing,2661
+4500,9,Octobrush,Inking on the go,1774
+4500,10,Splattershot,Shot,1608
+4500,10,Splattershot Jr.,Shot,1340
+4500,10,Splat Roller,Horizontal swing,6701
+4500,10,Splat Roller,Vertical swing,8935
+4500,10,Splat Roller,Inkling on the go,5361
+4500,10,Squiffer,Full charge,11169
+4500,10,Squiffer,Minimum charge,2233
+4500,10,Splat Brella,All shots hit,8042
+4500,10,Splat Brella,Single shot,1608
+4500,10,Splat Brella,Launched brella,6701
+4500,10,Blaster,Direct hit,9829
+4500,10,Blaster,Explosion (max),6880
+4500,10,Blaster,Explosion (min),4914
+4500,10,Octobrush,Brush swing,2680
+4500,10,Octobrush,Inking on the go,1787
+4500,11,Splattershot,Shot,1620
+4500,11,Splattershot Jr.,Shot,1350
+4500,11,Splat Roller,Horizontal swing,6752
+4500,11,Splat Roller,Vertical swing,9003
+4500,11,Splat Roller,Inkling on the go,5401
+4500,11,Squiffer,Full charge,11253
+4500,11,Squiffer,Minimum charge,2250
+4500,11,Splat Brella,All shots hit,8102
+4500,11,Splat Brella,Single shot,1620
+4500,11,Splat Brella,Launched brella,6752
+4500,11,Blaster,Direct hit,9903
+4500,11,Blaster,Explosion (max),6932
+4500,11,Blaster,Explosion (min),4951
+4500,11,Octobrush,Brush swing,2700
+4500,11,Octobrush,Inking on the go,1800
+4500,12,Splattershot,Shot,1633
+4500,12,Splattershot Jr.,Shot,1361
+4500,12,Splat Roller,Horizontal swing,6805
+4500,12,Splat Roller,Vertical swing,9074
+4500,12,Splat Roller,Inkling on the go,5444
+4500,12,Splat Brella,All shots hit,8166
+4500,12,Splat Brella,Single shot,1633
+4500,12,Splat Brella,Launched brella,6805
+4500,12,Blaster,Direct hit,9981
+4500,12,Blaster,Explosion (max),6987
+4500,12,Blaster,Explosion (min),4990
+4500,13,Splattershot,Shot,1647
+4500,13,Splat Roller,Horizontal swing,6865
+4500,13,Splat Roller,Vertical swing,9154
+4500,13,Splat Roller,Inkling on the go,5492
+4500,13,Splat Brella,All shots hit,8238
+4500,13,Splat Brella,Single shot,1647
+4500,13,Splat Brella,Launched brella,6865
+4500,14,Splattershot,Shot,1662
+4500,14,Splattershot Jr.,Shot,1385
+4500,14,Splat Roller,Horizontal swing,6928
+4500,14,Splat Roller,Vertical swing,9238
+4500,14,Splat Roller,Inkling on the go,5542
+4500,14,Splat Brella,All shots hit,8314
+4500,14,Splat Brella,Single shot,1662
+4500,14,Splat Brella,Launched brella,6928
+4500,15,Splattershot,Shot,1679
+4500,15,Splattershot Jr.,Shot,1399
+4500,15,Squelcher,Shot,2519
+4500,15,Squiffer,Full charge,11663
+4500,15,Squiffer,Minimum charge,2332
+4500,15,Mini Splatling,Shot,1819
+4500,15,Splat Brella,All shots hit,8397
+4500,15,Splat Brella,Single shot,1679
+4500,15,Splat Brella,Launched brella,6997
+4500,15,Blaster,Direct hit,10263
+4500,15,Blaster,Explosion (max),7184
+4500,15,Blaster,Explosion (min),5131
+4500,15,Rapid Blaster Pro,Direct hit,8379
+4500,15,Rapid Blaster Pro,Explosion,4198
+4500,15,Splatana Stamper,Horizontal slash,4665
+4500,15,Splatana Stamper,Charged slash,8397
+4500,15,Splatana Stamper,Charged slash (direct hit),10263
+4500,16,Splattershot,Shot,1696
+4500,16,Splattershot Jr.,Shot,1414
+4500,16,Squelcher,Shot,2545
+4500,16,Squiffer,Full charge,11784
+4500,16,Squiffer,Minimum charge,2356
+4500,16,Sloshing Machine,Direct hit,9427
+4500,16,Sloshing Machine,Explosion,5656
+4500,16,Mini Splatling,Shot,1838
+4500,16,Splat Dualies,Shot,1838
+4500,16,Splat Brella,All shots hit,8484
+4500,16,Splat Brella,Single shot,1696
+4500,16,Splat Brella,Launched brella,7070
+4500,16,Tenta Brella,All shots hit,16968
+4500,16,Tenta Brella,Single shot,2403
+4500,16,Tenta Brella,Launched brella,11784
+4500,16,Blaster,Direct hit,10369
+4500,16,Blaster,Explosion (max),7258
+4500,16,Blaster,Explosion (min),5184
+4500,16,Rapid Blaster Pro,Direct hit,8484
+4500,16,Rapid Blaster Pro,Explosion,4242
+4500,16,Octobrush,Brush swing,2828
+4500,16,Octobrush,Inking on the go,1885
+4500,16,Tri-Stringer,Explosion,1885
+4500,16,Tri-Stringer,Full charge,5656
+4500,16,Splatana Stamper,Horizontal slash,4713
+4500,16,Splatana Stamper,Charged slash,8484
+4500,16,Splatana Stamper,Charged slash (direct hit),10369
+4500,17,Splattershot,Shot,1715
+4500,17,Splattershot Jr.,Shot,1429
+4500,17,Squelcher,Shot,2573
+4500,17,Squiffer,Full charge,11915
+4500,17,Squiffer,Minimum charge,2383
+4500,17,Slosher,Single slosh,7625
+4500,17,Sloshing Machine,Direct hit,9532
+4500,17,Sloshing Machine,Explosion,5719
+4500,17,Mini Splatling,Shot,1858
+4500,17,Splat Dualies,Shot,1858
+4500,17,Glooga Dualies,Pre-Dodge Roll,2573
+4500,17,Glooga Dualies,Post-Dodge Roll,3717
+4500,17,Splat Brella,All shots hit,8578
+4500,17,Splat Brella,Single shot,1715
+4500,17,Splat Brella,Launched brella,7149
+4500,17,Tenta Brella,All shots hit,17157
+4500,17,Tenta Brella,Single shot,2430
+4500,17,Tenta Brella,Launched brella,11915
+4500,17,Blaster,Direct hit,10485
+4500,17,Blaster,Explosion (max),7339
+4500,17,Blaster,Explosion (min),5242
+4500,17,Rapid Blaster Pro,Direct hit,8578
+4500,17,Rapid Blaster Pro,Explosion,4289
+4500,17,Octobrush,Brush swing,2859
+4500,17,Octobrush,Inking on the go,1906
+4500,17,Splatana Stamper,Horizontal slash,4766
+4500,17,Splatana Stamper,Charged slash,8578
+4500,17,Splatana Stamper,Charged slash (direct hit),10485
+4500,18,Splattershot,Shot,1736
+4500,18,Splattershot Jr.,Shot,1446
+4500,18,Squelcher,Shot,2604
+4500,18,Splat Roller,Horizontal swing,7234
+4500,18,Splat Roller,Vertical swing,9645
+4500,18,Splat Roller,Inkling on the go,5787
+4500,18,E-liter,Full charge,28936
+4500,18,E-liter,Minimum charge,2411
+4500,18,Squiffer,Full charge,12057
+4500,18,Squiffer,Minimum charge,2411
+4500,18,Slosher,Single slosh,7716
+4500,18,Sloshing Machine,Direct hit,9645
+4500,18,Sloshing Machine,Explosion,5787
+4500,18,Mini Splatling,Shot,1880
+4500,18,Splat Dualies,Shot,1880
+4500,18,Glooga Dualies,Pre-Dodge Roll,2604
+4500,18,Glooga Dualies,Post-Dodge Roll,3761
+4500,18,Splat Brella,All shots hit,8681
+4500,18,Splat Brella,Single shot,1736
+4500,18,Splat Brella,Launched brella,7234
+4500,18,Tenta Brella,All shots hit,17362
+4500,18,Tenta Brella,Single shot,2459
+4500,18,Tenta Brella,Launched brella,12057
+4500,18,Blaster,Direct hit,10610
+4500,18,Blaster,Explosion (max),7427
+4500,18,Blaster,Explosion (min),5305
+4500,18,Rapid Blaster Pro,Direct hit,8681
+4500,18,Rapid Blaster Pro,Explosion,4340
+4500,18,Octobrush,Brush swing,2893
+4500,18,Octobrush,Inking on the go,1929
+4500,18,Splatana Stamper,Horizontal slash,4822
+4500,18,Splatana Stamper,Charged slash,8681
+4500,18,Splatana Stamper,Charged slash (direct hit),10610
+4500,19,Splattershot,Shot,1758
+4500,19,Splattershot Jr.,Shot,1465
+4500,19,Squelcher,Shot,2637
+4500,19,Splat Roller,Horizontal swing,7325
+4500,19,Splat Roller,Vertical swing,9767
+4500,19,Splat Roller,Inkling on the go,5860
+4500,19,E-liter,Full charge,29302
+4500,19,E-liter,Minimum charge,2441
+4500,19,Squiffer,Full charge,12209
+4500,19,Squiffer,Minimum charge,2441
+4500,19,Slosher,Single slosh,7813
+4500,19,Sloshing Machine,Direct hit,9767
+4500,19,Sloshing Machine,Explosion,5860
+4500,19,Mini Splatling,Shot,1904
+4500,19,Splat Dualies,Shot,1904
+4500,19,Glooga Dualies,Pre-Dodge Roll,2637
+4500,19,Glooga Dualies,Post-Dodge Roll,3809
+4500,19,Splat Brella,All shots hit,8790
+4500,19,Splat Brella,Single shot,1758
+4500,19,Splat Brella,Launched brella,7325
+4500,19,Tenta Brella,All shots hit,17581
+4500,19,Tenta Brella,Single shot,2490
+4500,19,Tenta Brella,Launched brella,12209
+4500,19,Blaster,Direct hit,10744
+4500,19,Blaster,Explosion (max),7520
+4500,19,Blaster,Explosion (min),5372
+4500,19,Rapid Blaster Pro,Direct hit,8790
+4500,19,Rapid Blaster Pro,Explosion,4395
+4500,19,Octobrush,Brush swing,2930
+4500,19,Octobrush,Inking on the go,1953
+4500,19,Tri-Stringer,Explosion,1953
+4500,19,Tri-Stringer,Full charge,5860
+4500,19,Splatana Stamper,Horizontal slash,4883
+4500,19,Splatana Stamper,Charged slash,8790
+4500,19,Splatana Stamper,Charged slash (direct hit),10744
+4500,20,Splattershot,Shot,1782
+4500,20,Splattershot Jr.,Shot,1485
+4500,20,Squelcher,Shot,2673
+4500,20,Splat Roller,Horizontal swing,7426
+4500,20,Splat Roller,Vertical swing,9901
+4500,20,Splat Roller,Inkling on the go,5941
+4500,20,Dynamo Roller,Horizontal swing,11882
+4500,20,Dynamo Roller,Vertical swing,17823
+4500,20,Dynamo Roller,Inkling on the go,29705
+4500,20,E-liter,Full charge,29705
+4500,20,E-liter,Minimum charge,2475
+4500,20,Squiffer,Full charge,12377
+4500,20,Squiffer,Minimum charge,2475
+4500,20,Slosher,Single slosh,7921
+4500,20,Sloshing Machine,Direct hit,9901
+4500,20,Sloshing Machine,Explosion,5941
+4500,20,Mini Splatling,Shot,1930
+4500,20,Splat Dualies,Shot,1930
+4500,20,Glooga Dualies,Pre-Dodge Roll,2673
+4500,20,Glooga Dualies,Post-Dodge Roll,3861
+4500,20,Splat Brella,All shots hit,8911
+4500,20,Splat Brella,Single shot,1782
+4500,20,Splat Brella,Launched brella,7426
+4500,20,Tenta Brella,All shots hit,17823
+4500,20,Tenta Brella,Single shot,2524
+4500,20,Tenta Brella,Launched brella,12377
+4500,20,Blaster,Direct hit,10891
+4500,20,Blaster,Explosion (max),7624
+4500,20,Blaster,Explosion (min),5445
+4500,20,Rapid Blaster Pro,Direct hit,8911
+4500,20,Rapid Blaster Pro,Explosion,4455
+4500,20,Octobrush,Brush swing,2970
+4500,20,Octobrush,Inking on the go,1980
+4500,20,Splatana Stamper,Horizontal slash,4950
+4500,20,Splatana Stamper,Charged slash,8911
+4500,20,Splatana Stamper,Charged slash (direct hit),10891
+4500,21,Splattershot,Shot,1808
+4500,21,Splattershot Jr.,Shot,1506
+4500,21,Squelcher,Shot,2712
+4500,21,Splat Roller,Horizontal swing,7533
+4500,21,Splat Roller,Vertical swing,10044
+4500,21,Splat Roller,Inkling on the go,6026
+4500,21,Dynamo Roller,Horizontal swing,12053
+4500,21,Dynamo Roller,Vertical swing,18080
+4500,21,Dynamo Roller,Inkling on the go,30133
+4500,21,E-liter,Full charge,30133
+4500,21,E-liter,Minimum charge,2511
+4500,21,Squiffer,Full charge,12555
+4500,21,Squiffer,Minimum charge,2511
+4500,21,Slosher,Single slosh,8035
+4500,21,Sloshing Machine,Direct hit,10044
+4500,21,Sloshing Machine,Explosion,6026
+4500,21,Mini Splatling,Shot,1958
+4500,21,Splat Dualies,Shot,1958
+4500,21,Glooga Dualies,Pre-Dodge Roll,2712
+4500,21,Glooga Dualies,Post-Dodge Roll,3917
+4500,21,Splat Brella,All shots hit,9040
+4500,21,Splat Brella,Single shot,1808
+4500,21,Splat Brella,Launched brella,7533
+4500,21,Tenta Brella,All shots hit,18080
+4500,21,Tenta Brella,Single shot,2561
+4500,21,Tenta Brella,Launched brella,12555
+4500,21,Blaster,Direct hit,11049
+4500,21,Blaster,Explosion (max),7734
+4500,21,Blaster,Explosion (min),5524
+4500,21,Rapid Blaster Pro,Direct hit,9040
+4500,21,Rapid Blaster Pro,Explosion,4520
+4500,21,Octobrush,Brush swing,3013
+4500,21,Octobrush,Inking on the go,2008
+4500,21,Splatana Stamper,Horizontal slash,5022
+4500,21,Splatana Stamper,Charged slash,9040
+4500,21,Splatana Stamper,Charged slash (direct hit),11049
+4500,22,Splattershot,Shot,1836
+4500,22,Splattershot Jr.,Shot,1530
+4500,22,Squelcher,Shot,2754
+4500,22,Splat Roller,Horizontal swing,7650
+4500,22,Splat Roller,Vertical swing,10200
+4500,22,Splat Roller,Inkling on the go,6120
+4500,22,Dynamo Roller,Horizontal swing,12240
+4500,22,Dynamo Roller,Vertical swing,18360
+4500,22,Dynamo Roller,Inkling on the go,30600
+4500,22,E-liter,Full charge,30600
+4500,22,E-liter,Minimum charge,2550
+4500,22,Squiffer,Full charge,12750
+4500,22,Squiffer,Minimum charge,2550
+4500,22,Slosher,Single slosh,8160
+4500,22,Sloshing Machine,Direct hit,10200
+4500,22,Sloshing Machine,Explosion,6120
+4500,22,Mini Splatling,Shot,1989
+4500,22,Splat Dualies,Shot,1989
+4500,22,Glooga Dualies,Pre-Dodge Roll,2754
+4500,22,Glooga Dualies,Post-Dodge Roll,3978
+4500,22,Splat Brella,All shots hit,9180
+4500,22,Splat Brella,Single shot,1836
+4500,22,Splat Brella,Launched brella,7650
+4500,22,Tenta Brella,All shots hit,18360
+4500,22,Tenta Brella,Single shot,2601
+4500,22,Tenta Brella,Launched brella,12750
+4500,22,Blaster,Direct hit,11220
+4500,22,Blaster,Explosion (max),7854
+4500,22,Blaster,Explosion (min),5610
+4500,22,Rapid Blaster Pro,Direct hit,9180
+4500,22,Rapid Blaster Pro,Explosion,4590
+4500,22,Octobrush,Brush swing,3060
+4500,22,Octobrush,Inking on the go,2040
+4500,22,Splatana Stamper,Horizontal slash,5100
+4500,22,Splatana Stamper,Charged slash,9180
+4500,22,Splatana Stamper,Charged slash (direct hit),11220
+4500,23,Splattershot,Shot,1866
+4500,23,Splattershot Jr.,Shot,1555
+4500,23,Squelcher,Shot,2799
+4500,23,Splat Roller,Horizontal swing,7776
+4500,23,Splat Roller,Vertical swing,10368
+4500,23,Splat Roller,Inkling on the go,6220
+4500,23,Dynamo Roller,Horizontal swing,12441
+4500,23,Dynamo Roller,Vertical swing,18662
+4500,23,Dynamo Roller,Inkling on the go,31104
+4500,23,E-liter,Full charge,31104
+4500,23,E-liter,Minimum charge,2592
+4500,23,Squiffer,Full charge,12960
+4500,23,Squiffer,Minimum charge,2592
+4500,23,Slosher,Single slosh,8294
+4500,23,Sloshing Machine,Direct hit,10368
+4500,23,Sloshing Machine,Explosion,6220
+4500,23,Mini Splatling,Shot,2021
+4500,23,Splat Dualies,Shot,2021
+4500,23,Glooga Dualies,Pre-Dodge Roll,2799
+4500,23,Glooga Dualies,Post-Dodge Roll,4043
+4500,23,Splat Brella,All shots hit,9331
+4500,23,Splat Brella,Single shot,1866
+4500,23,Splat Brella,Launched brella,7776
+4500,23,Tenta Brella,All shots hit,18662
+4500,23,Tenta Brella,Single shot,2643
+4500,23,Tenta Brella,Launched brella,12960
+4500,23,Blaster,Direct hit,11404
+4500,23,Blaster,Explosion (max),7983
+4500,23,Blaster,Explosion (min),5702
+4500,23,Rapid Blaster Pro,Direct hit,9331
+4500,23,Rapid Blaster Pro,Explosion,4665
+4500,23,Octobrush,Brush swing,3110
+4500,23,Octobrush,Inking on the go,2073
+4500,23,Splatana Stamper,Horizontal slash,5184
+4500,23,Splatana Stamper,Charged slash,9331
+4500,23,Splatana Stamper,Charged slash (direct hit),11404
+4500,24,Splattershot,Shot,1898
+4500,24,Splattershot Jr.,Shot,1582
+4500,24,Squelcher,Shot,2848
+4500,24,Splat Roller,Horizontal swing,7911
+4500,24,Splat Roller,Vertical swing,10548
+4500,24,Splat Roller,Inkling on the go,6329
+4500,24,Dynamo Roller,Horizontal swing,12658
+4500,24,Dynamo Roller,Vertical swing,18987
+4500,24,Dynamo Roller,Inkling on the go,31645
+4500,24,E-liter,Full charge,31645
+4500,24,E-liter,Minimum charge,2637
+4500,24,Squiffer,Full charge,13185
+4500,24,Squiffer,Minimum charge,2637
+4500,24,Slosher,Single slosh,8438
+4500,24,Sloshing Machine,Direct hit,10548
+4500,24,Sloshing Machine,Explosion,6329
+4500,24,Mini Splatling,Shot,2056
+4500,24,Splat Dualies,Shot,2056
+4500,24,Glooga Dualies,Pre-Dodge Roll,2848
+4500,24,Glooga Dualies,Post-Dodge Roll,4113
+4500,24,Splat Brella,All shots hit,9493
+4500,24,Splat Brella,Single shot,1898
+4500,24,Splat Brella,Launched brella,7911
+4500,24,Tenta Brella,All shots hit,18987
+4500,24,Tenta Brella,Single shot,2689
+4500,24,Tenta Brella,Launched brella,13185
+4500,24,Rapid Blaster Pro,Direct hit,9493
+4500,24,Rapid Blaster Pro,Explosion,4746
+4500,24,Octobrush,Brush swing,3164
+4500,24,Octobrush,Inking on the go,2109
+4500,24,Tri-Stringer,Explosion,2109
+4500,24,Tri-Stringer,Full charge,6329
+4500,24,Splatana Stamper,Horizontal slash,5274
+4500,24,Splatana Stamper,Charged slash,9493
+4500,24,Splatana Stamper,Charged slash (direct hit),11603
+4500,25,Splattershot,Shot,1934
+4500,25,Splattershot Jr.,Shot,1611
+4500,25,Squelcher,Shot,2901
+4500,25,Splat Roller,Horizontal swing,8059
+4500,25,Splat Roller,Vertical swing,10746
+4500,25,Splat Roller,Inkling on the go,6447
+4500,25,Dynamo Roller,Horizontal swing,12895
+4500,25,Dynamo Roller,Vertical swing,19342
+4500,25,Dynamo Roller,Inkling on the go,32238
+4500,25,E-liter,Full charge,32238
+4500,25,E-liter,Minimum charge,2686
+4500,25,Squiffer,Full charge,13432
+4500,25,Squiffer,Minimum charge,2686
+4500,25,Slosher,Single slosh,8596
+4500,25,Sloshing Machine,Direct hit,10746
+4500,25,Sloshing Machine,Explosion,6447
+4500,25,Mini Splatling,Shot,2095
+4500,25,Splat Dualies,Shot,2095
+4500,25,Glooga Dualies,Pre-Dodge Roll,2901
+4500,25,Glooga Dualies,Post-Dodge Roll,4190
+4500,25,Splat Brella,All shots hit,9671
+4500,25,Splat Brella,Single shot,1934
+4500,25,Splat Brella,Launched brella,8059
+4500,25,Blaster,Direct hit,11820
+4500,25,Blaster,Explosion (max),8274
+4500,25,Blaster,Explosion (min),5910
+4500,25,Rapid Blaster Pro,Direct hit,9671
+4500,25,Rapid Blaster Pro,Explosion,4835
+4500,25,Octobrush,Brush swing,3223
+4500,25,Octobrush,Inking on the go,2149
+4500,25,Tri-Stringer,Explosion,2149
+4500,25,Tri-Stringer,Full charge,6447
+4500,26,Splattershot,Shot,1972
+4500,26,Splattershot Jr.,Shot,1643
+4500,26,Squelcher,Shot,2958
+4500,26,Splat Roller,Horizontal swing,8217
+4500,26,Splat Roller,Vertical swing,10956
+4500,26,Splat Roller,Inkling on the go,6573
+4500,26,Dynamo Roller,Horizontal swing,13147
+4500,26,Dynamo Roller,Vertical swing,19720
+4500,26,Dynamo Roller,Inkling on the go,32868
+4500,26,E-liter,Full charge,32868
+4500,26,E-liter,Minimum charge,2739
+4500,26,Squiffer,Full charge,13695
+4500,26,Squiffer,Minimum charge,2739
+4500,26,Slosher,Single slosh,8764
+4500,26,Mini Splatling,Shot,2136
+4500,26,Splat Dualies,Shot,2136
+4500,26,Glooga Dualies,Pre-Dodge Roll,2958
+4500,26,Glooga Dualies,Post-Dodge Roll,4272
+4500,26,Splat Brella,All shots hit,9860
+4500,26,Splat Brella,Single shot,1972
+4500,26,Splat Brella,Launched brella,8217
+4500,26,Tenta Brella,All shots hit,19720
+4500,26,Tenta Brella,Single shot,2793
+4500,26,Tenta Brella,Launched brella,13695
+4500,26,Blaster,Direct hit,12051
+4500,26,Blaster,Explosion (max),8436
+4500,26,Blaster,Explosion (min),6025
+4500,26,Octobrush,Brush swing,3286
+4500,26,Octobrush,Inking on the go,2191
+4500,26,Tri-Stringer,Explosion,2191
+4500,26,Tri-Stringer,Full charge,6573
+4500,27,Splattershot,Shot,2012
+4500,27,Splattershot Jr.,Shot,1677
+4500,27,Squelcher,Shot,3019
+4500,27,Splat Roller,Horizontal swing,8387
+4500,27,Splat Roller,Vertical swing,11182
+4500,27,Splat Roller,Inkling on the go,6709
+4500,27,Dynamo Roller,Horizontal swing,13419
+4500,27,Dynamo Roller,Vertical swing,20129
+4500,27,Dynamo Roller,Inkling on the go,33548
+4500,27,E-liter,Full charge,33548
+4500,27,E-liter,Minimum charge,2795
+4500,27,Squiffer,Full charge,13978
+4500,27,Squiffer,Minimum charge,2795
+4500,27,Slosher,Single slosh,8946
+4500,27,Mini Splatling,Shot,2180
+4500,27,Splat Dualies,Shot,2180
+4500,27,Glooga Dualies,Pre-Dodge Roll,3019
+4500,27,Glooga Dualies,Post-Dodge Roll,4361
+4500,27,Splat Brella,All shots hit,10064
+4500,27,Splat Brella,Single shot,2012
+4500,27,Splat Brella,Launched brella,8387
+4500,27,Tenta Brella,All shots hit,20129
+4500,27,Tenta Brella,Single shot,2851
+4500,27,Tenta Brella,Launched brella,13978
+4500,27,Blaster,Direct hit,12301
+4500,27,Blaster,Explosion (max),8610
+4500,27,Blaster,Explosion (min),6150
+4500,27,Octobrush,Brush swing,3354
+4500,27,Octobrush,Inking on the go,2236
+4500,28,Splattershot,Shot,2057
+4500,28,Splattershot Jr.,Shot,1714
+4500,28,Squelcher,Shot,3086
+4500,28,Splat Roller,Horizontal swing,8572
+4500,28,Splat Roller,Vertical swing,11430
+4500,28,Splat Roller,Inkling on the go,6858
+4500,28,Dynamo Roller,Horizontal swing,13716
+4500,28,Dynamo Roller,Vertical swing,20575
+4500,28,Dynamo Roller,Inkling on the go,34291
+4500,28,E-liter,Full charge,34291
+4500,28,E-liter,Minimum charge,2857
+4500,28,Squiffer,Full charge,14288
+4500,28,Squiffer,Minimum charge,2857
+4500,28,Slosher,Single slosh,9144
+4500,28,Sloshing Machine,Direct hit,11430
+4500,28,Sloshing Machine,Explosion,6858
+4500,28,Mini Splatling,Shot,2228
+4500,28,Splat Dualies,Shot,2228
+4500,28,Glooga Dualies,Pre-Dodge Roll,3086
+4500,28,Glooga Dualies,Post-Dodge Roll,4457
+4500,28,Splat Brella,All shots hit,10287
+4500,28,Splat Brella,Single shot,2057
+4500,28,Splat Brella,Launched brella,8572
+4500,28,Tenta Brella,All shots hit,20575
+4500,28,Tenta Brella,Single shot,2914
+4500,28,Tenta Brella,Launched brella,14288
+4500,28,Blaster,Direct hit,12573
+4500,28,Blaster,Explosion (max),8801
+4500,28,Blaster,Explosion (min),6286
+4500,28,Rapid Blaster Pro,Direct hit,10287
+4500,28,Rapid Blaster Pro,Explosion,5143
+4500,28,Octobrush,Brush swing,3429
+4500,28,Octobrush,Inking on the go,2286
+4500,29,Splattershot,Shot,2105
+4500,29,Splattershot Jr.,Shot,1754
+4500,29,Squelcher,Shot,3157
+4500,29,Splat Roller,Horizontal swing,8771
+4500,29,Splat Roller,Vertical swing,11695
+4500,29,Splat Roller,Inkling on the go,7017
+4500,29,Dynamo Roller,Horizontal swing,14034
+4500,29,Dynamo Roller,Vertical swing,21051
+4500,29,Dynamo Roller,Inkling on the go,35085
+4500,29,E-liter,Full charge,35085
+4500,29,E-liter,Minimum charge,2923
+4500,29,Squiffer,Full charge,14619
+4500,29,Squiffer,Minimum charge,2923
+4500,29,Slosher,Single slosh,9356
+4500,29,Sloshing Machine,Direct hit,11695
+4500,29,Sloshing Machine,Explosion,7017
+4500,29,Heavy Splatling,Shot,2631
+4500,29,Mini Splatling,Shot,2280
+4500,29,Splat Dualies,Shot,2280
+4500,29,Glooga Dualies,Pre-Dodge Roll,3157
+4500,29,Glooga Dualies,Post-Dodge Roll,4561
+4500,29,Splat Brella,All shots hit,10525
+4500,29,Splat Brella,Single shot,2105
+4500,29,Splat Brella,Launched brella,8771
+4500,29,Tenta Brella,All shots hit,21051
+4500,29,Tenta Brella,Single shot,2982
+4500,29,Tenta Brella,Launched brella,14619
+4500,29,Blaster,Direct hit,12864
+4500,29,Blaster,Explosion (max),9005
+4500,29,Blaster,Explosion (min),6432
+4500,29,Rapid Blaster Pro,Direct hit,10525
+4500,29,Rapid Blaster Pro,Explosion,5262
+4500,29,Octobrush,Brush swing,3508
+4500,29,Octobrush,Inking on the go,2339
+4500,29,Splatana Stamper,Horizontal slash,5847
+4500,29,Splatana Stamper,Charged slash,10525
+4500,29,Splatana Stamper,Charged slash (direct hit),12864
+4500,30,Splattershot,Shot,2156
+4500,30,Splattershot Jr.,Shot,1797
+4500,30,Splat Roller,Horizontal swing,8985
+4500,30,Splat Roller,Vertical swing,11980
+4500,30,Splat Roller,Inkling on the go,7188
+4500,30,Dynamo Roller,Horizontal swing,14376
+4500,30,Dynamo Roller,Vertical swing,21565
+4500,30,Dynamo Roller,Inkling on the go,35942
+4500,30,E-liter,Full charge,35942
+4500,30,E-liter,Minimum charge,2995
+4500,30,Squiffer,Full charge,14976
+4500,30,Squiffer,Minimum charge,2995
+4500,30,Slosher,Single slosh,9584
+4500,30,Sloshing Machine,Direct hit,11980
+4500,30,Sloshing Machine,Explosion,7188
+4500,30,Heavy Splatling,Shot,2695
+4500,30,Mini Splatling,Shot,2336
+4500,30,Splat Dualies,Shot,2336
+4500,30,Glooga Dualies,Pre-Dodge Roll,3234
+4500,30,Glooga Dualies,Post-Dodge Roll,4672
+4500,30,Splat Brella,All shots hit,10782
+4500,30,Splat Brella,Single shot,2156
+4500,30,Splat Brella,Launched brella,8985
+4500,30,Tenta Brella,All shots hit,21565
+4500,30,Tenta Brella,Single shot,3055
+4500,30,Tenta Brella,Launched brella,14976
+4500,30,Blaster,Direct hit,13178
+4500,30,Blaster,Explosion (max),9225
+4500,30,Blaster,Explosion (min),6589
+4500,30,Rapid Blaster Pro,Direct hit,10782
+4500,30,Rapid Blaster Pro,Explosion,5391
+4500,30,Octobrush,Brush swing,3594
+4500,30,Octobrush,Inking on the go,2396
+4500,30,Splatana Stamper,Horizontal slash,5990
+4500,30,Splatana Stamper,Charged slash,10782
+4500,30,Splatana Stamper,Charged slash (direct hit),13178
+4500,31,Splattershot,Shot,2212
+4500,31,Splattershot Jr.,Shot,1843
+4500,31,Squelcher,Shot,3318
+4500,31,Splat Roller,Horizontal swing,9218
+4500,31,Splat Roller,Vertical swing,12291
+4500,31,Splat Roller,Inkling on the go,7374
+4500,31,Dynamo Roller,Horizontal swing,14749
+4500,31,Dynamo Roller,Vertical swing,22124
+4500,31,Dynamo Roller,Inkling on the go,36874
+4500,31,E-liter,Full charge,36874
+4500,31,E-liter,Minimum charge,3072
+4500,31,Squiffer,Full charge,15364
+4500,31,Squiffer,Minimum charge,3072
+4500,31,Slosher,Single slosh,9833
+4500,31,Sloshing Machine,Direct hit,12291
+4500,31,Sloshing Machine,Explosion,7374
+4500,31,Heavy Splatling,Shot,2765
+4500,31,Mini Splatling,Shot,2396
+4500,31,Splat Dualies,Shot,2396
+4500,31,Glooga Dualies,Pre-Dodge Roll,3318
+4500,31,Glooga Dualies,Post-Dodge Roll,4793
+4500,31,Splat Brella,All shots hit,11062
+4500,31,Splat Brella,Single shot,2212
+4500,31,Splat Brella,Launched brella,9218
+4500,31,Tenta Brella,All shots hit,22124
+4500,31,Tenta Brella,Single shot,3134
+4500,31,Tenta Brella,Launched brella,15364
+4500,31,Blaster,Direct hit,13520
+4500,31,Blaster,Explosion (max),9464
+4500,31,Blaster,Explosion (min),6760
+4500,31,Rapid Blaster Pro,Direct hit,11062
+4500,31,Rapid Blaster Pro,Explosion,5531
+4500,31,Octobrush,Brush swing,3687
+4500,31,Octobrush,Inking on the go,2458
+4500,31,Tri-Stringer,Explosion,2458
+4500,31,Tri-Stringer,Full charge,7374
+4500,31,Splatana Stamper,Horizontal slash,6145
+4500,31,Splatana Stamper,Charged slash,11062
+4500,31,Splatana Stamper,Charged slash (direct hit),13520
+4500,32,Splattershot,Shot,2272
+4500,32,Splattershot Jr.,Shot,1894
+4500,32,Squelcher,Shot,3409
+4500,32,Splat Roller,Horizontal swing,9470
+4500,32,Splat Roller,Vertical swing,12627
+4500,32,Splat Roller,Inkling on the go,7576
+4500,32,Dynamo Roller,Horizontal swing,15153
+4500,32,Dynamo Roller,Vertical swing,22729
+4500,32,Dynamo Roller,Inkling on the go,37882
+4500,32,E-liter,Full charge,37882
+4500,32,E-liter,Minimum charge,3156
+4500,32,Squiffer,Full charge,15784
+4500,32,Squiffer,Minimum charge,2156
+4500,32,Slosher,Single slosh,10102
+4500,32,Sloshing Machine,Direct hit,12627
+4500,32,Sloshing Machine,Explosion,6945
+4500,32,Heavy Splatling,Shot,2841
+4500,32,Mini Splatling,Shot,2462
+4500,32,Splat Dualies,Shot,2462
+4500,32,Glooga Dualies,Pre-Dodge Roll,3409
+4500,32,Glooga Dualies,Post-Dodge Roll,4924
+4500,32,Splat Brella,All shots hit,11364
+4500,32,Splat Brella,Single shot,2272
+4500,32,Splat Brella,Launched brella,9470
+4500,32,Tenta Brella,All shots hit,22729
+4500,32,Tenta Brella,Single shot,3220
+4500,32,Tenta Brella,Launched brella,15784
+4500,32,Blaster,Direct hit,13890
+4500,32,Blaster,Explosion (max),9723
+4500,32,Blaster,Explosion (min),6945
+4500,32,Rapid Blaster Pro,Direct hit,11364
+4500,32,Rapid Blaster Pro,Explosion,5682
+4500,32,Octobrush,Brush swing,3788
+4500,32,Octobrush,Inking on the go,2525
+4500,32,Tri-Stringer,Explosion,2525
+4500,32,Tri-Stringer,Full charge,7576
+4500,32,Splatana Stamper,Horizontal slash,6313
+4500,32,Splatana Stamper,Charged slash,11364
+4500,32,Splatana Stamper,Charged slash (direct hit),13890
+4500,33,Splattershot,Shot,2337
+4500,33,Splattershot Jr.,Shot,1948
+4500,33,Squelcher,Shot,3506
+4500,33,Splat Roller,Horizontal swing,9741
+4500,33,Splat Roller,Vertical swing,12988
+4500,33,Splat Roller,Inkling on the go,7793
+4500,33,Dynamo Roller,Horizontal swing,15586
+4500,33,Dynamo Roller,Vertical swing,23379
+4500,33,Dynamo Roller,Inkling on the go,38966
+4500,33,E-liter,Full charge,38966
+4500,33,E-liter,Minimum charge,3247
+4500,33,Squiffer,Full charge,16236
+4500,33,Squiffer,Minimum charge,3247
+4500,33,Slosher,Single slosh,10391
+4500,33,Sloshing Machine,Direct hit,12988
+4500,33,Sloshing Machine,Explosion,7143
+4500,33,Heavy Splatling,Shot,2922
+4500,33,Mini Splatling,Shot,2532
+4500,33,Splat Dualies,Shot,2532
+4500,33,Glooga Dualies,Pre-Dodge Roll,3506
+4500,33,Glooga Dualies,Post-Dodge Roll,5065
+4500,33,Splat Brella,All shots hit,11689
+4500,33,Splat Brella,Single shot,2337
+4500,33,Splat Brella,Launched brella,9741
+4500,33,Tenta Brella,All shots hit,23379
+4500,33,Tenta Brella,Single shot,3312
+4500,33,Tenta Brella,Launched brella,16236
+4500,33,Blaster,Direct hit,14287
+4500,33,Blaster,Explosion (max),10001
+4500,33,Blaster,Explosion (min),7143
+4500,33,Rapid Blaster Pro,Direct hit,11689
+4500,33,Rapid Blaster Pro,Explosion,5844
+4500,33,Tri-Stringer,Explosion,2597
+4500,33,Tri-Stringer,Full charge,7793
+4500,33,Splatana Stamper,Horizontal slash,6494
+4500,33,Splatana Stamper,Charged slash,11689
+4500,33,Splatana Stamper,Charged slash (direct hit),14287
+4500,34,Splattershot,Shot,2408
+4500,34,Splattershot Jr.,Shot,2006
+4500,34,Squelcher,Shot,3612
+4500,34,Splat Roller,Horizontal swing,10034
+4500,34,Splat Roller,Vertical swing,13379
+4500,34,Splat Roller,Inkling on the go,8027
+4500,34,Dynamo Roller,Horizontal swing,16055
+4500,34,Dynamo Roller,Vertical swing,24082
+4500,34,Dynamo Roller,Inkling on the go,40138
+4500,34,E-liter,Full charge,40138
+4500,34,E-liter,Minimum charge,3344
+4500,34,Squiffer,Full charge,16724
+4500,34,Squiffer,Minimum charge,3344
+4500,34,Slosher,Single slosh,10703
+4500,34,Sloshing Machine,Direct hit,13379
+4500,34,Sloshing Machine,Explosion,7358
+4500,34,Heavy Splatling,Shot,3010
+4500,34,Mini Splatling,Shot,2608
+4500,34,Splat Dualies,Shot,2608
+4500,34,Glooga Dualies,Pre-Dodge Roll,3612
+4500,34,Glooga Dualies,Post-Dodge Roll,5217
+4500,34,Splat Brella,All shots hit,12041
+4500,34,Splat Brella,Single shot,2408
+4500,34,Splat Brella,Launched brella,10034
+4500,34,Tenta Brella,All shots hit,24082
+4500,34,Tenta Brella,Single shot,3411
+4500,34,Tenta Brella,Launched brella,16724
+4500,34,Blaster,Direct hit,14717
+4500,34,Blaster,Explosion (max),10302
+4500,34,Blaster,Explosion (min),7358
+4500,34,Octobrush,Brush swing,4013
+4500,34,Octobrush,Inking on the go,2675
+4500,34,Tri-Stringer,Explosion,2675
+4500,34,Tri-Stringer,Full charge,8027
+4500,34,Splatana Stamper,Horizontal slash,6689
+4500,34,Splatana Stamper,Charged slash,12041
+4500,34,Splatana Stamper,Charged slash (direct hit),14717
+4500,35,Splattershot,Shot,2484
+4500,35,Splattershot Jr.,Shot,2070
+4500,35,Squelcher,Shot,3726
+4500,35,Splat Roller,Horizontal swing,10352
+4500,35,Splat Roller,Vertical swing,13803
+4500,35,Splat Roller,Inkling on the go,8282
+4500,35,Dynamo Roller,Horizontal swing,16564
+4500,35,Dynamo Roller,Vertical swing,24846
+4500,35,Dynamo Roller,Inkling on the go,41410
+4500,35,E-liter,Full charge,41410
+4500,35,E-liter,Minimum charge,3450
+4500,35,Squiffer,Full charge,17254
+4500,35,Squiffer,Minimum charge,3450
+4500,35,Slosher,Single slosh,11042
+4500,35,Sloshing Machine,Direct hit,13803
+4500,35,Sloshing Machine,Explosion,7591
+4500,35,Heavy Splatling,Shot,3105
+4500,35,Mini Splatling,Shot,2691
+4500,35,Splat Dualies,Shot,2691
+4500,35,Glooga Dualies,Pre-Dodge Roll,3726
+4500,35,Glooga Dualies,Post-Dodge Roll,5383
+4500,35,Splat Brella,All shots hit,12423
+4500,35,Splat Brella,Single shot,2484
+4500,35,Splat Brella,Launched brella,10352
+4500,35,Tenta Brella,All shots hit,24846
+4500,35,Tenta Brella,Single shot,3519
+4500,35,Tenta Brella,Launched brella,17254
+4500,35,Blaster,Direct hit,15183
+4500,35,Blaster,Explosion (max),10628
+4500,35,Blaster,Explosion (min),7591
+4500,35,Octobrush,Brush swing,4141
+4500,35,Octobrush,Inking on the go,2760
+4500,35,Tri-Stringer,Explosion,2760
+4500,35,Tri-Stringer,Full charge,8282
+4500,35,Splatana Stamper,Horizontal slash,6901
+4500,35,Splatana Stamper,Charged slash,12423
+4500,35,Splatana Stamper,Charged slash (direct hit),15183
+4500,36,Splattershot,Shot,2567
+4500,36,Splattershot Jr.,Shot,2139
+4500,36,Squelcher,Shot,3850
+4500,36,Splat Roller,Horizontal swing,10696
+4500,36,Splat Roller,Vertical swing,14261
+4500,36,Splat Roller,Inkling on the go,8556
+4500,36,Dynamo Roller,Horizontal swing,17113
+4500,36,Dynamo Roller,Vertical swing,25670
+4500,36,Dynamo Roller,Inkling on the go,42784
+4500,36,E-liter,Full charge,42784
+4500,36,E-liter,Minimum charge,3565
+4500,36,Squiffer,Full charge,17826
+4500,36,Squiffer,Minimum charge,3565
+4500,36,Slosher,Single slosh,11409
+4500,36,Sloshing Machine,Direct hit,14261
+4500,36,Sloshing Machine,Explosion,7843
+4500,36,Heavy Splatling,Shot,3208
+4500,36,Mini Splatling,Shot,2780
+4500,36,Splat Dualies,Shot,2780
+4500,36,Glooga Dualies,Pre-Dodge Roll,3850
+4500,36,Glooga Dualies,Post-Dodge Roll,5561
+4500,36,Splat Brella,All shots hit,12835
+4500,36,Splat Brella,Single shot,2567
+4500,36,Splat Brella,Launched brella,10696
+4500,36,Tenta Brella,All shots hit,25670
+4500,36,Tenta Brella,Single shot,3636
+4500,36,Tenta Brella,Launched brella,17826
+4500,36,Blaster,Direct hit,15687
+4500,36,Blaster,Explosion (max),10981
+4500,36,Blaster,Explosion (min),7843
+4500,36,Octobrush,Brush swing,4278
+4500,36,Octobrush,Inking on the go,2852
+4500,36,Tri-Stringer,Explosion,2852
+4500,36,Tri-Stringer,Full charge,8556
+4500,36,Splatana Stamper,Horizontal slash,7130
+4500,36,Splatana Stamper,Charged slash,12835
+4500,36,Splatana Stamper,Charged slash (direct hit),15687
+4500,37,Splattershot,Shot,2655
+4500,37,Splattershot Jr.,Shot,2212
+4500,37,Squelcher,Shot,3983
+4500,37,Dynamo Roller,Horizontal swing,17703
+4500,37,Dynamo Roller,Vertical swing,26555
+4500,37,Dynamo Roller,Inkling on the go,44258
+4500,37,Squiffer,Full charge,18441
+4500,37,Squiffer,Minimum charge,3688
+4500,37,Sloshing Machine,Direct hit,14752
+4500,37,Sloshing Machine,Explosion,8114
+4500,37,Heavy Splatling,Shot,3319
+4500,37,Mini Splatling,Shot,2876
+4500,37,Splat Dualies,Shot,2876
+4500,37,Glooga Dualies,Pre-Dodge Roll,3983
+4500,37,Glooga Dualies,Post-Dodge Roll,5753
+4500,37,Splat Brella,All shots hit,13277
+4500,37,Splat Brella,Single shot,2655
+4500,37,Splat Brella,Launched brella,11064
+4500,37,Tenta Brella,All shots hit,26555
+4500,37,Tenta Brella,Single shot,3761
+4500,37,Tenta Brella,Launched brella,18441
+4500,37,Blaster,Direct hit,16228
+4500,37,Blaster,Explosion (max),11359
+4500,37,Blaster,Explosion (min),8114
+4500,37,Octobrush,Brush swing,4425
+4500,37,Octobrush,Inking on the go,2950
+4500,37,Splatana Stamper,Horizontal slash,7376
+4500,37,Splatana Stamper,Charged slash,13277
+4500,37,Splatana Stamper,Charged slash (direct hit),16228
+4500,38,Splattershot,Shot,2751
+4500,38,Splattershot Jr.,Shot,2292
+4500,38,Squelcher,Shot,4127
+4500,38,Dynamo Roller,Horizontal swing,18343
+4500,38,Dynamo Roller,Vertical swing,27515
+4500,38,Dynamo Roller,Inkling on the go,45858
+4500,38,Squiffer,Full charge,19107
+4500,38,Squiffer,Minimum charge,3821
+4500,38,Sloshing Machine,Direct hit,15286
+4500,38,Sloshing Machine,Explosion,9171
+4500,38,Heavy Splatling,Shot,3439
+4500,38,Mini Splatling,Shot,2980
+4500,38,Splat Dualies,Shot,2980
+4500,38,Glooga Dualies,Pre-Dodge Roll,4127
+4500,38,Glooga Dualies,Post-Dodge Roll,5961
+4500,38,Splat Brella,All shots hit,13757
+4500,38,Splat Brella,Single shot,2751
+4500,38,Splat Brella,Launched brella,11464
+4500,38,Blaster,Direct hit,16814
+4500,38,Blaster,Explosion (max),11770
+4500,38,Blaster,Explosion (min),8407
+4500,38,Octobrush,Brush swing,4585
+4500,38,Octobrush,Inking on the go,3057
+4500,38,Splatana Stamper,Horizontal slash,7643
+4500,38,Splatana Stamper,Charged slash,13757
+4500,38,Splatana Stamper,Charged slash (direct hit),16814
+4500,39,Splattershot,Shot,2855
+4500,39,Splattershot Jr.,Shot,2379
+4500,39,Squelcher,Shot,4282
+4500,39,Dynamo Roller,Horizontal swing,19033
+4500,39,Dynamo Roller,Vertical swing,28550
+4500,39,Dynamo Roller,Inkling on the go,47584
+4500,39,E-liter,Full charge,47584
+4500,39,E-liter,Minimum charge,3965
+4500,39,Squiffer,Full charge,19827
+4500,39,Squiffer,Minimum charge,3965
+4500,39,Slosher,Single slosh,12689
+4500,39,Sloshing Machine,Direct hit,15861
+4500,39,Sloshing Machine,Explosion,9516
+4500,39,Mini Splatling,Shot,3093
+4500,39,Splat Dualies,Shot,3093
+4500,39,Glooga Dualies,Pre-Dodge Roll,4282
+4500,39,Glooga Dualies,Post-Dodge Roll,6186
+4500,39,Splat Brella,All shots hit,14275
+4500,39,Splat Brella,Single shot,2855
+4500,39,Splat Brella,Launched brella,11896
+4500,39,Blaster,Direct hit,17447
+4500,39,Blaster,Explosion (max),12213
+4500,39,Blaster,Explosion (min),8723
+4500,39,Rapid Blaster Pro,Direct hit,14275
+4500,39,Rapid Blaster Pro,Explosion,7137
+4500,39,Octobrush,Brush swing,4758
+4500,39,Octobrush,Inking on the go,3172
+4500,39,Tri-Stringer,Explosion,3172
+4500,39,Tri-Stringer,Full charge,9516
+4500,39,Splatana Stamper,Horizontal slash,7930
+4500,39,Splatana Stamper,Charged slash,14275
+4500,39,Splatana Stamper,Charged slash (direct hit),17447
+4500,40,Splattershot,Shot,2966
+4500,40,Splattershot Jr.,Shot,2472
+4500,40,Squelcher,Shot,4450
+4500,40,Dynamo Roller,Horizontal swing,19779
+4500,40,Dynamo Roller,Vertical swing,29669
+4500,40,Dynamo Roller,Inkling on the go,49449
+4500,40,E-liter,Full charge,49449
+4500,40,E-liter,Minimum charge,4120
+4500,40,Squiffer,Full charge,20604
+4500,40,Squiffer,Minimum charge,4120
+4500,40,Slosher,Single slosh,13186
+4500,40,Sloshing Machine,Direct hit,16483
+4500,40,Sloshing Machine,Explosion,9889
+4500,40,Mini Splatling,Shot,3214
+4500,40,Splat Dualies,Shot,3214
+4500,40,Glooga Dualies,Pre-Dodge Roll,4450
+4500,40,Glooga Dualies,Post-Dodge Roll,6428
+4500,40,Splat Brella,All shots hit,14834
+4500,40,Splat Brella,Single shot,2966
+4500,40,Splat Brella,Launched brella,12362
+4500,40,Tenta Brella,All shots hit,29669
+4500,40,Tenta Brella,Single shot,4203
+4500,40,Tenta Brella,Launched brella,20604
+4500,40,Blaster,Direct hit,18131
+4500,40,Blaster,Explosion (max),12692
+4500,40,Blaster,Explosion (min),9065
+4500,40,Rapid Blaster Pro,Direct hit,14834
+4500,40,Rapid Blaster Pro,Explosion,7417
+4500,40,Octobrush,Brush swing,4944
+4500,40,Octobrush,Inking on the go,3296
+4500,40,Tri-Stringer,Explosion,3296
+4500,40,Tri-Stringer,Full charge,9889
+4500,40,Splatana Stamper,Horizontal slash,8241
+4500,40,Splatana Stamper,Charged slash,14834
+4500,40,Splatana Stamper,Charged slash (direct hit),18131
+4500,41,Splattershot,Shot,3087
+4500,41,Splattershot Jr.,Shot,2573
+4500,41,Squelcher,Shot,4631
+4500,41,Splat Roller,Horizontal swing,12866
+4500,41,Splat Roller,Vertical swing,17155
+4500,41,Splat Roller,Inkling on the go,10293
+4500,41,Dynamo Roller,Horizontal swing,20586
+4500,41,Dynamo Roller,Vertical swing,30879
+4500,41,Dynamo Roller,Inkling on the go,51465
+4500,41,E-liter,Full charge,51465
+4500,41,E-liter,Minimum charge,4288
+4500,41,Squiffer,Full charge,21444
+4500,41,Squiffer,Minimum charge,4288
+4500,41,Slosher,Single slosh,13724
+4500,41,Sloshing Machine,Direct hit,17155
+4500,41,Sloshing Machine,Explosion,10293
+4500,41,Heavy Splatling,Shot,3859
+4500,41,Mini Splatling,Shot,3345
+4500,41,Splat Dualies,Shot,3345
+4500,41,Glooga Dualies,Pre-Dodge Roll,4631
+4500,41,Glooga Dualies,Post-Dodge Roll,6690
+4500,41,Splat Brella,All shots hit,15439
+4500,41,Splat Brella,Single shot,3087
+4500,41,Splat Brella,Launched brella,12866
+4500,41,Tenta Brella,All shots hit,30879
+4500,41,Tenta Brella,Single shot,4374
+4500,41,Tenta Brella,Launched brella,21444
+4500,41,Blaster,Direct hit,18870
+4500,41,Blaster,Explosion (max),13209
+4500,41,Blaster,Explosion (min),9435
+4500,41,Rapid Blaster Pro,Direct hit,15439
+4500,41,Rapid Blaster Pro,Explosion,7719
+4500,41,Octobrush,Brush swing,5146
+4500,41,Octobrush,Inking on the go,3431
+4500,41,Splatana Stamper,Horizontal slash,8577
+4500,41,Splatana Stamper,Charged slash,15439
+4500,41,Splatana Stamper,Charged slash (direct hit),18870
+4500,42,Splattershot,Shot,3217
+4500,42,Splattershot Jr.,Shot,2681
+4500,42,Squelcher,Shot,4826
+4500,42,Splat Roller,Horizontal swing,13408
+4500,42,Splat Roller,Vertical swing,17877
+4500,42,Splat Roller,Inkling on the go,10726
+4500,42,Dynamo Roller,Horizontal swing,21453
+4500,42,Dynamo Roller,Vertical swing,32179
+4500,42,Dynamo Roller,Inkling on the go,53632
+4500,42,E-liter,Full charge,53632
+4500,42,E-liter,Minimum charge,4469
+4500,42,Squiffer,Full charge,22347
+4500,42,Squiffer,Minimum charge,4469
+4500,42,Slosher,Single slosh,14302
+4500,42,Sloshing Machine,Direct hit,17877
+4500,42,Sloshing Machine,Explosion,9832
+4500,42,Heavy Splatling,Shot,4022
+4500,42,Mini Splatling,Shot,3486
+4500,42,Splat Dualies,Shot,3486
+4500,42,Glooga Dualies,Pre-Dodge Roll,4826
+4500,42,Glooga Dualies,Post-Dodge Roll,6972
+4500,42,Splat Brella,All shots hit,16089
+4500,42,Splat Brella,Single shot,3217
+4500,42,Splat Brella,Launched brella,13408
+4500,42,Tenta Brella,All shots hit,32179
+4500,42,Tenta Brella,Single shot,4558
+4500,42,Tenta Brella,Launched brella,22347
+4500,42,Blaster,Direct hit,19665
+4500,42,Blaster,Explosion (max),13765
+4500,42,Blaster,Explosion (min),9832
+4500,42,Rapid Blaster Pro,Direct hit,16089
+4500,42,Rapid Blaster Pro,Explosion,8044
+4500,42,Octobrush,Brush swing,5363
+4500,42,Octobrush,Inking on the go,3575
+4500,42,Splatana Stamper,Horizontal slash,8938
+4500,42,Splatana Stamper,Charged slash,16089
+4500,42,Splatana Stamper,Charged slash (direct hit),19665
+4500,43,Splattershot,Shot,3358
+4500,43,Splattershot Jr.,Shot,2798
+4500,43,Squelcher,Shot,5037
+4500,43,Splat Roller,Horizontal swing,13994
+4500,43,Splat Roller,Vertical swing,18658
+4500,43,Splat Roller,Inkling on the go,11195
+4500,43,Dynamo Roller,Horizontal swing,22390
+4500,43,Dynamo Roller,Vertical swing,33585
+4500,43,Dynamo Roller,Inkling on the go,55976
+4500,43,E-liter,Full charge,55976
+4500,43,E-liter,Minimum charge,4664
+4500,43,Squiffer,Full charge,23323
+4500,43,Squiffer,Minimum charge,4664
+4500,43,Slosher,Single slosh,14927
+4500,43,Sloshing Machine,Direct hit,18658
+4500,43,Sloshing Machine,Explosion,10262
+4500,43,Heavy Splatling,Shot,4198
+4500,43,Mini Splatling,Shot,3638
+4500,43,Splat Dualies,Shot,3638
+4500,43,Glooga Dualies,Pre-Dodge Roll,5037
+4500,43,Glooga Dualies,Post-Dodge Roll,7276
+4500,43,Splat Brella,All shots hit,16792
+4500,43,Splat Brella,Single shot,3358
+4500,43,Splat Brella,Launched brella,13994
+4500,43,Tenta Brella,All shots hit,33585
+4500,43,Tenta Brella,Single shot,4757
+4500,43,Tenta Brella,Launched brella,23323
+4500,43,Rapid Blaster Pro,Direct hit,16792
+4500,43,Rapid Blaster Pro,Explosion,8396
+4500,43,Octobrush,Brush swing,5597
+4500,43,Octobrush,Inking on the go,3731
+4500,43,Splatana Stamper,Horizontal slash,9329
+4500,43,Splatana Stamper,Charged slash,16792
+4500,43,Splatana Stamper,Charged slash (direct hit),20524
+4500,44,Splattershot,Shot,3510
+4500,44,Splattershot Jr.,Shot,2925
+4500,44,Squelcher,Shot,5265
+4500,44,Splat Roller,Horizontal swing,14627
+4500,44,Splat Roller,Vertical swing,19503
+4500,44,Splat Roller,Inkling on the go,11701
+4500,44,Dynamo Roller,Horizontal swing,23403
+4500,44,Dynamo Roller,Vertical swing,35105
+4500,44,Dynamo Roller,Inkling on the go,58509
+4500,44,E-liter,Full charge,58509
+4500,44,E-liter,Minimum charge,4875
+4500,44,Squiffer,Full charge,24378
+4500,44,Squiffer,Minimum charge,4875
+4500,44,Slosher,Single slosh,15602
+4500,44,Sloshing Machine,Direct hit,19503
+4500,44,Sloshing Machine,Explosion,10726
+4500,44,Heavy Splatling,Shot,4388
+4500,44,Mini Splatling,Shot,3803
+4500,44,Splat Dualies,Shot,3803
+4500,44,Glooga Dualies,Pre-Dodge Roll,5265
+4500,44,Glooga Dualies,Post-Dodge Roll,7606
+4500,44,Splat Brella,All shots hit,17552
+4500,44,Splat Brella,Single shot,3510
+4500,44,Splat Brella,Launched brella,14627
+4500,44,Tenta Brella,All shots hit,35105
+4500,44,Tenta Brella,Single shot,4973
+4500,44,Tenta Brella,Launched brella,24378
+4500,44,Rapid Blaster Pro,Direct hit,17552
+4500,44,Rapid Blaster Pro,Explosion,8776
+4500,44,Octobrush,Brush swing,5850
+4500,44,Octobrush,Inking on the go,3900
+4500,44,Tri-Stringer,Explosion,3900
+4500,44,Tri-Stringer,Full charge,11701
+4500,44,Splatana Stamper,Horizontal slash,9751
+4500,44,Splatana Stamper,Charged slash,17552
+4500,44,Splatana Stamper,Charged slash (direct hit),21453
+4500,45,Splattershot,Shot,3674
+4500,45,Splattershot Jr.,Shot,3062
+4500,45,Squelcher,Shot,5511
+4500,45,Splat Roller,Horizontal swing,15310
+4500,45,Splat Roller,Vertical swing,20414
+4500,45,Splat Roller,Inkling on the go,12248
+4500,45,Dynamo Roller,Horizontal swing,24497
+4500,45,Dynamo Roller,Vertical swing,36745
+4500,45,Dynamo Roller,Inkling on the go,61243
+4500,45,E-liter,Full charge,61243
+4500,45,E-liter,Minimum charge,5103
+4500,45,Squiffer,Full charge,25518
+4500,45,Squiffer,Minimum charge,5103
+4500,45,Slosher,Single slosh,16331
+4500,45,Sloshing Machine,Direct hit,20414
+4500,45,Sloshing Machine,Explosion,11227
+4500,45,Heavy Splatling,Shot,4593
+4500,45,Mini Splatling,Shot,3980
+4500,45,Splat Dualies,Shot,3980
+4500,45,Tenta Brella,All shots hit,36745
+4500,45,Tenta Brella,Single shot,5205
+4500,45,Tenta Brella,Launched brella,25518
+4500,45,Rapid Blaster Pro,Direct hit,18372
+4500,45,Rapid Blaster Pro,Explosion,9186
+4500,45,Octobrush,Brush swing,6124
+4500,45,Octobrush,Inking on the go,4082
+4500,45,Splatana Stamper,Horizontal slash,10207
+4500,45,Splatana Stamper,Charged slash,18372
+4500,45,Splatana Stamper,Charged slash (direct hit),22455
+4500,46,Splattershot,Shot,3852
+4500,46,Splattershot Jr.,Shot,3210
+4500,46,Squelcher,Shot,5778
+4500,46,Splat Roller,Horizontal swing,16051
+4500,46,Splat Roller,Vertical swing,21401
+4500,46,Splat Roller,Inkling on the go,12840
+4500,46,E-liter,Full charge,64204
+4500,46,E-liter,Minimum charge,5350
+4500,46,Squiffer,Full charge,26751
+4500,46,Squiffer,Minimum charge,5350
+4500,46,Slosher,Single slosh,17121
+4500,46,Sloshing Machine,Direct hit,21401
+4500,46,Sloshing Machine,Explosion,11770
+4500,46,Heavy Splatling,Shot,4815
+4500,46,Mini Splatling,Shot,4173
+4500,46,Splat Dualies,Shot,4173
+4500,46,Splat Brella,All shots hit,19261
+4500,46,Splat Brella,Single shot,3852
+4500,46,Splat Brella,Launched brella,16051
+4500,46,Tenta Brella,All shots hit,38522
+4500,46,Tenta Brella,Single shot,5457
+4500,46,Tenta Brella,Launched brella,26751
+4500,46,Rapid Blaster Pro,Direct hit,19261
+4500,46,Rapid Blaster Pro,Explosion,9630
+4500,46,Octobrush,Brush swing,6420
+4500,46,Octobrush,Inking on the go,4280
+4500,46,Splatana Stamper,Horizontal slash,10700
+4500,46,Splatana Stamper,Charged slash,19261
+4500,46,Splatana Stamper,Charged slash (direct hit),23541
+4500,47,Splattershot,Shot,4043
+4500,47,Splattershot Jr.,Shot,3369
+4500,47,Squelcher,Shot,6065
+4500,47,Splat Roller,Horizontal swing,16848
+4500,47,Splat Roller,Vertical swing,22464
+4500,47,Splat Roller,Inkling on the go,13478
+4500,47,E-liter,Full charge,67392
+4500,47,E-liter,Minimum charge,5616
+4500,47,Squiffer,Full charge,28080
+4500,47,Squiffer,Minimum charge,5616
+4500,47,Slosher,Single slosh,17971
+4500,47,Sloshing Machine,Direct hit,22565
+4500,47,Sloshing Machine,Explosion,12355
+4500,47,Heavy Splatling,Shot,5054
+4500,47,Mini Splatling,Shot,4380
+4500,47,Splat Dualies,Shot,4380
+4500,47,Splat Brella,All shots hit,20217
+4500,47,Splat Brella,Single shot,4043
+4500,47,Splat Brella,Launched brella,16848
+4500,47,Tenta Brella,All shots hit,40435
+4500,47,Tenta Brella,Single shot,5728
+4500,47,Tenta Brella,Launched brella,28080
+4500,47,Rapid Blaster Pro,Direct hit,20217
+4500,47,Rapid Blaster Pro,Explosion,10108
+4500,47,Octobrush,Brush swing,6739
+4500,47,Octobrush,Inking on the go,4492
+4500,47,Splatana Stamper,Horizontal slash,11232
+4500,47,Splatana Stamper,Charged slash,20217
+4500,47,Splatana Stamper,Charged slash (direct hit),24710
+4500,48,Splattershot,Shot,4250
+4500,48,Splattershot Jr.,Shot,3542
+4500,48,Squelcher,Shot,6375
+4500,48,Splat Roller,Horizontal swing,17711
+4500,48,Splat Roller,Vertical swing,23614
+4500,48,Splat Roller,Inkling on the go,14168
+4500,48,E-liter,Full charge,70844
+4500,48,E-liter,Minimum charge,5903
+4500,48,Squiffer,Full charge,29518
+4500,48,Squiffer,Minimum charge,5903
+4500,48,Slosher,Single slosh,18891
+4500,48,Sloshing Machine,Direct hit,23614
+4500,48,Sloshing Machine,Explosion,14168
+4500,48,Heavy Splatling,Shot,5313
+4500,48,Mini Splatling,Shot,4604
+4500,48,Splat Dualies,Shot,4604
+4500,48,Glooga Dualies,Pre-Dodge Roll,6375
+4500,48,Glooga Dualies,Post-Dodge Roll,9209
+4500,48,Splat Brella,All shots hit,21253
+4500,48,Splat Brella,Single shot,4250
+4500,48,Splat Brella,Launched brella,17711
+4500,48,Tenta Brella,All shots hit,42506
+4500,48,Tenta Brella,Single shot,6021
+4500,48,Tenta Brella,Launched brella,29518
+4500,48,Blaster,Direct hit,25976
+4500,48,Blaster,Explosion (max),18183
+4500,48,Blaster,Explosion (min),12988
+4500,48,Rapid Blaster Pro,Direct hit,21253
+4500,48,Rapid Blaster Pro,Explosion,10626
+4500,48,Octobrush,Brush swing,7084
+4500,48,Octobrush,Inking on the go,4722
+4500,48,Tri-Stringer,Explosion,4722
+4500,48,Tri-Stringer,Full charge,14168
+4500,48,Splatana Stamper,Horizontal slash,11807
+4500,48,Splatana Stamper,Charged slash,21253
+4500,48,Splatana Stamper,Charged slash (direct hit),25976
+4500,49,Splattershot,Shot,4474
+4500,49,Splattershot Jr.,Shot,3728
+4500,49,Squelcher,Shot,6711
+4500,49,Splat Roller,Horizontal swing,18643
+4500,49,Splat Roller,Vertical swing,24858
+4500,49,Splat Roller,Inkling on the go,14914
+4500,49,E-liter,Full charge,74574
+4500,49,E-liter,Minimum charge,6214
+4500,49,Squiffer,Full charge,31072
+4500,49,Squiffer,Minimum charge,5214
+4500,49,Slosher,Single slosh,19886
+4500,49,Sloshing Machine,Direct hit,24858
+4500,49,Sloshing Machine,Explosion,13671
+4500,49,Heavy Splatling,Shot,5593
+4500,49,Mini Splatling,Shot,4847
+4500,49,Splat Dualies,Shot,4847
+4500,49,Glooga Dualies,Pre-Dodge Roll,6711
+4500,49,Glooga Dualies,Post-Dodge Roll,9694
+4500,49,Splat Brella,All shots hit,22372
+4500,49,Splat Brella,Single shot,4474
+4500,49,Splat Brella,Launched brella,18643
+4500,49,Tenta Brella,All shots hit,44744
+4500,49,Tenta Brella,Single shot,6338
+4500,49,Tenta Brella,Launched brella,31072
+4500,49,Blaster,Direct hit,27343
+4500,49,Blaster,Explosion (max),19140
+4500,49,Blaster,Explosion (min),13671
+4500,49,Rapid Blaster Pro,Direct hit,22372
+4500,49,Rapid Blaster Pro,Explosion,11186
+4500,49,Octobrush,Brush swing,7457
+4500,49,Octobrush,Inking on the go,4971
+4500,49,Tri-Stringer,Explosion,4971
+4500,49,Tri-Stringer,Full charge,14914
+4500,49,Splatana Stamper,Horizontal slash,12429
+4500,49,Splatana Stamper,Charged slash,22372
+4500,49,Splatana Stamper,Charged slash (direct hit),27343
+4500,50,Splattershot,Shot,4715
+4500,50,Splattershot Jr.,Shot,3929
+4500,50,Squelcher,Shot,7073
+4500,50,Splat Roller,Horizontal swing,19648
+4500,50,Splat Roller,Vertical swing,26197
+4500,50,Splat Roller,Inkling on the go,15718
+4500,50,Dynamo Roller,Horizontal swing,31437
+4500,50,Dynamo Roller,Vertical swing,47156
+4500,50,Dynamo Roller,Inkling on the go,78593
+4500,50,E-liter,Full charge,78593
+4500,50,E-liter,Minimum charge,6549
+4500,50,Squiffer,Full charge,32747
+4500,50,Squiffer,Minimum charge,6549
+4500,50,Slosher,Single slosh,20958
+4500,50,Sloshing Machine,Direct hit,26197
+4500,50,Sloshing Machine,Explosion,15718
+4500,50,Heavy Splatling,Shot,5894
+4500,50,Mini Splatling,Shot,5108
+4500,50,Splat Dualies,Shot,5108
+4500,50,Glooga Dualies,Pre-Dodge Roll,7073
+4500,50,Glooga Dualies,Post-Dodge Roll,10217
+4500,50,Splat Brella,All shots hit,23578
+4500,50,Splat Brella,Single shot,4715
+4500,50,Splat Brella,Launched brella,19648
+4500,50,Tenta Brella,All shots hit,47156
+4500,50,Tenta Brella,Single shot,6680
+4500,50,Tenta Brella,Launched brella,32747
+4500,50,Blaster,Direct hit,28817
+4500,50,Blaster,Explosion (max),20172
+4500,50,Blaster,Explosion (min),14408
+4500,50,Rapid Blaster Pro,Direct hit,23578
+4500,50,Rapid Blaster Pro,Explosion,11789
+4500,50,Octobrush,Brush swing,7859
+4500,50,Octobrush,Inking on the go,5239
+4500,50,Tri-Stringer,Explosion,5239
+4500,50,Tri-Stringer,Full charge,15718
+4500,50,Splatana Stamper,Horizontal slash,13098
+4500,50,Splatana Stamper,Charged slash,23578
+4500,50,Splatana Stamper,Charged slash (direct hit),28817
+4500,51,Splattershot,Shot,4797
+4500,51,Splattershot Jr.,Shot,3997
+4500,51,Squelcher,Shot,7195
+4500,51,Splat Roller,Horizontal swing,19988
+4500,51,Splat Roller,Vertical swing,26651
+4500,51,Splat Roller,Inkling on the go,15990
+4500,51,Dynamo Roller,Horizontal swing,31981
+4500,51,Dynamo Roller,Vertical swing,47972
+4500,51,Dynamo Roller,Inkling on the go,79954
+4500,51,E-liter,Full charge,79954
+4500,51,E-liter,Minimum charge,6662
+4500,51,Squiffer,Full charge,33314
+4500,51,Squiffer,Minimum charge,6662
+4500,51,Slosher,Single slosh,21321
+4500,51,Sloshing Machine,Direct hit,26651
+4500,51,Sloshing Machine,Explosion,15590
+4500,51,Heavy Splatling,Shot,5996
+4500,51,Mini Splatling,Shot,5197
+4500,51,Splat Dualies,Shot,5197
+4500,51,Glooga Dualies,Pre-Dodge Roll,7195
+4500,51,Glooga Dualies,Post-Dodge Roll,10394
+4500,51,Splat Brella,All shots hit,23986
+4500,51,Splat Brella,Single shot,4797
+4500,51,Splat Brella,Launched brella,19988
+4500,51,Tenta Brella,All shots hit,47972
+4500,51,Tenta Brella,Single shot,6796
+4500,51,Tenta Brella,Launched brella,33314
+4500,51,Blaster,Direct hit,29316
+4500,51,Blaster,Explosion (max),20521
+4500,51,Blaster,Explosion (min),14658
+4500,51,Rapid Blaster Pro,Direct hit,23986
+4500,51,Rapid Blaster Pro,Explosion,11993
+4500,51,Octobrush,Brush swing,7995
+4500,51,Octobrush,Inking on the go,5330
+4500,51,Tri-Stringer,Explosion,5330
+4500,51,Tri-Stringer,Full charge,15990
+4500,51,Splatana Stamper,Horizontal slash,13325
+4500,51,Splatana Stamper,Charged slash,23986
+4500,51,Splatana Stamper,Charged slash (direct hit),29316
+4500,52,Splattershot,Shot,4880
+4500,52,Splattershot Jr.,Shot,4067
+4500,52,Squelcher,Shot,7320
+4500,52,Splat Roller,Horizontal swing,20335
+4500,52,Splat Roller,Vertical swing,27113
+4500,52,Splat Roller,Inkling on the go,16268
+4500,52,Dynamo Roller,Horizontal swing,32536
+4500,52,Dynamo Roller,Vertical swing,48804
+4500,52,Dynamo Roller,Inkling on the go,81340
+4500,52,E-liter,Full charge,81340
+4500,52,E-liter,Minimum charge,6778
+4500,52,Squiffer,Full charge,33891
+4500,52,Squiffer,Minimum charge,6778
+4500,52,Slosher,Single slosh,21690
+4500,52,Sloshing Machine,Direct hit,27113
+4500,52,Sloshing Machine,Explosion,16268
+4500,52,Heavy Splatling,Shot,6100
+4500,52,Mini Splatling,Shot,5287
+4500,52,Splat Dualies,Shot,5289
+4500,52,Glooga Dualies,Pre-Dodge Roll,7320
+4500,52,Glooga Dualies,Post-Dodge Roll,10574
+4500,52,Splat Brella,All shots hit,24402
+4500,52,Splat Brella,Single shot,4880
+4500,52,Splat Brella,Launched brella,20335
+4500,52,Tenta Brella,All shots hit,48804
+4500,52,Tenta Brella,Single shot,6913
+4500,52,Tenta Brella,Launched brella,33891
+4500,52,Blaster,Direct hit,29824
+4500,52,Blaster,Explosion (max),20877
+4500,52,Blaster,Explosion (min),14912
+4500,52,Rapid Blaster Pro,Direct hit,24402
+4500,52,Rapid Blaster Pro,Explosion,12201
+4500,52,Octobrush,Brush swing,8134
+4500,52,Octobrush,Inking on the go,5422
+4500,52,Tri-Stringer,Explosion,5422
+4500,52,Tri-Stringer,Full charge,16268
+4500,52,Splatana Stamper,Horizontal slash,13556
+4500,52,Splatana Stamper,Charged slash,24402
+4500,52,Splatana Stamper,Charged slash (direct hit),29824
+4500,53,Splattershot,Shot,4965
+4500,53,Splattershot Jr.,Shot,4138
+4500,53,Squelcher,Shot,7448
+4500,53,Splat Roller,Horizontal swing,20691
+4500,53,Splat Roller,Vertical swing,27588
+4500,53,Splat Roller,Inkling on the go,16552
+4500,53,Dynamo Roller,Horizontal swing,33105
+4500,53,Dynamo Roller,Vertical swing,49658
+4500,53,Dynamo Roller,Inkling on the go,82764
+4500,53,E-liter,Full charge,82764
+4500,53,E-liter,Minimum charge,6897
+4500,53,Squiffer,Full charge,34485
+4500,53,Squiffer,Minimum charge,6897
+4500,53,Slosher,Single slosh,22070
+4500,53,Sloshing Machine,Direct hit,27588
+4500,53,Sloshing Machine,Explosion,16552
+4500,53,Heavy Splatling,Shot,6207
+4500,53,Mini Splatling,Shot,5379
+4500,53,Splat Dualies,Shot,5379
+4500,53,Glooga Dualies,Pre-Dodge Roll,7448
+4500,53,Glooga Dualies,Post-Dodge Roll,10759
+4500,53,Splat Brella,All shots hit,24829
+4500,53,Splat Brella,Single shot,4965
+4500,53,Splat Brella,Launched brella,20691
+4500,53,Tenta Brella,All shots hit,49658
+4500,53,Tenta Brella,Single shot,7034
+4500,53,Tenta Brella,Launched brella,34485
+4500,53,Blaster,Direct hit,30346
+4500,53,Blaster,Explosion (max),21242
+4500,53,Blaster,Explosion (min),15173
+4500,53,Rapid Blaster Pro,Direct hit,24829
+4500,53,Rapid Blaster Pro,Explosion,12414
+4500,53,Octobrush,Brush swing,8276
+4500,53,Octobrush,Inking on the go,5517
+4500,53,Tri-Stringer,Explosion,5517
+4500,53,Tri-Stringer,Full charge,16552
+4500,53,Splatana Stamper,Horizontal slash,13794
+4500,53,Splatana Stamper,Charged slash,24829
+4500,53,Splatana Stamper,Charged slash (direct hit),30346
+4500,54,Splattershot,Shot,5053
+4500,54,Splattershot Jr.,Shot,4211
+4500,54,Squelcher,Shot,7580
+4500,54,Splat Roller,Horizontal swing,21056
+4500,54,Splat Roller,Vertical swing,28075
+4500,54,Splat Roller,Inkling on the go,16845
+4500,54,Dynamo Roller,Horizontal swing,33690
+4500,54,Dynamo Roller,Vertical swing,50535
+4500,54,Dynamo Roller,Inkling on the go,84225
+4500,54,E-liter,Full charge,84225
+4500,54,E-liter,Minimum charge,7018
+4500,54,Squiffer,Full charge,35094
+4500,54,Squiffer,Minimum charge,7018
+4500,54,Sloshing Machine,Direct hit,28075
+4500,54,Sloshing Machine,Explosion,16845
+4500,54,Heavy Splatling,Shot,6316
+4500,54,Mini Splatling,Shot,5474
+4500,54,Splat Dualies,Shot,5474
+4500,54,Glooga Dualies,Pre-Dodge Roll,7580
+4500,54,Glooga Dualies,Post-Dodge Roll,10949
+4500,54,Splat Brella,All shots hit,25267
+4500,54,Splat Brella,Single shot,5053
+4500,54,Splat Brella,Launched brella,21056
+4500,54,Tenta Brella,All shots hit,50535
+4500,54,Tenta Brella,Single shot,7159
+4500,54,Tenta Brella,Launched brella,35094
+4500,54,Blaster,Direct hit,30882
+4500,54,Blaster,Explosion (max),21617
+4500,54,Blaster,Explosion (min),15441
+4500,54,Rapid Blaster Pro,Direct hit,25267
+4500,54,Rapid Blaster Pro,Explosion,12633
+4500,54,Octobrush,Brush swing,8422
+4500,54,Octobrush,Inking on the go,5615
+4500,54,Tri-Stringer,Explosion,5615
+4500,54,Tri-Stringer,Full charge,16845
+4500,54,Splatana Stamper,Horizontal slash,14037
+4500,54,Splatana Stamper,Charged slash,25267
+4500,54,Splatana Stamper,Charged slash (direct hit),30882
+4500,55,Splattershot Jr.,Shot,4286
+4500,55,Squelcher,Shot,7715
+4500,55,Splat Roller,Horizontal swing,21431
+4500,55,Splat Roller,Vertical swing,28575
+4500,55,Splat Roller,Inkling on the go,17145
+4500,55,Dynamo Roller,Horizontal swing,34290
+4500,55,Dynamo Roller,Vertical swing,51435
+4500,55,Dynamo Roller,Inkling on the go,85725
+4500,55,E-liter,Full charge,85725
+4500,55,E-liter,Minimum charge,7143
+4500,55,Squiffer,Full charge,35718
+4500,55,Squiffer,Minimum charge,7143
+4500,55,Sloshing Machine,Direct hit,28575
+4500,55,Sloshing Machine,Explosion,17145
+4500,55,Heavy Splatling,Shot,6429
+4500,55,Mini Splatling,Shot,5572
+4500,55,Splat Dualies,Shot,5572
+4500,55,Glooga Dualies,Pre-Dodge Roll,7715
+4500,55,Glooga Dualies,Post-Dodge Roll,11144
+4500,55,Splat Brella,All shots hit,25717
+4500,55,Splat Brella,Single shot,5143
+4500,55,Splat Brella,Launched brella,21431
+4500,55,Tenta Brella,All shots hit,51435
+4500,55,Tenta Brella,Single shot,7286
+4500,55,Tenta Brella,Launched brella,35718
+4500,55,Blaster,Direct hit,31432
+4500,55,Blaster,Explosion (max),22002
+4500,55,Blaster,Explosion (min),15716
+4500,55,Rapid Blaster Pro,Direct hit,25717
+4500,55,Rapid Blaster Pro,Explosion,12858
+4500,55,Octobrush,Brush swing,8572
+4500,55,Octobrush,Inking on the go,5715
+4500,55,Tri-Stringer,Explosion,5715
+4500,55,Tri-Stringer,Full charge,17145
+4500,55,Splatana Stamper,Horizontal slash,14287
+4500,55,Splatana Stamper,Charged slash,25717
+4500,55,Splatana Stamper,Charged slash (direct hit),31432
+4500,56,E-liter,Full charge,87262
+4500,56,E-liter,Minimum charge,7271
+4500,56,Tenta Brella,All shots hit,52357
+4500,56,Tenta Brella,Single shot,7417
+4500,56,Tenta Brella,Launched brella,36359
+4500,56,Splatana Stamper,Horizontal slash,14543
+4500,56,Splatana Stamper,Charged slash,26178
+4500,56,Splatana Stamper,Charged slash (direct hit),31996
+4500,57,E-liter,Full charge,88837
+4500,57,E-liter,Minimum charge,7403
+4500,57,Tenta Brella,All shots hit,53302
+4500,57,Tenta Brella,Single shot,7551
+4500,57,Tenta Brella,Launched brella,37015
+4500,57,Splatana Stamper,Horizontal slash,14806
+4500,57,Splatana Stamper,Charged slash,26651
+4500,57,Splatana Stamper,Charged slash (direct hit),32573
+4500,58,E-liter,Full charge,90450
+4500,58,E-liter,Minimum charge,7537
+4500,58,Tenta Brella,All shots hit,54270
+4500,58,Tenta Brella,Single shot,7688
+4500,58,Tenta Brella,Launched brella,37687
+4500,58,Splatana Stamper,Horizontal slash,15075
+4500,58,Splatana Stamper,Charged slash,27135
+4500,58,Splatana Stamper,Charged slash (direct hit),33165
+4500,59,E-liter,Full charge,92100
+4500,59,E-liter,Minimum charge,7675
+4500,59,Tenta Brella,All shots hit,55260
+4500,59,Tenta Brella,Single shot,7828
+4500,59,Tenta Brella,Launched brella,38375
+4500,59,Splatana Stamper,Horizontal slash,15350
+4500,59,Splatana Stamper,Charged slash,27630
+4500,59,Splatana Stamper,Charged slash (direct hit),33770
+4500,60,E-liter,Full charge,93801
+4500,60,E-liter,Minimum charge,7816
+4500,60,Tenta Brella,All shots hit,56280
+4500,60,Tenta Brella,Single shot,7973
+4500,60,Tenta Brella,Launched brella,39084
+4500,60,Splatana Stamper,Horizontal slash,15633
+4500,60,Splatana Stamper,Charged slash,28140
+4500,60,Splatana Stamper,Charged slash (direct hit),34393
+4700,50,Splattershot,Shot,4780
+4700,50,Splattershot Jr.,Shot,3983
+4700,50,Squelcher,Shot,7170
+4700,50,Splat Roller,Horizontal swing,19918
+4700,50,Splat Roller,Vertical swing,26558
+4700,50,Splat Roller,Inkling on the go,15934
+4700,50,Dynamo Roller,Horizontal swing,31869
+4700,50,Dynamo Roller,Vertical swing,47804
+4700,50,Dynamo Roller,Inkling on the go,79674
+4700,50,E-liter,Full charge,79674
+4700,50,E-liter,Minimum charge,6639
+4700,50,Squiffer,Full charge,33197
+4700,50,Squiffer,Minimum charge,6639
+4700,50,Slosher,Single slosh,21246
+4700,50,Sloshing Machine,Direct hit,26558
+4700,50,Sloshing Machine,Explosion,15934
+4700,50,Heavy Splatling,Shot,5975
+4700,50,Mini Splatling,Shot,5178
+4700,50,Splat Dualies,Shot,5178
+4700,50,Glooga Dualies,Pre-Dodge Roll,7170
+4700,50,Glooga Dualies,Post-Dodge Roll,10357
+4700,50,Splat Brella,All shots hit,23902
+4700,50,Splat Brella,Single shot,4780
+4700,50,Splat Brella,Launched brella,19918
+4700,50,Tenta Brella,All shots hit,47804
+4700,50,Tenta Brella,Single shot,6772
+4700,50,Tenta Brella,Launched brella,33197
+4700,50,Blaster,Direct hit,29213
+4700,50,Blaster,Explosion (max),20449
+4700,50,Blaster,Explosion (min),14606
+4700,50,Rapid Blaster Pro,Direct hit,23902
+4700,50,Rapid Blaster Pro,Explosion,11951
+4700,50,Octobrush,Brush swing,7967
+4700,50,Octobrush,Inking on the go,5311
+4700,50,Tri-Stringer,Explosion,5311
+4700,50,Tri-Stringer,Full charge,15934
+4700,50,Splatana Stamper,Horizontal slash,13279
+4700,50,Splatana Stamper,Charged slash,23902
+4700,50,Splatana Stamper,Charged slash (direct hit),29213
+4700,51,Splattershot,Shot,4862
+4700,51,Splattershot Jr.,Shot,4051
+4700,51,Squelcher,Shot,7293
+4700,51,Splat Roller,Horizontal swing,20258
+4700,51,Splat Roller,Vertical swing,27011
+4700,51,Splat Roller,Inkling on the go,16207
+4700,51,Dynamo Roller,Horizontal swing,32414
+4700,51,Dynamo Roller,Vertical swing,48621
+4700,51,Dynamo Roller,Inkling on the go,81035
+4700,51,E-liter,Full charge,81035
+4700,51,E-liter,Minimum charge,6752
+4700,51,Squiffer,Full charge,33764
+4700,51,Squiffer,Minimum charge,6752
+4700,51,Slosher,Single slosh,21609
+4700,51,Sloshing Machine,Direct hit,27011
+4700,51,Sloshing Machine,Explosion,16207
+4700,51,Heavy Splatling,Shot,6077
+4700,51,Mini Splatling,Shot,5267
+4700,51,Splat Dualies,Shot,5267
+4700,51,Glooga Dualies,Pre-Dodge Roll,7293
+4700,51,Glooga Dualies,Post-Dodge Roll,10534
+4700,51,Splat Brella,All shots hit,24310
+4700,51,Splat Brella,Single shot,4862
+4700,51,Splat Brella,Launched brella,20258
+4700,51,Tenta Brella,All shots hit,48621
+4700,51,Tenta Brella,Single shot,6887
+4700,51,Tenta Brella,Launched brella,33764
+4700,51,Blaster,Direct hit,29712
+4700,51,Blaster,Explosion (max),20799
+4700,51,Blaster,Explosion (min),14856
+4700,51,Rapid Blaster Pro,Direct hit,24310
+4700,51,Rapid Blaster Pro,Explosion,12155
+4700,51,Octobrush,Brush swing,8103
+4700,51,Octobrush,Inking on the go,5402
+4700,51,Tri-Stringer,Explosion,5402
+4700,51,Tri-Stringer,Full charge,16207
+4700,51,Splatana Stamper,Horizontal slash,13505
+4700,51,Splatana Stamper,Charged slash,24310
+4700,51,Splatana Stamper,Charged slash (direct hit),29712
+4700,52,Splattershot,Shot,4945
+4700,52,Splattershot Jr.,Shot,4121
+4700,52,Squelcher,Shot,7417
+4700,52,Splat Roller,Horizontal swing,20605
+4700,52,Splat Roller,Vertical swing,27473
+4700,52,Splat Roller,Inkling on the go,16484
+4700,52,Dynamo Roller,Horizontal swing,32968
+4700,52,Dynamo Roller,Vertical swing,49452
+4700,52,Dynamo Roller,Inkling on the go,82421
+4700,52,E-liter,Full charge,82421
+4700,52,E-liter,Minimum charge,6868
+4700,52,Squiffer,Full charge,34342
+4700,52,Squiffer,Minimum charge,6868
+4700,52,Slosher,Single slosh,21979
+4700,52,Sloshing Machine,Direct hit,27473
+4700,52,Sloshing Machine,Explosion,16464
+4700,52,Heavy Splatling,Shot,6181
+4700,52,Mini Splatling,Shot,5357
+4700,52,Splat Dualies,Shot,5357
+4700,52,Glooga Dualies,Pre-Dodge Roll,7417
+4700,52,Glooga Dualies,Post-Dodge Roll,10714
+4700,52,Splat Brella,All shots hit,24726
+4700,52,Splat Brella,Single shot,4945
+4700,52,Splat Brella,Launched brella,20605
+4700,52,Tenta Brella,All shots hit,49452
+4700,52,Tenta Brella,Single shot,7005
+4700,52,Tenta Brella,Launched brella,34342
+4700,52,Blaster,Direct hit,30221
+4700,52,Blaster,Explosion (max),21154
+4700,52,Blaster,Explosion (min),15110
+4700,52,Rapid Blaster Pro,Direct hit,24726
+4700,52,Rapid Blaster Pro,Explosion,12363
+4700,52,Octobrush,Brush swing,8242
+4700,52,Octobrush,Inking on the go,5494
+4700,52,Tri-Stringer,Explosion,5494
+4700,52,Tri-Stringer,Full charge,16484
+4700,52,Splatana Stamper,Horizontal slash,13736
+4700,52,Splatana Stamper,Charged slash,24726
+4700,52,Splatana Stamper,Charged slash (direct hit),30221
+4700,53,Splattershot,Shot,5030
+4700,53,Splattershot Jr.,Shot,4192
+4700,53,Squelcher,Shot,7546
+4700,53,Splat Roller,Horizontal swing,20961
+4700,53,Splat Roller,Vertical swing,27948
+4700,53,Splat Roller,Inkling on the go,16769
+4700,53,Dynamo Roller,Horizontal swing,33538
+4700,53,Dynamo Roller,Vertical swing,50307
+4700,53,Dynamo Roller,Inkling on the go,83845
+4700,53,E-liter,Full charge,83845
+4700,53,E-liter,Minimum charge,6987
+4700,53,Squiffer,Full charge,34935
+4700,53,Squiffer,Minimum charge,6987
+4700,53,Slosher,Single slosh,22358
+4700,53,Sloshing Machine,Direct hit,27948
+4700,53,Sloshing Machine,Explosion,16769
+4700,53,Heavy Splatling,Shot,6288
+4700,53,Mini Splatling,Shot,5449
+4700,53,Splat Dualies,Shot,5449
+4700,53,Glooga Dualies,Pre-Dodge Roll,7546
+4700,53,Glooga Dualies,Post-Dodge Roll,10899
+4700,53,Splat Brella,All shots hit,25153
+4700,53,Splat Brella,Single shot,5030
+4700,53,Splat Brella,Launched brella,20961
+4700,53,Tenta Brella,All shots hit,50307
+4700,53,Tenta Brella,Single shot,7126
+4700,53,Tenta Brella,Launched brella,34935
+4700,53,Blaster,Direct hit,30743
+4700,53,Blaster,Explosion (max),21520
+4700,53,Blaster,Explosion (min),15371
+4700,53,Rapid Blaster Pro,Direct hit,25153
+4700,53,Rapid Blaster Pro,Explosion,12576
+4700,53,Octobrush,Brush swing,8384
+4700,53,Octobrush,Inking on the go,5589
+4700,53,Tri-Stringer,Explosion,5589
+4700,53,Tri-Stringer,Full charge,16769
+4700,53,Splatana Stamper,Horizontal slash,13974
+4700,53,Splatana Stamper,Charged slash,25153
+4700,53,Splatana Stamper,Charged slash (direct hit),30743
+4700,54,Splattershot,Shot,5118
+4700,54,Splattershot Jr.,Shot,4265
+4700,54,Squelcher,Shot,7677
+4700,54,Splat Roller,Horizontal swing,21326
+4700,54,Splat Roller,Vertical swing,28435
+4700,54,Splat Roller,Inkling on the go,17061
+4700,54,Dynamo Roller,Horizontal swing,34122
+4700,54,Dynamo Roller,Vertical swing,51184
+4700,54,Dynamo Roller,Inkling on the go,85306
+4700,54,E-liter,Full charge,85306
+4700,54,E-liter,Minimum charge,7108
+4700,54,Squiffer,Full charge,35544
+4700,54,Squiffer,Minimum charge,7108
+4700,54,Slosher,Single slosh,22748
+4700,54,Sloshing Machine,Direct hit,28435
+4700,54,Sloshing Machine,Explosion,17061
+4700,54,Heavy Splatling,Shot,6398
+4700,54,Mini Splatling,Shot,5544
+4700,54,Splat Dualies,Shot,5544
+4700,54,Glooga Dualies,Pre-Dodge Roll,7677
+4700,54,Glooga Dualies,Post-Dodge Roll,11089
+4700,54,Splat Brella,All shots hit,25592
+4700,54,Splat Brella,Single shot,5118
+4700,54,Splat Brella,Launched brella,21326
+4700,54,Tenta Brella,All shots hit,51184
+4700,54,Tenta Brella,Single shot,7251
+4700,54,Tenta Brella,Launched brella,35544
+4700,54,Blaster,Direct hit,31279
+4700,54,Blaster,Explosion (max),21895
+4700,54,Blaster,Explosion (min),15639
+4700,54,Rapid Blaster Pro,Direct hit,25592
+4700,54,Rapid Blaster Pro,Explosion,12796
+4700,54,Octobrush,Brush swing,8530
+4700,54,Octobrush,Inking on the go,5687
+4700,54,Tri-Stringer,Explosion,5687
+4700,54,Tri-Stringer,Full charge,17061
+4700,54,Splatana Stamper,Horizontal slash,14217
+4700,54,Splatana Stamper,Charged slash,25592
+4700,54,Splatana Stamper,Charged slash (direct hit),31279
+4700,55,Splattershot,Shot,5208
+4700,55,Splattershot Jr.,Shot,4340
+4700,55,Squelcher,Shot,7812
+4700,55,Splat Roller,Horizontal swing,21701
+4700,55,Splat Roller,Vertical swing,28935
+4700,55,Splat Roller,Inkling on the go,17361
+4700,55,Dynamo Roller,Horizontal swing,34722
+4700,55,Dynamo Roller,Vertical swing,52083
+4700,55,Dynamo Roller,Inkling on the go,86806
+4700,55,E-liter,Full charge,86806
+4700,55,E-liter,Minimum charge,7233
+4700,55,Squiffer,Full charge,36169
+4700,55,Squiffer,Minimum charge,7233
+4700,55,Slosher,Single slosh,23148
+4700,55,Sloshing Machine,Direct hit,28935
+4700,55,Sloshing Machine,Explosion,17361
+4700,55,Heavy Splatling,Shot,6510
+4700,55,Mini Splatling,Shot,5642
+4700,55,Splat Dualies,Shot,5642
+4700,55,Glooga Dualies,Pre-Dodge Roll,7812
+4700,55,Glooga Dualies,Post-Dodge Roll,11284
+4700,55,Splat Brella,All shots hit,26041
+4700,55,Splat Brella,Single shot,5208
+4700,55,Splat Brella,Launched brella,21701
+4700,55,Tenta Brella,All shots hit,52083
+4700,55,Tenta Brella,Single shot,7378
+4700,55,Tenta Brella,Launched brella,36169
+4700,55,Blaster,Direct hit,31828
+4700,55,Blaster,Explosion (max),22280
+4700,55,Blaster,Explosion (min),15914
+4700,55,Rapid Blaster Pro,Direct hit,26041
+4700,55,Rapid Blaster Pro,Explosion,13020
+4700,55,Octobrush,Brush swing,8680
+4700,55,Octobrush,Inking on the go,5787
+4700,55,Tri-Stringer,Explosion,5787
+4700,55,Tri-Stringer,Full charge,17361
+4700,55,Splatana Stamper,Horizontal slash,14467
+4700,55,Splatana Stamper,Charged slash,26041
+4700,55,Splatana Stamper,Charged slash (direct hit),31828
+4700,56,Splattershot,Shot,5300
+4700,56,Splattershot Jr.,Shot,4417
+4700,56,Squelcher,Shot,7950
+4700,56,Splat Roller,Horizontal swing,22085
+4700,56,Splat Roller,Vertical swing,29447
+4700,56,Splat Roller,Inkling on the go,17668
+4700,56,Dynamo Roller,Horizontal swing,35337
+4700,56,Dynamo Roller,Vertical swing,53005
+4700,56,Dynamo Roller,Inkling on the go,88343
+4700,56,E-liter,Full charge,88343
+4700,56,E-liter,Minimum charge,7361
+4700,56,Squiffer,Full charge,36809
+4700,56,Squiffer,Minimum charge,7361
+4700,56,Slosher,Single slosh,23558
+4700,56,Sloshing Machine,Direct hit,29447
+4700,56,Sloshing Machine,Explosion,17668
+4700,56,Heavy Splatling,Shot,6625
+4700,56,Mini Splatling,Shot,5742
+4700,56,Splat Dualies,Shot,5742
+4700,56,Glooga Dualies,Pre-Dodge Roll,7950
+4700,56,Glooga Dualies,Post-Dodge Roll,11484
+4700,56,Splat Brella,All shots hit,26502
+4700,56,Splat Brella,Single shot,5300
+4700,56,Splat Brella,Launched brella,22805
+4700,56,Tenta Brella,All shots hit,53005
+4700,56,Tenta Brella,Single shot,7509
+4700,56,Tenta Brella,Launched brella,36809
+4700,56,Blaster,Direct hit,32392
+4700,56,Blaster,Explosion (max),22674
+4700,56,Blaster,Explosion (min),16196
+4700,56,Rapid Blaster Pro,Direct hit,26502
+4700,56,Rapid Blaster Pro,Explosion,13251
+4700,56,Octobrush,Brush swing,8834
+4700,56,Octobrush,Inking on the go,5889
+4700,56,Tri-Stringer,Explosion,5889
+4700,56,Tri-Stringer,Full charge,17668
+4700,56,Splatana Stamper,Horizontal slash,14723
+4700,56,Splatana Stamper,Charged slash,26502
+4700,56,Splatana Stamper,Charged slash (direct hit),32392
+4700,57,Splattershot,Shot,5395
+4700,57,Splattershot Jr.,Shot,4495
+4700,57,Squelcher,Shot,8092
+4700,57,Splat Roller,Horizontal swing,22479
+4700,57,Splat Roller,Vertical swing,29972
+4700,57,Splat Roller,Inkling on the go,17983
+4700,57,Dynamo Roller,Horizontal swing,35967
+4700,57,Dynamo Roller,Vertical swing,53950
+4700,57,Dynamo Roller,Inkling on the go,89918
+4700,57,E-liter,Full charge,89918
+4700,57,E-liter,Minimum charge,7493
+4700,57,Squiffer,Full charge,37465
+4700,57,Squiffer,Minimum charge,7493
+4700,57,Slosher,Single slosh,23978
+4700,57,Sloshing Machine,Direct hit,29972
+4700,57,Sloshing Machine,Explosion,17983
+4700,57,Heavy Splatling,Shot,6743
+4700,57,Mini Splatling,Shot,5844
+4700,57,Splat Dualies,Shot,5844
+4700,57,Glooga Dualies,Pre-Dodge Roll,8092
+4700,57,Glooga Dualies,Post-Dodge Roll,11689
+4700,57,Splat Brella,All shots hit,26975
+4700,57,Splat Brella,Single shot,5395
+4700,57,Splat Brella,Launched brella,22479
+4700,57,Tenta Brella,All shots hit,53950
+4700,57,Tenta Brella,Single shot,7643
+4700,57,Tenta Brella,Launched brella,37465
+4700,57,Blaster,Direct hit,32970
+4700,57,Blaster,Explosion (max),23079
+4700,57,Blaster,Explosion (min),16485
+4700,57,Rapid Blaster Pro,Direct hit,26975
+4700,57,Rapid Blaster Pro,Explosion,13487
+4700,57,Octobrush,Brush swing,8991
+4700,57,Octobrush,Inking on the go,5994
+4700,57,Tri-Stringer,Explosion,5994
+4700,57,Tri-Stringer,Full charge,17983
+4700,57,Splatana Stamper,Horizontal slash,14986
+4700,57,Splatana Stamper,Charged slash,26975
+4700,57,Splatana Stamper,Charged slash (direct hit),32970
+4700,58,Splattershot,Shot,5491
+4700,58,Splattershot Jr.,Shot,4576
+4700,58,Squelcher,Shot,8237
+4700,58,Splat Roller,Horizontal swing,22882
+4700,58,Splat Roller,Vertical swing,30510
+4700,58,Splat Roller,Inkling on the go,18306
+4700,58,Dynamo Roller,Horizontal swing,36612
+4700,58,Dynamo Roller,Vertical swing,54918
+4700,58,Dynamo Roller,Inkling on the go,91531
+4700,58,E-liter,Full charge,91531
+4700,58,E-liter,Minimum charge,7627
+4700,58,Squiffer,Full charge,38137
+4700,58,Squiffer,Minimum charge,7627
+4700,58,Slosher,Single slosh,24408
+4700,58,Sloshing Machine,Direct hit,30510
+4700,58,Sloshing Machine,Explosion,18306
+4700,58,Heavy Splatling,Shot,6864
+4700,58,Mini Splatling,Shot,5949
+4700,58,Splat Dualies,Shot,5949
+4700,58,Glooga Dualies,Pre-Dodge Roll,8237
+4700,58,Glooga Dualies,Post-Dodge Roll,11899
+4700,58,Splat Brella,All shots hit,27459
+4700,58,Splat Brella,Single shot,5491
+4700,58,Splat Brella,Launched brella,22882
+4700,58,Tenta Brella,All shots hit,54918
+4700,58,Tenta Brella,Single shot,7780
+4700,58,Tenta Brella,Launched brella,38137
+4700,58,Blaster,Direct hit,33561
+4700,58,Blaster,Explosion (max),23492
+4700,58,Blaster,Explosion (min),16780
+4700,58,Rapid Blaster Pro,Direct hit,27459
+4700,58,Rapid Blaster Pro,Explosion,13729
+4700,58,Octobrush,Brush swing,9153
+4700,58,Octobrush,Inking on the go,6102
+4700,58,Tri-Stringer,Explosion,6102
+4700,58,Tri-Stringer,Full charge,18306
+4700,58,Splatana Stamper,Horizontal slash,15255
+4700,58,Splatana Stamper,Charged slash,27459
+4700,58,Splatana Stamper,Charged slash (direct hit),33561
+4700,59,Splattershot,Shot,5590
+4700,59,Splattershot Jr.,Shot,4659
+4700,59,Squelcher,Shot,8386
+4700,59,Splat Roller,Horizontal swing,23295
+4700,59,Splat Roller,Vertical swing,31060
+4700,59,Splat Roller,Inkling on the go,18636
+4700,59,Dynamo Roller,Horizontal swing,37272
+4700,59,Dynamo Roller,Vertical swing,55909
+4700,59,Dynamo Roller,Inkling on the go,93181
+4700,59,E-liter,Full charge,83181
+4700,59,E-liter,Minimum charge,7765
+4700,59,Squiffer,Full charge,38825
+4700,59,Squiffer,Minimum charge,7765
+4700,59,Slosher,Single slosh,24848
+4700,59,Sloshing Machine,Direct hit,31060
+4700,59,Sloshing Machine,Explosion,18636
+4700,59,Heavy Splatling,Shot,6988
+4700,59,Mini Splatling,Shot,6056
+4700,59,Splat Dualies,Shot,6056
+4700,59,Glooga Dualies,Pre-Dodge Roll,8386
+4700,59,Glooga Dualies,Post-Dodge Roll,12113
+4700,59,Splat Brella,All shots hit,27954
+4700,59,Splat Brella,Single shot,5590
+4700,59,Splat Brella,Launched brella,23295
+4700,59,Tenta Brella,All shots hit,55909
+4700,59,Tenta Brella,Single shot,7920
+4700,59,Tenta Brella,Launched brella,38825
+4700,59,Blaster,Direct hit,34166
+4700,59,Blaster,Explosion (max),23916
+4700,59,Blaster,Explosion (min),17083
+4700,59,Rapid Blaster Pro,Direct hit,27954
+4700,59,Rapid Blaster Pro,Explosion,13977
+4700,59,Octobrush,Brush swing,9318
+4700,59,Octobrush,Inking on the go,6212
+4700,59,Tri-Stringer,Explosion,6212
+4700,59,Tri-Stringer,Full charge,18636
+4700,59,Splatana Stamper,Horizontal slash,15530
+4700,59,Splatana Stamper,Charged slash,27954
+4700,59,Splatana Stamper,Charged slash (direct hit),34166
+4700,60,Splattershot,Shot,5692
+4700,60,Splattershot Jr.,Shot,4744
+4700,60,Squelcher,Shot,8539
+4700,60,Splat Roller,Horizontal swing,23720
+4700,60,Splat Roller,Vertical swing,31627
+4700,60,Splat Roller,Inkling on the go,18976
+4700,60,Dynamo Roller,Horizontal swing,37953
+4700,60,Dynamo Roller,Vertical swing,56929
+4700,60,Dynamo Roller,Inkling on the go,94882
+4700,60,E-liter,Full charge,94882
+4700,60,E-liter,Minimum charge,7906
+4700,60,Squiffer,Full charge,39534
+4700,60,Squiffer,Minimum charge,7906
+4700,60,Slosher,Single slosh,25302
+4700,60,Sloshing Machine,Direct hit,31627
+4700,60,Sloshing Machine,Explosion,18976
+4700,60,Heavy Splatling,Shot,7116
+4700,60,Mini Splatling,Shot,6167
+4700,60,Splat Dualies,Shot,6167
+4700,60,Glooga Dualies,Pre-Dodge Roll,8539
+4700,60,Glooga Dualies,Post-Dodge Roll,12334
+4700,60,Splat Brella,All shots hit,28464
+4700,60,Splat Brella,Single shot,5692
+4700,60,Splat Brella,Launched brella,23720
+4700,60,Tenta Brella,All shots hit,56929
+4700,60,Tenta Brella,Single shot,8065
+4700,60,Tenta Brella,Launched brella,39534
+4700,60,Blaster,Direct hit,34790
+4700,60,Blaster,Explosion (max),24353
+4700,60,Blaster,Explosion (min),17395
+4700,60,Rapid Blaster Pro,Direct hit,28464
+4700,60,Rapid Blaster Pro,Explosion,14232
+4700,60,Octobrush,Brush swing,9488
+4700,60,Octobrush,Inking on the go,6325
+4700,60,Tri-Stringer,Explosion,6325
+4700,60,Tri-Stringer,Full charge,18976
+4700,60,Splatana Stamper,Horizontal slash,15813
+4700,60,Splatana Stamper,Charged slash,28464
+4700,60,Splatana Stamper,Charged slash (direct hit),34790
+4700,61,Splattershot,Shot,5797
+4700,61,Splattershot Jr.,Shot,4831
+4700,61,Squelcher,Shot,8695
+4700,61,Splat Roller,Horizontal swing,24155
+4700,61,Splat Roller,Vertical swing,32207
+4700,61,Splat Roller,Inkling on the go,19324
+4700,61,Dynamo Roller,Horizontal swing,38648
+4700,61,Dynamo Roller,Vertical swing,57972
+4700,61,Dynamo Roller,Inkling on the go,96621
+4700,61,E-liter,Full charge,96621
+4700,61,E-liter,Minimum charge,8051
+4700,61,Squiffer,Full charge,40258
+4700,61,Squiffer,Minimum charge,8051
+4700,61,Slosher,Single slosh,25765
+4700,61,Sloshing Machine,Direct hit,32207
+4700,61,Sloshing Machine,Explosion,19324
+4700,61,Heavy Splatling,Shot,7246
+4700,61,Mini Splatling,Shot,6280
+4700,61,Splat Dualies,Shot,6280
+4700,61,Glooga Dualies,Pre-Dodge Roll,8695
+4700,61,Glooga Dualies,Post-Dodge Roll,12560
+4700,61,Splat Brella,All shots hit,28986
+4700,61,Splat Brella,Single shot,5797
+4700,61,Splat Brella,Launched brella,24155
+4700,61,Tenta Brella,All shots hit,57972
+4700,61,Tenta Brella,Single shot,8212
+4700,61,Tenta Brella,Launched brella,40258
+4700,61,Blaster,Direct hit,35427
+4700,61,Blaster,Explosion (max),24799
+4700,61,Blaster,Explosion (min),17713
+4700,61,Rapid Blaster Pro,Direct hit,28986
+4700,61,Rapid Blaster Pro,Explosion,14493
+4700,61,Octobrush,Brush swing,9662
+4700,61,Octobrush,Inking on the go,6441
+4700,61,Tri-Stringer,Explosion,6441
+4700,61,Tri-Stringer,Full charge,19324
+4700,61,Splatana Stamper,Horizontal slash,16103
+4700,61,Splatana Stamper,Charged slash,28986
+4700,61,Splatana Stamper,Charged slash (direct hit),35427
+4700,62,Splattershot,Shot,5903
+4700,62,Splattershot Jr.,Shot,4919
+4700,62,Squelcher,Shot,8855
+4700,62,Splat Roller,Horizontal swing,24599
+4700,62,Splat Roller,Vertical swing,32799
+4700,62,Splat Roller,Inkling on the go,19679
+4700,62,Dynamo Roller,Horizontal swing,39359
+4700,62,Dynamo Roller,Vertical swing,59038
+4700,62,Dynamo Roller,Inkling on the go,98398
+4700,62,E-liter,Full charge,98398
+4700,62,E-liter,Minimum charge,8199
+4700,62,Squiffer,Full charge,40999
+4700,62,Squiffer,Minimum charge,8199
+4700,62,Slosher,Single slosh,26239
+4700,62,Sloshing Machine,Direct hit,32799
+4700,62,Sloshing Machine,Explosion,19679
+4700,62,Heavy Splatling,Shot,7379
+4700,62,Mini Splatling,Shot,6395
+4700,62,Splat Dualies,Shot,6395
+4700,62,Glooga Dualies,Pre-Dodge Roll,8855
+4700,62,Glooga Dualies,Post-Dodge Roll,12791
+4700,62,Splat Brella,All shots hit,29519
+4700,62,Splat Brella,Single shot,5903
+4700,62,Splat Brella,Launched brella,24599
+4700,62,Tenta Brella,All shots hit,59038
+4700,62,Tenta Brella,Single shot,8363
+4700,62,Tenta Brella,Launched brella,40999
+4700,62,Blaster,Direct hit,36079
+4700,62,Blaster,Explosion (max),25255
+4700,62,Blaster,Explosion (min),18039
+4700,62,Rapid Blaster Pro,Direct hit,29519
+4700,62,Rapid Blaster Pro,Explosion,14759
+4700,62,Octobrush,Brush swing,9839
+4700,62,Octobrush,Inking on the go,6559
+4700,62,Tri-Stringer,Explosion,6559
+4700,62,Tri-Stringer,Full charge,19679
+4700,62,Splatana Stamper,Horizontal slash,16399
+4700,62,Splatana Stamper,Charged slash,29519
+4700,62,Splatana Stamper,Charged slash (direct hit),36079
+4700,63,Splattershot,Shot,6013
+4700,63,Splattershot Jr.,Shot,5011
+4700,63,Squelcher,Shot,9020
+4700,63,Splat Roller,Horizontal swing,25056
+4700,63,Splat Roller,Vertical swing,33408
+4700,63,Splat Roller,Inkling on the go,20045
+4700,63,Dynamo Roller,Horizontal swing,40090
+4700,63,Dynamo Roller,Vertical swing,60135
+4700,63,Dynamo Roller,Inkling on the go,100225
+4700,63,E-liter,Full charge,100225
+4700,63,E-liter,Minimum charge,8352
+4700,63,Squiffer,Full charge,41760
+4700,63,Squiffer,Minimum charge,8352
+4700,63,Slosher,Single slosh,26726
+4700,63,Sloshing Machine,Direct hit,33408
+4700,63,Sloshing Machine,Explosion,20045
+4700,63,Heavy Splatling,Shot,7516
+4700,63,Mini Splatling,Shot,6514
+4700,63,Splat Dualies,Shot,6514
+4700,63,Glooga Dualies,Pre-Dodge Roll,9020
+4700,63,Glooga Dualies,Post-Dodge Roll,13029
+4700,63,Splat Brella,All shots hit,30067
+4700,63,Splat Brella,Single shot,6013
+4700,63,Splat Brella,Launched brella,25056
+4700,63,Tenta Brella,All shots hit,60135
+4700,63,Tenta Brella,Single shot,8519
+4700,63,Tenta Brella,Launched brella,41760
+4700,63,Blaster,Direct hit,36749
+4700,63,Blaster,Explosion (max),25724
+4700,63,Blaster,Explosion (min),18374
+4700,63,Rapid Blaster Pro,Direct hit,30067
+4700,63,Rapid Blaster Pro,Explosion,15033
+4700,63,Octobrush,Brush swing,10022
+4700,63,Octobrush,Inking on the go,6681
+4700,63,Tri-Stringer,Explosion,6681
+4700,63,Tri-Stringer,Full charge,20045
+4700,63,Splatana Stamper,Horizontal slash,16704
+4700,63,Splatana Stamper,Charged slash,30067
+4700,63,Splatana Stamper,Charged slash (direct hit),36749
+4700,64,Splattershot,Shot,6126
+4700,64,Splattershot Jr.,Shot,5105
+4700,64,Squelcher,Shot,9189
+4700,64,Splat Roller,Horizontal swing,25525
+4700,64,Splat Roller,Vertical swing,34034
+4700,64,Splat Roller,Inkling on the go,20420
+4700,64,Dynamo Roller,Horizontal swing,40840
+4700,64,Dynamo Roller,Vertical swing,61261
+4700,64,Dynamo Roller,Inkling on the go,102102
+4700,64,E-liter,Full charge,102102
+4700,64,E-liter,Minimum charge,8508
+4700,64,Squiffer,Full charge,42542
+4700,64,Squiffer,Minimum charge,8508
+4700,64,Slosher,Single slosh,27227
+4700,64,Sloshing Machine,Direct hit,34034
+4700,64,Sloshing Machine,Explosion,20420
+4700,64,Heavy Splatling,Shot,7657
+4700,64,Mini Splatling,Shot,6636
+4700,64,Splat Dualies,Shot,6636
+4700,64,Glooga Dualies,Pre-Dodge Roll,9189
+4700,64,Glooga Dualies,Post-Dodge Roll,13273
+4700,64,Splat Brella,All shots hit,30630
+4700,64,Splat Brella,Single shot,6126
+4700,64,Splat Brella,Launched brella,25525
+4700,64,Tenta Brella,All shots hit,61261
+4700,64,Tenta Brella,Single shot,8678
+4700,64,Tenta Brella,Launched brella,42542
+4700,64,Blaster,Direct hit,37437
+4700,64,Blaster,Explosion (max),26206
+4700,64,Blaster,Explosion (min),18718
+4700,64,Rapid Blaster Pro,Direct hit,30630
+4700,64,Rapid Blaster Pro,Explosion,15315
+4700,64,Octobrush,Brush swing,10210
+4700,64,Octobrush,Inking on the go,6806
+4700,64,Tri-Stringer,Explosion,6806
+4700,64,Tri-Stringer,Full charge,20420
+4700,64,Splatana Stamper,Horizontal slash,17017
+4700,64,Splatana Stamper,Charged slash,30630
+4700,64,Splatana Stamper,Charged slash (direct hit),37437
+4700,65,Splattershot,Shot,6241
+4700,65,Splattershot Jr.,Shot,5200
+4700,65,Squelcher,Shot,9361
+4700,65,Splat Roller,Horizontal swing,26004
+4700,65,Splat Roller,Vertical swing,34672
+4700,65,Splat Roller,Inkling on the go,20803
+4700,65,Dynamo Roller,Horizontal swing,41607
+4700,65,Dynamo Roller,Vertical swing,62410
+4700,65,Dynamo Roller,Inkling on the go,104017
+4700,65,E-liter,Full charge,104017
+4700,65,E-liter,Minimum charge,8668
+4700,65,Squiffer,Full charge,43340
+4700,65,Squiffer,Minimum charge,8668
+4700,65,Slosher,Single slosh,27738
+4700,65,Sloshing Machine,Direct hit,34672
+4700,65,Sloshing Machine,Explosion,20803
+4700,65,Heavy Splatling,Shot,7801
+4700,65,Mini Splatling,Shot,6761
+4700,65,Splat Dualies,Shot,6761
+4700,65,Glooga Dualies,Pre-Dodge Roll,9361
+4700,65,Glooga Dualies,Post-Dodge Roll,13522
+4700,65,Splat Brella,All shots hit,31205
+4700,65,Splat Brella,Single shot,6241
+4700,65,Splat Brella,Launched brella,26004
+4700,65,Tenta Brella,All shots hit,62410
+4700,65,Tenta Brella,Single shot,8841
+4700,65,Tenta Brella,Launched brella,43340
+4700,65,Blaster,Direct hit,38139
+4700,65,Blaster,Explosion (max),26697
+4700,65,Blaster,Explosion (min),19069
+4700,65,Rapid Blaster Pro,Direct hit,31205
+4700,65,Rapid Blaster Pro,Explosion,15602
+4700,65,Octobrush,Brush swing,10401
+4700,65,Octobrush,Inking on the go,6934
+4700,65,Tri-Stringer,Explosion,6934
+4700,65,Tri-Stringer,Full charge,20803
+4700,65,Splatana Stamper,Horizontal slash,17336
+4700,65,Splatana Stamper,Charged slash,31205
+4700,65,Splatana Stamper,Charged slash (direct hit),38139
+4700,66,Splattershot,Shot,6358
+4700,66,Splattershot Jr.,Shot,5299
+4700,66,Squelcher,Shot,9538
+4700,66,Splat Roller,Horizontal swing,26495
+4700,66,Splat Roller,Vertical swing,35327
+4700,66,Splat Roller,Inkling on the go,21196
+4700,66,Dynamo Roller,Horizontal swing,42393
+4700,66,Dynamo Roller,Vertical swing,63589
+4700,66,Dynamo Roller,Inkling on the go,105983
+4700,66,E-liter,Full charge,105983
+4700,66,E-liter,Minimum charge,8831
+4700,66,Squiffer,Full charge,44159
+4700,66,Squiffer,Minimum charge,8831
+4700,66,Slosher,Single slosh,28262
+4700,66,Sloshing Machine,Direct hit,35327
+4700,66,Sloshing Machine,Explosion,21196
+4700,66,Heavy Splatling,Shot,7948
+4700,66,Mini Splatling,Shot,6888
+4700,66,Splat Dualies,Shot,6888
+4700,66,Glooga Dualies,Pre-Dodge Roll,9538
+4700,66,Glooga Dualies,Post-Dodge Roll,13777
+4700,66,Splat Brella,All shots hit,31794
+4700,66,Splat Brella,Single shot,6358
+4700,66,Splat Brella,Launched brella,26495
+4700,66,Tenta Brella,All shots hit,63589
+4700,66,Tenta Brella,Single shot,9008
+4700,66,Tenta Brella,Launched brella,44159
+4700,66,Blaster,Direct hit,38860
+4700,66,Blaster,Explosion (max),27202
+4700,66,Blaster,Explosion (min),19430
+4700,66,Rapid Blaster Pro,Direct hit,31794
+4700,66,Rapid Blaster Pro,Explosion,15897
+4700,66,Octobrush,Brush swing,10598
+4700,66,Octobrush,Inking on the go,7065
+4700,66,Tri-Stringer,Explosion,7065
+4700,66,Tri-Stringer,Full charge,21196
+4700,66,Splatana Stamper,Horizontal slash,17663
+4700,66,Splatana Stamper,Charged slash,31794
+4700,66,Splatana Stamper,Charged slash (direct hit),38860
+4700,67,Splattershot,Shot,6479
+4700,67,Splattershot Jr.,Shot,5399
+4700,67,Squelcher,Shot,9719
+4700,67,Splat Roller,Horizontal swing,26999
+4700,67,Splat Roller,Vertical swing,35999
+4700,67,Splat Roller,Inkling on the go,21599
+4700,67,Dynamo Roller,Horizontal swing,43199
+4700,67,Dynamo Roller,Vertical swing,64799
+4700,67,Dynamo Roller,Inkling on the go,107999
+4700,67,E-liter,Full charge,107999
+4700,67,E-liter,Minimum charge,8999
+4700,67,Squiffer,Full charge,44999
+4700,67,Squiffer,Minimum charge,8999
+4700,67,Slosher,Single slosh,28799
+4700,67,Sloshing Machine,Direct hit,35999
+4700,67,Sloshing Machine,Explosion,21599
+4700,67,Heavy Splatling,Shot,8099
+4700,67,Mini Splatling,Shot,7019
+4700,67,Splat Dualies,Shot,7019
+4700,67,Glooga Dualies,Pre-Dodge Roll,9719
+4700,67,Glooga Dualies,Post-Dodge Roll,14039
+4700,67,Splat Brella,All shots hit,32399
+4700,67,Splat Brella,Single shot,6479
+4700,67,Splat Brella,Launched brella,26999
+4700,67,Tenta Brella,All shots hit,64799
+4700,67,Tenta Brella,Single shot,9179
+4700,67,Tenta Brella,Launched brella,44999
+4700,67,Blaster,Direct hit,39599
+4700,67,Blaster,Explosion (max),27719
+4700,67,Blaster,Explosion (min),19799
+4700,67,Rapid Blaster Pro,Direct hit,32399
+4700,67,Rapid Blaster Pro,Explosion,16199
+4700,67,Octobrush,Brush swing,10799
+4700,67,Octobrush,Inking on the go,7199
+4700,67,Tri-Stringer,Explosion,7199
+4700,67,Tri-Stringer,Full charge,21599
+4700,67,Splatana Stamper,Horizontal slash,17999
+4700,67,Splatana Stamper,Charged slash,32399
+4700,67,Splatana Stamper,Charged slash (direct hit),39599
+4700,68,Splattershot,Shot,6603
+4700,68,Splattershot Jr.,Shot,5503
+4700,68,Squelcher,Shot,9905
+4700,68,Splat Roller,Horizontal swing,27516
+4700,68,Splat Roller,Vertical swing,36688
+4700,68,Splat Roller,Inkling on the go,22013
+4700,68,Dynamo Roller,Horizontal swing,44026
+4700,68,Dynamo Roller,Vertical swing,66039
+4700,68,Dynamo Roller,Inkling on the go,110065
+4700,68,E-liter,Full charge,110065
+4700,68,E-liter,Minimum charge,9172
+4700,68,Squiffer,Full charge,45860
+4700,68,Squiffer,Minimum charge,9172
+4700,68,Slosher,Single slosh,29350
+4700,68,Sloshing Machine,Direct hit,36688
+4700,68,Sloshing Machine,Explosion,22013
+4700,68,Heavy Splatling,Shot,8254
+4700,68,Mini Splatling,Shot,7154
+4700,68,Splat Dualies,Shot,7154
+4700,68,Glooga Dualies,Pre-Dodge Roll,9905
+4700,68,Glooga Dualies,Post-Dodge Roll,14308
+4700,68,Splat Brella,All shots hit,33019
+4700,68,Splat Brella,Single shot,6603
+4700,68,Splat Brella,Launched brella,27516
+4700,68,Tenta Brella,All shots hit,66039
+4700,68,Tenta Brella,Single shot,9355
+4700,68,Tenta Brella,Launched brella,45860
+4700,68,Blaster,Direct hit,40357
+4700,68,Blaster,Explosion (max),28250
+4700,68,Blaster,Explosion (min),20178
+4700,68,Rapid Blaster Pro,Direct hit,33019
+4700,68,Rapid Blaster Pro,Explosion,16509
+4700,68,Octobrush,Brush swing,11006
+4700,68,Octobrush,Inking on the go,7337
+4700,68,Tri-Stringer,Explosion,7337
+4700,68,Tri-Stringer,Full charge,22013
+4700,68,Splatana Stamper,Horizontal slash,18344
+4700,68,Splatana Stamper,Charged slash,33019
+4700,68,Splatana Stamper,Charged slash (direct hit),40357
+4700,69,Splattershot,Shot,6730
+4700,69,Splattershot Jr.,Shot,5609
+4700,69,Squelcher,Shot,10096
+4700,69,Splat Roller,Horizontal swing,28045
+4700,69,Splat Roller,Vertical swing,37394
+4700,69,Splat Roller,Inkling on the go,22436
+4700,69,Dynamo Roller,Horizontal swing,44872
+4700,69,Dynamo Roller,Vertical swing,67309
+4700,69,Dynamo Roller,Inkling on the go,112182
+4700,69,E-liter,Full charge,112182
+4700,69,E-liter,Minimum charge,9348
+4700,69,Squiffer,Full charge,46742
+4700,69,Squiffer,Minimum charge,9348
+4700,69,Slosher,Single slosh,29915
+4700,69,Sloshing Machine,Direct hit,37394
+4700,69,Sloshing Machine,Explosion,22436
+4700,69,Heavy Splatling,Shot,8413
+4700,69,Mini Splatling,Shot,7291
+4700,69,Splat Dualies,Shot,7291
+4700,69,Glooga Dualies,Pre-Dodge Roll,10096
+4700,69,Glooga Dualies,Post-Dodge Roll,14583
+4700,69,Splat Brella,All shots hit,33654
+4700,69,Splat Brella,Single shot,6730
+4700,69,Splat Brella,Launched brella,28045
+4700,69,Tenta Brella,All shots hit,67309
+4700,69,Tenta Brella,Single shot,9535
+4700,69,Tenta Brella,Launched brella,46742
+4700,69,Blaster,Direct hit,41133
+4700,69,Blaster,Explosion (max),28793
+4700,69,Blaster,Explosion (min),20566
+4700,69,Rapid Blaster Pro,Direct hit,33654
+4700,69,Rapid Blaster Pro,Explosion,16827
+4700,69,Octobrush,Brush swing,11218
+4700,69,Octobrush,Inking on the go,7478
+4700,69,Tri-Stringer,Explosion,7478
+4700,69,Tri-Stringer,Full charge,22436
+4700,69,Splatana Stamper,Horizontal slash,18697
+4700,69,Splatana Stamper,Charged slash,33654
+4700,69,Splatana Stamper,Charged slash (direct hit),41133
+4700,70,Splattershot,Shot,6860
+4700,70,Splattershot Jr.,Shot,5717
+4700,70,Squelcher,Shot,10291
+4700,70,Splat Roller,Horizontal swing,28587
+4700,70,Splat Roller,Vertical swing,38116
+4700,70,Splat Roller,Inkling on the go,22869
+4700,70,Dynamo Roller,Horizontal swing,45739
+4700,70,Dynamo Roller,Vertical swing,68609
+4700,70,Dynamo Roller,Inkling on the go,114349
+4700,70,E-liter,Full charge,114349
+4700,70,E-liter,Minimum charge,9529
+4700,70,Squiffer,Full charge,47645
+4700,70,Squiffer,Minimum charge,9529
+4700,70,Slosher,Single slosh,30493
+4700,70,Sloshing Machine,Direct hit,38116
+4700,70,Sloshing Machine,Explosion,22869
+4700,70,Heavy Splatling,Shot,8576
+4700,70,Mini Splatling,Shot,7432
+4700,70,Splat Dualies,Shot,7432
+4700,70,Glooga Dualies,Pre-Dodge Roll,10291
+4700,70,Glooga Dualies,Post-Dodge Roll,14865
+4700,70,Splat Brella,All shots hit,34304
+4700,70,Splat Brella,Single shot,6860
+4700,70,Splat Brella,Launched brella,28587
+4700,70,Tenta Brella,All shots hit,68609
+4700,70,Tenta Brella,Single shot,9719
+4700,70,Tenta Brella,Launched brella,47645
+4700,70,Blaster,Direct hit,41928
+4700,70,Blaster,Explosion (max),29349
+4700,70,Blaster,Explosion (min),20964
+4700,70,Rapid Blaster Pro,Direct hit,34304
+4700,70,Rapid Blaster Pro,Explosion,17152
+4700,70,Octobrush,Brush swing,11434
+4700,70,Octobrush,Inking on the go,7623
+4700,70,Tri-Stringer,Explosion,7623
+4700,70,Tri-Stringer,Full charge,22869
+4700,70,Splatana Stamper,Horizontal slash,19058
+4700,70,Splatana Stamper,Charged slash,34304
+4700,70,Splatana Stamper,Charged slash (direct hit),41928
+4700,71,Splattershot,Shot,6994
+4700,71,Splattershot Jr.,Shot,5828
+4700,71,Squelcher,Shot,10492
+4700,71,Splat Roller,Horizontal swing,29144
+4700,71,Splat Roller,Vertical swing,38859
+4700,71,Splat Roller,Inkling on the go,23315
+4700,71,Dynamo Roller,Horizontal swing,46631
+4700,71,Dynamo Roller,Vertical swing,69947
+4700,71,Dynamo Roller,Inkling on the go,116579
+4700,71,E-liter,Full charge,116579
+4700,71,E-liter,Minimum charge,9714
+4700,71,Squiffer,Full charge,48574
+4700,71,Squiffer,Minimum charge,9714
+4700,71,Slosher,Single slosh,31087
+4700,71,Sloshing Machine,Direct hit,38859
+4700,71,Sloshing Machine,Explosion,23315
+4700,71,Heavy Splatling,Shot,8743
+4700,71,Mini Splatling,Shot,7577
+4700,71,Splat Dualies,Shot,7577
+4700,71,Glooga Dualies,Pre-Dodge Roll,10492
+4700,71,Glooga Dualies,Post-Dodge Roll,15155
+4700,71,Splat Brella,All shots hit,34973
+4700,71,Splat Brella,Single shot,6994
+4700,71,Splat Brella,Launched brella,29144
+4700,71,Tenta Brella,All shots hit,69947
+4700,71,Tenta Brella,Single shot,9909
+4700,71,Tenta Brella,Launched brella,48574
+4700,71,Blaster,Direct hit,42745
+4700,71,Blaster,Explosion (max),29922
+4700,71,Blaster,Explosion (min),21372
+4700,71,Rapid Blaster Pro,Direct hit,34973
+4700,71,Rapid Blaster Pro,Explosion,17486
+4700,71,Octobrush,Brush swing,11657
+4700,71,Octobrush,Inking on the go,7771
+4700,71,Tri-Stringer,Explosion,7771
+4700,71,Tri-Stringer,Full charge,23315
+4700,71,Splatana Stamper,Horizontal slash,19429
+4700,71,Splatana Stamper,Charged slash,34973
+4700,71,Splatana Stamper,Charged slash (direct hit),42745
+4700,72,Splattershot,Shot,7131
+4700,72,Splattershot Jr.,Shot,5943
+4700,72,Squelcher,Shot,10697
+4700,72,Splat Roller,Horizontal swing,29715
+4700,72,Splat Roller,Vertical swing,39620
+4700,72,Splat Roller,Inkling on the go,23772
+4700,72,Dynamo Roller,Horizontal swing,47544
+4700,72,Dynamo Roller,Vertical swing,71316
+4700,72,Dynamo Roller,Inkling on the go,118860
+4700,72,E-liter,Full charge,118860
+4700,72,E-liter,Minimum charge,9905
+4700,72,Squiffer,Full charge,49525
+4700,72,Squiffer,Minimum charge,9905
+4700,72,Slosher,Single slosh,31696
+4700,72,Sloshing Machine,Direct hit,39620
+4700,72,Sloshing Machine,Explosion,23772
+4700,72,Heavy Splatling,Shot,8914
+4700,72,Mini Splatling,Shot,7725
+4700,72,Splat Dualies,Shot,7725
+4700,72,Glooga Dualies,Pre-Dodge Roll,10697
+4700,72,Glooga Dualies,Post-Dodge Roll,15451
+4700,72,Splat Brella,All shots hit,35658
+4700,72,Splat Brella,Single shot,7131
+4700,72,Splat Brella,Launched brella,29715
+4700,72,Tenta Brella,All shots hit,71316
+4700,72,Tenta Brella,Single shot,10103
+4700,72,Tenta Brella,Launched brella,49525
+4700,72,Blaster,Direct hit,43582
+4700,72,Blaster,Explosion (max),30507
+4700,72,Blaster,Explosion (min),21791
+4700,72,Rapid Blaster Pro,Direct hit,35658
+4700,72,Rapid Blaster Pro,Explosion,17829
+4700,72,Octobrush,Brush swing,11886
+4700,72,Octobrush,Inking on the go,7924
+4700,72,Tri-Stringer,Explosion,7924
+4700,72,Tri-Stringer,Full charge,23772
+4700,72,Splatana Stamper,Horizontal slash,19810
+4700,72,Splatana Stamper,Charged slash,35658
+4700,72,Splatana Stamper,Charged slash (direct hit),43582
+4700,73,Splattershot,Shot,7217
+4700,73,Splattershot Jr.,Shot,6059
+4700,73,Squelcher,Shot,10907
+4700,73,Splat Roller,Horizontal swing,30297
+4700,73,Splat Roller,Vertical swing,40397
+4700,73,Splat Roller,Inkling on the go,24238
+4700,73,Dynamo Roller,Horizontal swing,48476
+4700,73,Dynamo Roller,Vertical swing,72714
+4700,73,Dynamo Roller,Inkling on the go,121191
+4700,73,E-liter,Full charge,121191
+4700,73,E-liter,Minimum charge,10099
+4700,73,Squiffer,Full charge,50496
+4700,73,Squiffer,Minimum charge,10099
+4700,73,Slosher,Single slosh,32317
+4700,73,Sloshing Machine,Direct hit,40397
+4700,73,Sloshing Machine,Explosion,24238
+4700,73,Heavy Splatling,Shot,9089
+4700,73,Mini Splatling,Shot,7877
+4700,73,Splat Dualies,Shot,7877
+4700,73,Glooga Dualies,Pre-Dodge Roll,10907
+4700,73,Glooga Dualies,Post-Dodge Roll,15754
+4700,73,Splat Brella,All shots hit,36357
+4700,73,Splat Brella,Single shot,7271
+4700,73,Splat Brella,Launched brella,30297
+4700,73,Tenta Brella,All shots hit,72714
+4700,73,Tenta Brella,Single shot,10301
+4700,73,Tenta Brella,Launched brella,50496
+4700,73,Blaster,Direct hit,44436
+4700,73,Blaster,Explosion (max),31105
+4700,73,Blaster,Explosion (min),22218
+4700,73,Rapid Blaster Pro,Direct hit,36357
+4700,73,Rapid Blaster Pro,Explosion,18178
+4700,73,Octobrush,Brush swing,12119
+4700,73,Octobrush,Inking on the go,8079
+4700,73,Tri-Stringer,Explosion,8079
+4700,73,Tri-Stringer,Full charge,24238
+4700,73,Splatana Stamper,Horizontal slash,20198
+4700,73,Splatana Stamper,Charged slash,36357
+4700,73,Splatana Stamper,Charged slash (direct hit),44436
+4700,74,Splattershot,Shot,7415
+4700,74,Splattershot Jr.,Shot,6179
+4700,74,Squelcher,Shot,11122
+4700,74,Splat Roller,Horizontal swing,30896
+4700,74,Splat Roller,Vertical swing,41195
+4700,74,Splat Roller,Inkling on the go,24717
+4700,74,Dynamo Roller,Horizontal swing,49434
+4700,74,Dynamo Roller,Vertical swing,74151
+4700,74,Dynamo Roller,Inkling on the go,123585
+4700,74,E-liter,Full charge,123585
+4700,74,E-liter,Minimum charge,10298
+4700,74,Squiffer,Full charge,51493
+4700,74,Squiffer,Minimum charge,10298
+4700,74,Slosher,Single slosh,32956
+4700,74,Sloshing Machine,Direct hit,41195
+4700,74,Sloshing Machine,Explosion,24717
+4700,74,Heavy Splatling,Shot,9268
+4700,74,Mini Splatling,Shot,8033
+4700,74,Splat Dualies,Shot,8033
+4700,74,Glooga Dualies,Pre-Dodge Roll,11122
+4700,74,Glooga Dualies,Post-Dodge Roll,16066
+4700,74,Splat Brella,All shots hit,37075
+4700,74,Splat Brella,Single shot,7415
+4700,74,Splat Brella,Launched brella,30896
+4700,74,Tenta Brella,All shots hit,74151
+4700,74,Tenta Brella,Single shot,10504
+4700,74,Tenta Brella,Launched brella,51493
+4700,74,Blaster,Direct hit,45314
+4700,74,Blaster,Explosion (max),31720
+4700,74,Blaster,Explosion (min),22657
+4700,74,Rapid Blaster Pro,Direct hit,37075
+4700,74,Rapid Blaster Pro,Explosion,18537
+4700,74,Octobrush,Brush swing,12358
+4700,74,Octobrush,Inking on the go,8239
+4700,74,Tri-Stringer,Explosion,8239
+4700,74,Tri-Stringer,Full charge,24717
+4700,74,Splatana Stamper,Horizontal slash,20597
+4700,74,Splatana Stamper,Charged slash,37075
+4700,74,Splatana Stamper,Charged slash (direct hit),45314
+4700,75,Splattershot,Shot,7562
+4700,75,Splattershot Jr.,Shot,6302
+4700,75,Squelcher,Shot,11343
+4700,75,Splat Roller,Horizontal swing,31510
+4700,75,Splat Roller,Vertical swing,42014
+4700,75,Splat Roller,Inkling on the go,25208
+4700,75,Dynamo Roller,Horizontal swing,50416
+4700,75,Dynamo Roller,Vertical swing,75625
+4700,75,Dynamo Roller,Inkling on the go,126042
+4700,75,E-liter,Full charge,126042
+4700,75,E-liter,Minimum charge,10503
+4700,75,Squiffer,Full charge,52517
+4700,75,Squiffer,Minimum charge,10503
+4700,75,Slosher,Single slosh,33611
+4700,75,Sloshing Machine,Direct hit,42014
+4700,75,Sloshing Machine,Explosion,25208
+4700,75,Heavy Splatling,Shot,9453
+4700,75,Mini Splatling,Shot,8192
+4700,75,Splat Dualies,Shot,8192
+4700,75,Glooga Dualies,Pre-Dodge Roll,11343
+4700,75,Glooga Dualies,Post-Dodge Roll,16385
+4700,75,Splat Brella,All shots hit,37812
+4700,75,Splat Brella,Single shot,7562
+4700,75,Splat Brella,Launched brella,31510
+4700,75,Tenta Brella,All shots hit,75625
+4700,75,Tenta Brella,Single shot,10713
+4700,75,Tenta Brella,Launched brella,52517
+4700,75,Blaster,Direct hit,46215
+4700,75,Blaster,Explosion (max),32350
+4700,75,Blaster,Explosion (min),23107
+4700,75,Rapid Blaster Pro,Direct hit,37812
+4700,75,Rapid Blaster Pro,Explosion,18906
+4700,75,Octobrush,Brush swing,12604
+4700,75,Octobrush,Inking on the go,8402
+4700,75,Tri-Stringer,Explosion,8402
+4700,75,Tri-Stringer,Full charge,25208
+4700,75,Splatana Stamper,Horizontal slash,21007
+4700,75,Splatana Stamper,Charged slash,37812
+4700,75,Splatana Stamper,Charged slash (direct hit),46215
+4700,76,Splattershot,Shot,7713
+4700,76,Splattershot Jr.,Shot,6428
+4700,76,Squelcher,Shot,11570
+4700,76,Splat Roller,Horizontal swing,32140
+4700,76,Splat Roller,Vertical swing,42854
+4700,76,Splat Roller,Inkling on the go,25712
+4700,76,Dynamo Roller,Horizontal swing,51424
+4700,76,Dynamo Roller,Vertical swing,77137
+4700,76,Dynamo Roller,Inkling on the go,128562
+4700,76,E-liter,Full charge,128562
+4700,76,E-liter,Minimum charge,10713
+4700,76,Squiffer,Full charge,53567
+4700,76,Squiffer,Minimum charge,10713
+4700,76,Slosher,Single slosh,34283
+4700,76,Sloshing Machine,Direct hit,42854
+4700,76,Sloshing Machine,Explosion,25712
+4700,76,Heavy Splatling,Shot,9642
+4700,76,Mini Splatling,Shot,8356
+4700,76,Splat Dualies,Shot,8356
+4700,76,Glooga Dualies,Pre-Dodge Roll,11570
+4700,76,Glooga Dualies,Post-Dodge Roll,16713
+4700,76,Splat Brella,All shots hit,38568
+4700,76,Splat Brella,Single shot,7713
+4700,76,Splat Brella,Launched brella,32140
+4700,76,Tenta Brella,All shots hit,77137
+4700,76,Tenta Brella,Single shot,10927
+4700,76,Tenta Brella,Launched brella,53567
+4700,76,Blaster,Direct hit,47139
+4700,76,Blaster,Explosion (max),32997
+4700,76,Blaster,Explosion (min),23569
+4700,76,Rapid Blaster Pro,Direct hit,38568
+4700,76,Rapid Blaster Pro,Explosion,19284
+4700,76,Octobrush,Brush swing,12856
+4700,76,Octobrush,Inking on the go,8570
+4700,76,Tri-Stringer,Explosion,8570
+4700,76,Tri-Stringer,Full charge,25712
+4700,76,Splatana Stamper,Horizontal slash,21427
+4700,76,Splatana Stamper,Charged slash,38568
+4700,76,Splatana Stamper,Charged slash (direct hit),47139
+4700,77,Splattershot,Shot,7868
+4700,77,Splattershot Jr.,Shot,6557
+4700,77,Squelcher,Shot,11803
+4700,77,Splat Roller,Horizontal swing,32786
+4700,77,Splat Roller,Vertical swing,43715
+4700,77,Splat Roller,Inkling on the go,26229
+4700,77,Dynamo Roller,Horizontal swing,52458
+4700,77,Dynamo Roller,Vertical swing,78687
+4700,77,Dynamo Roller,Inkling on the go,131145
+4700,77,E-liter,Full charge,131145
+4700,77,E-liter,Minimum charge,10928
+4700,77,Squiffer,Full charge,54643
+4700,77,Squiffer,Minimum charge,10928
+4700,77,Slosher,Single slosh,34972
+4700,77,Sloshing Machine,Direct hit,43715
+4700,77,Sloshing Machine,Explosion,26229
+4700,77,Heavy Splatling,Shot,9835
+4700,77,Mini Splatling,Shot,8524
+4700,77,Splat Dualies,Shot,8524
+4700,77,Glooga Dualies,Pre-Dodge Roll,11803
+4700,77,Glooga Dualies,Post-Dodge Roll,17048
+4700,77,Splat Brella,All shots hit,39343
+4700,77,Splat Brella,Single shot,7868
+4700,77,Splat Brella,Launched brella,32786
+4700,77,Tenta Brella,All shots hit,78687
+4700,77,Tenta Brella,Single shot,11147
+4700,77,Tenta Brella,Launched brella,54643
+4700,77,Blaster,Direct hit,48086
+4700,77,Blaster,Explosion (max),33660
+4700,77,Blaster,Explosion (min),24043
+4700,77,Rapid Blaster Pro,Direct hit,39343
+4700,77,Rapid Blaster Pro,Explosion,19671
+4700,77,Octobrush,Brush swing,13114
+4700,77,Octobrush,Inking on the go,8743
+4700,77,Tri-Stringer,Explosion,8743
+4700,77,Tri-Stringer,Full charge,26229
+4700,77,Splatana Stamper,Horizontal slash,21857
+4700,77,Splatana Stamper,Charged slash,39343
+4700,77,Splatana Stamper,Charged slash (direct hit),48086
+4700,78,Splattershot,Shot,8027
+4700,78,Splattershot Jr.,Shot,6689
+4700,78,Squelcher,Shot,12041
+4700,78,Splat Roller,Horizontal swing,33447
+4700,78,Splat Roller,Vertical swing,44597
+4700,78,Splat Roller,Inkling on the go,26758
+4700,78,Dynamo Roller,Horizontal swing,53516
+4700,78,Dynamo Roller,Vertical swing,80274
+4700,78,Dynamo Roller,Inkling on the go,133791
+4700,78,E-liter,Full charge,133791
+4700,78,E-liter,Minimum charge,11149
+4700,78,Squiffer,Full charge,55746
+4700,78,Squiffer,Minimum charge,11149
+4700,78,Slosher,Single slosh,35677
+4700,78,Sloshing Machine,Direct hit,44597
+4700,78,Sloshing Machine,Explosion,26758
+4700,78,Heavy Splatling,Shot,10034
+4700,78,Mini Splatling,Shot,8696
+4700,78,Splat Dualies,Shot,8696
+4700,78,Glooga Dualies,Pre-Dodge Roll,12041
+4700,78,Glooga Dualies,Post-Dodge Roll,17392
+4700,78,Splat Brella,All shots hit,40137
+4700,78,Splat Brella,Single shot,8027
+4700,78,Splat Brella,Launched brella,33447
+4700,78,Tenta Brella,All shots hit,80274
+4700,78,Tenta Brella,Single shot,11372
+4700,78,Tenta Brella,Launched brella,55746
+4700,78,Blaster,Direct hit,49056
+4700,78,Blaster,Explosion (max),34339
+4700,78,Blaster,Explosion (min),24528
+4700,78,Rapid Blaster Pro,Direct hit,40137
+4700,78,Rapid Blaster Pro,Explosion,20068
+4700,78,Octobrush,Brush swing,13379
+4700,78,Octobrush,Inking on the go,8919
+4700,78,Tri-Stringer,Explosion,8919
+4700,78,Tri-Stringer,Full charge,26758
+4700,78,Splatana Stamper,Horizontal slash,22298
+4700,78,Splatana Stamper,Charged slash,40137
+4700,78,Splatana Stamper,Charged slash (direct hit),49056
+4700,79,Splattershot,Shot,8190
+4700,79,Splattershot Jr.,Shot,6825
+4700,79,Squelcher,Shot,12285
+4700,79,Splat Roller,Horizontal swing,34125
+4700,79,Splat Roller,Vertical swing,45500
+4700,79,Splat Roller,Inkling on the go,27300
+4700,79,Dynamo Roller,Horizontal swing,54600
+4700,79,Dynamo Roller,Vertical swing,81900
+4700,79,Dynamo Roller,Inkling on the go,136500
+4700,79,E-liter,Full charge,136500
+4700,79,E-liter,Minimum charge,11375
+4700,79,Squiffer,Full charge,56875
+4700,79,Squiffer,Minimum charge,11375
+4700,79,Slosher,Single slosh,36400
+4700,79,Sloshing Machine,Direct hit,45500
+4700,79,Sloshing Machine,Explosion,27300
+4700,79,Heavy Splatling,Shot,10237
+4700,79,Mini Splatling,Shot,8872
+4700,79,Splat Dualies,Shot,8872
+4700,79,Glooga Dualies,Pre-Dodge Roll,12285
+4700,79,Glooga Dualies,Post-Dodge Roll,17745
+4700,79,Splat Brella,All shots hit,40950
+4700,79,Splat Brella,Single shot,8190
+4700,79,Splat Brella,Launched brella,34125
+4700,79,Tenta Brella,All shots hit,81900
+4700,79,Tenta Brella,Single shot,11602
+4700,79,Tenta Brella,Launched brella,56875
+4700,79,Blaster,Direct hit,50050
+4700,79,Blaster,Explosion (max),35035
+4700,79,Blaster,Explosion (min),25025
+4700,79,Rapid Blaster Pro,Direct hit,40950
+4700,79,Rapid Blaster Pro,Explosion,20475
+4700,79,Octobrush,Brush swing,13650
+4700,79,Octobrush,Inking on the go,9100
+4700,79,Tri-Stringer,Explosion,9100
+4700,79,Tri-Stringer,Full charge,27300
+4700,79,Splatana Stamper,Horizontal slash,22750
+4700,79,Splatana Stamper,Charged slash,40950
+4700,79,Splatana Stamper,Charged slash (direct hit),50050
+4700,80,Splattershot,Shot,8356
+4700,80,Splattershot Jr.,Shot,6963
+4700,80,Squelcher,Shot,12534
+4700,80,Splat Roller,Horizontal swing,34818
+4700,80,Splat Roller,Vertical swing,46424
+4700,80,Splat Roller,Inkling on the go,27854
+4700,80,Dynamo Roller,Horizontal swing,55708
+4700,80,Dynamo Roller,Vertical swing,83563
+4700,80,Dynamo Roller,Inkling on the go,139272
+4700,80,E-liter,Full charge,139272
+4700,80,E-liter,Minimum charge,11606
+4700,80,Squiffer,Full charge,58030
+4700,80,Squiffer,Minimum charge,11606
+4700,80,Slosher,Single slosh,37139
+4700,80,Sloshing Machine,Direct hit,46424
+4700,80,Sloshing Machine,Explosion,27854
+4700,80,Heavy Splatling,Shot,10445
+4700,80,Mini Splatling,Shot,9052
+4700,80,Splat Dualies,Shot,9052
+4700,80,Glooga Dualies,Pre-Dodge Roll,12534
+4700,80,Glooga Dualies,Post-Dodge Roll,18105
+4700,80,Splat Brella,All shots hit,31781
+4700,80,Splat Brella,Single shot,8356
+4700,80,Splat Brella,Launched brella,34818
+4700,80,Tenta Brella,All shots hit,83563
+4700,80,Tenta Brella,Single shot,11838
+4700,80,Tenta Brella,Launched brella,58030
+4700,80,Blaster,Direct hit,51066
+4700,80,Blaster,Explosion (max),35746
+4700,80,Blaster,Explosion (min),25533
+4700,80,Rapid Blaster Pro,Direct hit,41781
+4700,80,Rapid Blaster Pro,Explosion,20890
+4700,80,Octobrush,Brush swing,13927
+4700,80,Octobrush,Inking on the go,9284
+4700,80,Tri-Stringer,Explosion,9284
+4700,80,Tri-Stringer,Full charge,27854
+4700,80,Splatana Stamper,Horizontal slash,23212
+4700,80,Splatana Stamper,Charged slash,41781
+4700,80,Splatana Stamper,Charged slash (direct hit),51066
+4700,81,Splattershot,Shot,8527
+4700,81,Splattershot Jr.,Shot,7106
+4700,81,Squelcher,Shot,12790
+4700,81,Splat Roller,Horizontal swing,35530
+4700,81,Splat Roller,Vertical swing,47373
+4700,81,Splat Roller,Inkling on the go,28424
+4700,81,Dynamo Roller,Horizontal swing,56848
+4700,81,Dynamo Roller,Vertical swing,85272
+4700,81,Dynamo Roller,Inkling on the go,142120
+4700,81,E-liter,Full charge,142120
+4700,81,E-liter,Minimum charge,11843
+4700,81,Squiffer,Full charge,59216
+4700,81,Squiffer,Minimum charge,11843
+4700,81,Slosher,Single slosh,37898
+4700,81,Sloshing Machine,Direct hit,47373
+4700,81,Sloshing Machine,Explosion,28424
+4700,81,Heavy Splatling,Shot,10659
+4700,81,Mini Splatling,Shot,9237
+4700,81,Splat Dualies,Shot,9237
+4700,81,Glooga Dualies,Pre-Dodge Roll,12790
+4700,81,Glooga Dualies,Post-Dodge Roll,18475
+4700,81,Splat Brella,All shots hit,42636
+4700,81,Splat Brella,Single shot,8527
+4700,81,Splat Brella,Launched brella,35530
+4700,81,Tenta Brella,All shots hit,85272
+4700,81,Tenta Brella,Single shot,12080
+4700,81,Tenta Brella,Launched brella,59216
+4700,81,Blaster,Direct hit,52110
+4700,81,Blaster,Explosion (max),36477
+4700,81,Blaster,Explosion (min),26055
+4700,81,Rapid Blaster Pro,Direct hit,42636
+4700,81,Rapid Blaster Pro,Explosion,21318
+4700,81,Octobrush,Brush swing,14212
+4700,81,Octobrush,Inking on the go,9474
+4700,81,Tri-Stringer,Explosion,9474
+4700,81,Tri-Stringer,Full charge,28424
+4700,81,Splatana Stamper,Horizontal slash,23686
+4700,81,Splatana Stamper,Charged slash,42636
+4700,81,Splatana Stamper,Charged slash (direct hit),52110
+4700,82,Splattershot,Shot,8702
+4700,82,Splattershot Jr.,Shot,7252
+4700,82,Squelcher,Shot,13053
+4700,82,Splat Roller,Horizontal swing,36260
+4700,82,Splat Roller,Vertical swing,48347
+4700,82,Splat Roller,Inkling on the go,29008
+4700,82,Dynamo Roller,Horizontal swing,58017
+4700,82,Dynamo Roller,Vertical swing,87025
+4700,82,Dynamo Roller,Inkling on the go,145043
+4700,82,E-liter,Full charge,145043
+4700,82,E-liter,Minimum charge,12086
+4700,82,Squiffer,Full charge,60434
+4700,82,Squiffer,Minimum charge,12086
+4700,82,Slosher,Single slosh,38678
+4700,82,Sloshing Machine,Direct hit,48347
+4700,82,Sloshing Machine,Explosion,29008
+4700,82,Heavy Splatling,Shot,10878
+4700,82,Mini Splatling,Shot,9427
+4700,82,Splat Dualies,Shot,9427
+4700,82,Glooga Dualies,Pre-Dodge Roll,13053
+4700,82,Glooga Dualies,Post-Dodge Roll,18855
+4700,82,Splat Brella,All shots hit,43512
+4700,82,Splat Brella,Single shot,8702
+4700,82,Splat Brella,Launched brella,36260
+4700,82,Tenta Brella,All shots hit,87025
+4700,82,Tenta Brella,Single shot,12328
+4700,82,Tenta Brella,Launched brella,60434
+4700,82,Blaster,Direct hit,53182
+4700,82,Blaster,Explosion (max),37227
+4700,82,Blaster,Explosion (min),26591
+4700,82,Rapid Blaster Pro,Direct hit,43512
+4700,82,Rapid Blaster Pro,Explosion,21756
+4700,82,Octobrush,Brush swing,14504
+4700,82,Octobrush,Inking on the go,9669
+4700,82,Tri-Stringer,Explosion,9669
+4700,82,Tri-Stringer,Full charge,29008
+4700,82,Splatana Stamper,Horizontal slash,24173
+4700,82,Splatana Stamper,Charged slash,43512
+4700,82,Splatana Stamper,Charged slash (direct hit),53182
+4700,83,Splattershot,Shot,8881
+4700,83,Splattershot Jr.,Shot,7401
+4700,83,Squelcher,Shot,13322
+4700,83,Splat Roller,Horizontal swing,37007
+4700,83,Splat Roller,Vertical swing,49343
+4700,83,Splat Roller,Inkling on the go,29605
+4700,83,Dynamo Roller,Horizontal swing,59211
+4700,83,Dynamo Roller,Vertical swing,88817
+4700,83,Dynamo Roller,Inkling on the go,148029
+4700,83,E-liter,Full charge,148029
+4700,83,E-liter,Minimum charge,12335
+4700,83,Squiffer,Full charge,61678
+4700,83,Squiffer,Minimum charge,12335
+4700,83,Slosher,Single slosh,39474
+4700,83,Sloshing Machine,Direct hit,49343
+4700,83,Sloshing Machine,Explosion,29605
+4700,83,Heavy Splatling,Shot,11102
+4700,83,Mini Splatling,Shot,9621
+4700,83,Splat Dualies,Shot,9621
+4700,83,Glooga Dualies,Pre-Dodge Roll,13322
+4700,83,Glooga Dualies,Post-Dodge Roll,19243
+4700,83,Splat Brella,All shots hit,44408
+4700,83,Splat Brella,Single shot,8881
+4700,83,Splat Brella,Launched brella,37007
+4700,83,Tenta Brella,All shots hit,88817
+4700,83,Tenta Brella,Single shot,12582
+4700,83,Tenta Brella,Launched brella,61678
+4700,83,Blaster,Direct hit,54277
+4700,83,Blaster,Explosion (max),37994
+4700,83,Blaster,Explosion (min),27138
+4700,83,Rapid Blaster Pro,Direct hit,44408
+4700,83,Rapid Blaster Pro,Explosion,22204
+4700,83,Octobrush,Brush swing,14802
+4700,83,Octobrush,Inking on the go,9868
+4700,83,Tri-Stringer,Explosion,9868
+4700,83,Tri-Stringer,Full charge,29605
+4700,83,Splatana Stamper,Horizontal slash,24671
+4700,83,Splatana Stamper,Charged slash,44408
+4700,83,Splatana Stamper,Charged slash (direct hit),54277
+4700,84,Splattershot,Shot,9065
+4700,84,Splattershot Jr.,Shot,7554
+4700,84,Squelcher,Shot,13598
+4700,84,Splat Roller,Horizontal swing,37772
+4700,84,Splat Roller,Vertical swing,50363
+4700,84,Splat Roller,Inkling on the go,30218
+4700,84,Dynamo Roller,Horizontal swing,60436
+4700,84,Dynamo Roller,Vertical swing,90654
+4700,84,Dynamo Roller,Inkling on the go,151091
+4700,84,E-liter,Full charge,151091
+4700,84,E-liter,Minimum charge,12590
+4700,84,Squiffer,Full charge,62954
+4700,84,Squiffer,Minimum charge,12590
+4700,84,Slosher,Single slosh,40291
+4700,84,Sloshing Machine,Direct hit,50363
+4700,84,Sloshing Machine,Explosion,30218
+4700,84,Heavy Splatling,Shot,11331
+4700,84,Mini Splatling,Shot,9820
+4700,84,Splat Dualies,Shot,9820
+4700,84,Glooga Dualies,Pre-Dodge Roll,13598
+4700,84,Glooga Dualies,Post-Dodge Roll,19641
+4700,84,Splat Brella,All shots hit,45327
+4700,84,Splat Brella,Single shot,9065
+4700,84,Splat Brella,Launched brella,37772
+4700,84,Tenta Brella,All shots hit,90654
+4700,84,Tenta Brella,Single shot,12842
+4700,84,Tenta Brella,Launched brella,62954
+4700,84,Blaster,Direct hit,55400
+4700,84,Blaster,Explosion (max),38780
+4700,84,Blaster,Explosion (min),27700
+4700,84,Rapid Blaster Pro,Direct hit,45327
+4700,84,Rapid Blaster Pro,Explosion,22663
+4700,84,Octobrush,Brush swing,15109
+4700,84,Octobrush,Inking on the go,10072
+4700,84,Tri-Stringer,Explosion,10072
+4700,84,Tri-Stringer,Full charge,30218
+4700,84,Splatana Stamper,Horizontal slash,25181
+4700,84,Splatana Stamper,Charged slash,45327
+4700,84,Splatana Stamper,Charged slash (direct hit),55400
+4700,85,Splattershot,Shot,9253
+4700,85,Splattershot Jr.,Shot,7711
+4700,85,Squelcher,Shot,13880
+4700,85,Splat Roller,Horizontal swing,38557
+4700,85,Splat Roller,Vertical swing,51409
+4700,85,Splat Roller,Inkling on the go,30845
+4700,85,Dynamo Roller,Horizontal swing,61691
+4700,85,Dynamo Roller,Vertical swing,92537
+4700,85,Dynamo Roller,Inkling on the go,154228
+4700,85,E-liter,Full charge,154228
+4700,85,E-liter,Minimum charge,12852
+4700,85,Squiffer,Full charge,64261
+4700,85,Squiffer,Minimum charge,12852
+4700,85,Slosher,Single slosh,41127
+4700,85,Sloshing Machine,Direct hit,51409
+4700,85,Sloshing Machine,Explosion,30845
+4700,85,Heavy Splatling,Shot,11567
+4700,85,Mini Splatling,Shot,10024
+4700,85,Splat Dualies,Shot,10024
+4700,85,Glooga Dualies,Pre-Dodge Roll,13880
+4700,85,Glooga Dualies,Post-Dodge Roll,20049
+4700,85,Splat Brella,All shots hit,46268
+4700,85,Splat Brella,Single shot,9253
+4700,85,Splat Brella,Launched brella,38557
+4700,85,Tenta Brella,All shots hit,92537
+4700,85,Tenta Brella,Single shot,13109
+4700,85,Tenta Brella,Launched brella,64261
+4700,85,Blaster,Direct hit,56550
+4700,85,Blaster,Explosion (max),39585
+4700,85,Blaster,Explosion (min),28275
+4700,85,Rapid Blaster Pro,Direct hit,46268
+4700,85,Rapid Blaster Pro,Explosion,23134
+4700,85,Octobrush,Brush swing,15422
+4700,85,Octobrush,Inking on the go,10281
+4700,85,Tri-Stringer,Explosion,10281
+4700,85,Tri-Stringer,Full charge,30845
+4700,85,Splatana Stamper,Horizontal slash,25704
+4700,85,Splatana Stamper,Charged slash,46268
+4700,85,Splatana Stamper,Charged slash (direct hit),56550
+4700,86,Splattershot,Shot,9447
+4700,86,Splattershot Jr.,Shot,7872
+4700,86,Squelcher,Shot,14170
+4700,86,Splat Roller,Horizontal swing,39363
+4700,86,Splat Roller,Vertical swing,52484
+4700,86,Splat Roller,Inkling on the go,31490
+4700,86,Dynamo Roller,Horizontal swing,62981
+4700,86,Dynamo Roller,Vertical swing,94472
+4700,86,Dynamo Roller,Inkling on the go,157454
+4700,86,E-liter,Full charge,157454
+4700,86,E-liter,Minimum charge,13121
+4700,86,Squiffer,Full charge,65605
+4700,86,Squiffer,Minimum charge,13121
+4700,86,Slosher,Single slosh,41987
+4700,86,Sloshing Machine,Direct hit,52484
+4700,86,Sloshing Machine,Explosion,31490
+4700,86,Heavy Splatling,Shot,11809
+4700,86,Mini Splatling,Shot,10234
+4700,86,Splat Dualies,Shot,10234
+4700,86,Glooga Dualies,Pre-Dodge Roll,14170
+4700,86,Glooga Dualies,Post-Dodge Roll,20469
+4700,86,Splat Brella,All shots hit,47236
+4700,86,Splat Brella,Single shot,9447
+4700,86,Splat Brella,Launched brella,39363
+4700,86,Tenta Brella,All shots hit,94472
+4700,86,Tenta Brella,Single shot,13383
+4700,86,Tenta Brella,Launched brella,65605
+4700,86,Blaster,Direct hit,57733
+4700,86,Blaster,Explosion (max),40413
+4700,86,Blaster,Explosion (min),28866
+4700,86,Rapid Blaster Pro,Direct hit,47236
+4700,86,Rapid Blaster Pro,Explosion,23618
+4700,86,Octobrush,Brush swing,15745
+4700,86,Octobrush,Inking on the go,10496
+4700,86,Tri-Stringer,Explosion,10496
+4700,86,Tri-Stringer,Full charge,31490
+4700,86,Splatana Stamper,Horizontal slash,26242
+4700,86,Splatana Stamper,Charged slash,47236
+4700,86,Splatana Stamper,Charged slash (direct hit),57733
+4700,87,Splattershot,Shot,9645
+4700,87,Splattershot Jr.,Shot,8037
+4700,87,Squelcher,Shot,14467
+4700,87,Splat Roller,Horizontal swing,40188
+4700,87,Splat Roller,Vertical swing,53585
+4700,87,Splat Roller,Inkling on the go,32151
+4700,87,Dynamo Roller,Horizontal swing,64302
+4700,87,Dynamo Roller,Vertical swing,96453
+4700,87,Dynamo Roller,Inkling on the go,160755
+4700,87,E-liter,Full charge,160755
+4700,87,E-liter,Minimum charge,13396
+4700,87,Squiffer,Full charge,66981
+4700,87,Squiffer,Minimum charge,13396
+4700,87,Slosher,Single slosh,42868
+4700,87,Sloshing Machine,Direct hit,53585
+4700,87,Sloshing Machine,Explosion,32151
+4700,87,Heavy Splatling,Shot,12056
+4700,87,Mini Splatling,Shot,10449
+4700,87,Splat Dualies,Shot,10449
+4700,87,Glooga Dualies,Pre-Dodge Roll,14467
+4700,87,Glooga Dualies,Post-Dodge Roll,20898
+4700,87,Splat Brella,All shots hit,48226
+4700,87,Splat Brella,Single shot,9645
+4700,87,Splat Brella,Launched brella,40188
+4700,87,Tenta Brella,All shots hit,96453
+4700,87,Tenta Brella,Single shot,13664
+4700,87,Tenta Brella,Launched brella,66981
+4700,87,Blaster,Direct hit,58943
+4700,87,Blaster,Explosion (max),41260
+4700,87,Blaster,Explosion (min),29471
+4700,87,Rapid Blaster Pro,Direct hit,48226
+4700,87,Rapid Blaster Pro,Explosion,24113
+4700,87,Octobrush,Brush swing,16075
+4700,87,Octobrush,Inking on the go,10717
+4700,87,Tri-Stringer,Explosion,10717
+4700,87,Tri-Stringer,Full charge,32151
+4700,87,Splatana Stamper,Horizontal slash,26792
+4700,87,Splatana Stamper,Charged slash,48226
+4700,87,Splatana Stamper,Charged slash (direct hit),58943
+4700,88,Splattershot,Shot,9848
+4700,88,Splattershot Jr.,Shot,8207
+4700,88,Squelcher,Shot,14773
+4700,88,Splat Roller,Horizontal swing,41036
+4700,88,Splat Roller,Vertical swing,54714
+4700,88,Splat Roller,Inkling on the go,32828
+4700,88,Dynamo Roller,Horizontal swing,65657
+4700,88,Dynamo Roller,Vertical swing,98486
+4700,88,Dynamo Roller,Inkling on the go,164144
+4700,88,E-liter,Full charge,164144
+4700,88,E-liter,Minimum charge,13678
+4700,88,Squiffer,Full charge,68393
+4700,88,Squiffer,Minimum charge,13678
+4700,88,Slosher,Single slosh,43771
+4700,88,Sloshing Machine,Direct hit,54714
+4700,88,Sloshing Machine,Explosion,32828
+4700,88,Heavy Splatling,Shot,12310
+4700,88,Mini Splatling,Shot,10669
+4700,88,Splat Dualies,Shot,10669
+4700,88,Glooga Dualies,Pre-Dodge Roll,14773
+4700,88,Glooga Dualies,Post-Dodge Roll,21338
+4700,88,Splat Brella,All shots hit,49243
+4700,88,Splat Brella,Single shot,9848
+4700,88,Splat Brella,Launched brella,41036
+4700,88,Tenta Brella,All shots hit,98486
+4700,88,Tenta Brella,Single shot,13952
+4700,88,Tenta Brella,Launched brella,68393
+4700,88,Blaster,Direct hit,60186
+4700,88,Blaster,Explosion (max),42130
+4700,88,Blaster,Explosion (min),30093
+4700,88,Rapid Blaster Pro,Direct hit,49243
+4700,88,Rapid Blaster Pro,Explosion,24621
+4700,88,Octobrush,Brush swing,16414
+4700,88,Octobrush,Inking on the go,10942
+4700,88,Tri-Stringer,Explosion,10942
+4700,88,Tri-Stringer,Full charge,32828
+4700,88,Splatana Stamper,Horizontal slash,27357
+4700,88,Splatana Stamper,Charged slash,49243
+4700,88,Splatana Stamper,Charged slash (direct hit),60186
+4700,89,Splattershot,Shot,10056
+4700,89,Splattershot Jr.,Shot,8380
+4700,89,Squelcher,Shot,15084
+4700,89,Splat Roller,Horizontal swing,41902
+4700,89,Splat Roller,Vertical swing,55869
+4700,89,Splat Roller,Inkling on the go,33521
+4700,89,Dynamo Roller,Horizontal swing,67043
+4700,89,Dynamo Roller,Vertical swing,100565
+4700,89,Dynamo Roller,Inkling on the go,167609
+4700,89,E-liter,Full charge,167609
+4700,89,E-liter,Minimum charge,13967
+4700,89,Squiffer,Full charge,69837
+4700,89,Squiffer,Minimum charge,13967
+4700,89,Slosher,Single slosh,44695
+4700,89,Sloshing Machine,Direct hit,55869
+4700,89,Sloshing Machine,Explosion,33521
+4700,89,Heavy Splatling,Shot,12570
+4700,89,Mini Splatling,Shot,10894
+4700,89,Splat Dualies,Shot,10894
+4700,89,Glooga Dualies,Pre-Dodge Roll,15084
+4700,89,Glooga Dualies,Post-Dodge Roll,21789
+4700,89,Splat Brella,All shots hit,50282
+4700,89,Splat Brella,Single shot,10056
+4700,89,Splat Brella,Launched brella,41902
+4700,89,Tenta Brella,All shots hit,100565
+4700,89,Tenta Brella,Single shot,14246
+4700,89,Tenta Brella,Launched brella,69837
+4700,89,Blaster,Direct hit,61456
+4700,89,Blaster,Explosion (max),43019
+4700,89,Blaster,Explosion (min),30728
+4700,89,Rapid Blaster Pro,Direct hit,50282
+4700,89,Rapid Blaster Pro,Explosion,25141
+4700,89,Octobrush,Brush swing,16760
+4700,89,Octobrush,Inking on the go,11173
+4700,89,Tri-Stringer,Explosion,11173
+4700,89,Tri-Stringer,Full charge,33521
+4700,89,Splatana Stamper,Horizontal slash,27934
+4700,89,Splatana Stamper,Charged slash,50282
+4700,89,Splatana Stamper,Charged slash (direct hit),61456
+4700,90,Splattershot,Shot,10269
+4700,90,Splattershot Jr.,Shot,8558
+4700,90,Squelcher,Shot,15404
+4700,90,Splat Roller,Horizontal swing,42790
+4700,90,Splat Roller,Vertical swing,57054
+4700,90,Splat Roller,Inkling on the go,34232
+4700,90,Dynamo Roller,Horizontal swing,68465
+4700,90,Dynamo Roller,Vertical swing,102697
+4700,90,Dynamo Roller,Inkling on the go,171163
+4700,90,E-liter,Full charge,171163
+4700,90,E-liter,Minimum charge,14263
+4700,90,Squiffer,Full charge,71317
+4700,90,Squiffer,Minimum charge,14263
+4700,90,Slosher,Single slosh,45643
+4700,90,Sloshing Machine,Direct hit,57054
+4700,90,Sloshing Machine,Explosion,34232
+4700,90,Heavy Splatling,Shot,12837
+4700,90,Mini Splatling,Shot,11125
+4700,90,Splat Dualies,Shot,11125
+4700,90,Glooga Dualies,Pre-Dodge Roll,15404
+4700,90,Glooga Dualies,Post-Dodge Roll,22251
+4700,90,Splat Brella,All shots hit,51348
+4700,90,Splat Brella,Single shot,10269
+4700,90,Splat Brella,Launched brella,42790
+4700,90,Tenta Brella,All shots hit,102697
+4700,90,Tenta Brella,Single shot,14548
+4700,90,Tenta Brella,Launched brella,71317
+4700,90,Blaster,Direct hit,62759
+4700,90,Blaster,Explosion (max),43931
+4700,90,Blaster,Explosion (min),31379
+4700,90,Rapid Blaster Pro,Direct hit,51348
+4700,90,Rapid Blaster Pro,Explosion,25674
+4700,90,Octobrush,Brush swing,17116
+4700,90,Octobrush,Inking on the go,11410
+4700,90,Tri-Stringer,Explosion,11410
+4700,90,Tri-Stringer,Full charge,34232
+4700,90,Splatana Stamper,Horizontal slash,28527
+4700,90,Splatana Stamper,Charged slash,51348
+4700,90,Splatana Stamper,Charged slash (direct hit),62759
+4700,91,Splattershot,Shot,10488
+4700,91,Splattershot Jr.,Shot,8740
+4700,91,Squelcher,Shot,15732
+4700,91,Splat Roller,Horizontal swing,43701
+4700,91,Splat Roller,Vertical swing,58268
+4700,91,Splat Roller,Inkling on the go,34960
+4700,91,Dynamo Roller,Horizontal swing,69921
+4700,91,Dynamo Roller,Vertical swing,104882
+4700,91,Dynamo Roller,Inkling on the go,174804
+4700,91,E-liter,Full charge,174804
+4700,91,E-liter,Minimum charge,14567
+4700,91,Squiffer,Full charge,72835
+4700,91,Squiffer,Minimum charge,14567
+4700,91,Slosher,Single slosh,46614
+4700,91,Sloshing Machine,Direct hit,58268
+4700,91,Sloshing Machine,Explosion,34960
+4700,91,Heavy Splatling,Shot,13110
+4700,91,Mini Splatling,Shot,11362
+4700,91,Splat Dualies,Shot,11362
+4700,91,Glooga Dualies,Pre-Dodge Roll,15732
+4700,91,Glooga Dualies,Post-Dodge Roll,22724
+4700,91,Splat Brella,All shots hit,52441
+4700,91,Splat Brella,Single shot,10488
+4700,91,Splat Brella,Launched brella,43701
+4700,91,Tenta Brella,All shots hit,104882
+4700,91,Tenta Brella,Single shot,14858
+4700,91,Tenta Brella,Launched brella,72835
+4700,91,Blaster,Direct hit,64094
+4700,91,Blaster,Explosion (max),44866
+4700,91,Blaster,Explosion (min),32047
+4700,91,Rapid Blaster Pro,Direct hit,52441
+4700,91,Rapid Blaster Pro,Explosion,26220
+4700,91,Octobrush,Brush swing,17480
+4700,91,Octobrush,Inking on the go,11653
+4700,91,Tri-Stringer,Explosion,11653
+4700,91,Tri-Stringer,Full charge,34960
+4700,91,Splatana Stamper,Horizontal slash,29134
+4700,91,Splatana Stamper,Charged slash,52441
+4700,91,Splatana Stamper,Charged slash (direct hit),64094
+4700,92,Splattershot,Shot,10712
+4700,92,Splattershot Jr.,Shot,8926
+4700,92,Squelcher,Shot,16068
+4700,92,Splat Roller,Horizontal swing,44633
+4700,92,Splat Roller,Vertical swing,59511
+4700,92,Splat Roller,Inkling on the go,35706
+4700,92,Dynamo Roller,Horizontal swing,71413
+4700,92,Dynamo Roller,Vertical swing,107120
+4700,92,Dynamo Roller,Inkling on the go,178534
+4700,92,E-liter,Full charge,178534
+4700,92,E-liter,Minimum charge,14877
+4700,92,Squiffer,Full charge,74389
+4700,92,Squiffer,Minimum charge,14877
+4700,92,Slosher,Single slosh,47609
+4700,92,Sloshing Machine,Direct hit,59511
+4700,92,Sloshing Machine,Explosion,35706
+4700,92,Heavy Splatling,Shot,13390
+4700,92,Mini Splatling,Shot,11604
+4700,92,Splat Dualies,Shot,11604
+4700,92,Glooga Dualies,Pre-Dodge Roll,16068
+4700,92,Glooga Dualies,Post-Dodge Roll,23209
+4700,92,Splat Brella,All shots hit,53560
+4700,92,Splat Brella,Single shot,10712
+4700,92,Splat Brella,Launched brella,44633
+4700,92,Tenta Brella,All shots hit,107120
+4700,92,Tenta Brella,Single shot,15175
+4700,92,Tenta Brella,Launched brella,74389
+4700,92,Blaster,Direct hit,65462
+4700,92,Blaster,Explosion (max),45823
+4700,92,Blaster,Explosion (min),32731
+4700,92,Rapid Blaster Pro,Direct hit,53560
+4700,92,Rapid Blaster Pro,Explosion,26780
+4700,92,Octobrush,Brush swing,17853
+4700,92,Octobrush,Inking on the go,11902
+4700,92,Tri-Stringer,Explosion,11902
+4700,92,Tri-Stringer,Full charge,35706
+4700,92,Splatana Stamper,Horizontal slash,29755
+4700,92,Splatana Stamper,Charged slash,53560
+4700,92,Splatana Stamper,Charged slash (direct hit),65462
+4700,93,Splattershot,Shot,10941
+4700,93,Splattershot Jr.,Shot,9118
+4700,93,Squelcher,Shot,16412
+4700,93,Splat Roller,Horizontal swing,45591
+4700,93,Splat Roller,Vertical swing,60788
+4700,93,Splat Roller,Inkling on the go,36472
+4700,93,Dynamo Roller,Horizontal swing,72945
+4700,93,Dynamo Roller,Vertical swing,109418
+4700,93,Dynamo Roller,Inkling on the go,182364
+4700,93,E-liter,Full charge,182364
+4700,93,E-liter,Minimum charge,15197
+4700,93,Squiffer,Full charge,75985
+4700,93,Squiffer,Minimum charge,15197
+4700,93,Slosher,Single slosh,48630
+4700,93,Sloshing Machine,Direct hit,60788
+4700,93,Sloshing Machine,Explosion,36472
+4700,93,Heavy Splatling,Shot,13677
+4700,93,Mini Splatling,Shot,11853
+4700,93,Splat Dualies,Shot,11853
+4700,93,Glooga Dualies,Pre-Dodge Roll,16412
+4700,93,Glooga Dualies,Post-Dodge Roll,23707
+4700,93,Splat Brella,All shots hit,43709
+4700,93,Splat Brella,Single shot,10941
+4700,93,Splat Brella,Launched brella,45591
+4700,93,Tenta Brella,All shots hit,109418
+4700,93,Tenta Brella,Single shot,15500
+4700,93,Tenta Brella,Launched brella,75985
+4700,93,Blaster,Direct hit,66866
+4700,93,Blaster,Explosion (max),46806
+4700,93,Blaster,Explosion (min),33433
+4700,93,Rapid Blaster Pro,Direct hit,54709
+4700,93,Rapid Blaster Pro,Explosion,27354
+4700,93,Octobrush,Brush swing,18236
+4700,93,Octobrush,Inking on the go,12157
+4700,93,Tri-Stringer,Explosion,12157
+4700,93,Tri-Stringer,Full charge,36472
+4700,93,Splatana Stamper,Horizontal slash,30394
+4700,93,Splatana Stamper,Charged slash,54709
+4700,93,Splatana Stamper,Charged slash (direct hit),66866
+4700,94,Splattershot,Shot,11176
+4700,94,Splattershot Jr.,Shot,9314
+4700,94,Squelcher,Shot,16765
+4700,94,Splat Roller,Horizontal swing,46570
+4700,94,Splat Roller,Vertical swing,62094
+4700,94,Splat Roller,Inkling on the go,37256
+4700,94,Dynamo Roller,Horizontal swing,74513
+4700,94,Dynamo Roller,Vertical swing,111769
+4700,94,Dynamo Roller,Inkling on the go,186283
+4700,94,E-liter,Full charge,186283
+4700,94,E-liter,Minimum charge,15523
+4700,94,Squiffer,Full charge,77617
+4700,94,Squiffer,Minimum charge,15523
+4700,94,Slosher,Single slosh,49675
+4700,94,Sloshing Machine,Direct hit,62094
+4700,94,Sloshing Machine,Explosion,37256
+4700,94,Heavy Splatling,Shot,13971
+4700,94,Mini Splatling,Shot,12108
+4700,94,Splat Dualies,Shot,12108
+4700,94,Glooga Dualies,Pre-Dodge Roll,16765
+4700,94,Glooga Dualies,Post-Dodge Roll,24216
+4700,94,Splat Brella,All shots hit,55884
+4700,94,Splat Brella,Single shot,11176
+4700,94,Splat Brella,Launched brella,46570
+4700,94,Tenta Brella,All shots hit,111769
+4700,94,Tenta Brella,Single shot,15834
+4700,94,Tenta Brella,Launched brella,77617
+4700,94,Blaster,Direct hit,68303
+4700,94,Blaster,Explosion (max),47812
+4700,94,Blaster,Explosion (min),34151
+4700,94,Rapid Blaster Pro,Direct hit,55884
+4700,94,Rapid Blaster Pro,Explosion,27942
+4700,94,Octobrush,Brush swing,18628
+4700,94,Octobrush,Inking on the go,12418
+4700,94,Tri-Stringer,Explosion,12418
+4700,94,Tri-Stringer,Full charge,37256
+4700,94,Splatana Stamper,Horizontal slash,31047
+4700,94,Splatana Stamper,Charged slash,55884
+4700,94,Splatana Stamper,Charged slash (direct hit),68303
+4700,95,Splattershot,Shot,11418
+4700,95,Splattershot Jr.,Shot,9515
+4700,95,Squelcher,Shot,17127
+4700,95,Splat Roller,Horizontal swing,47575
+4700,95,Splat Roller,Vertical swing,63434
+4700,95,Splat Roller,Inkling on the go,38060
+4700,95,Dynamo Roller,Horizontal swing,76120
+4700,95,Dynamo Roller,Vertical swing,114181
+4700,95,Dynamo Roller,Inkling on the go,190302
+4700,95,E-liter,Full charge,190302
+4700,95,E-liter,Minimum charge,15858
+4700,95,Squiffer,Full charge,79292
+4700,95,Squiffer,Minimum charge,15858
+4700,95,Slosher,Single slosh,50747
+4700,95,Sloshing Machine,Direct hit,63434
+4700,95,Sloshing Machine,Explosion,38060
+4700,95,Heavy Splatling,Shot,14272
+4700,95,Mini Splatling,Shot,12369
+4700,95,Splat Dualies,Shot,12369
+4700,95,Glooga Dualies,Pre-Dodge Roll,17127
+4700,95,Glooga Dualies,Post-Dodge Roll,24739
+4700,95,Splat Brella,All shots hit,57090
+4700,95,Splat Brella,Single shot,11418
+4700,95,Splat Brella,Launched brella,47575
+4700,95,Tenta Brella,All shots hit,114181
+4700,95,Tenta Brella,Single shot,16175
+4700,95,Tenta Brella,Launched brella,79292
+4700,95,Blaster,Direct hit,69777
+4700,95,Blaster,Explosion (max),48844
+4700,95,Blaster,Explosion (min),34888
+4700,95,Rapid Blaster Pro,Direct hit,57090
+4700,95,Rapid Blaster Pro,Explosion,28545
+4700,95,Octobrush,Brush swing,19030
+4700,95,Octobrush,Inking on the go,12686
+4700,95,Tri-Stringer,Explosion,12686
+4700,95,Tri-Stringer,Full charge,38060
+4700,95,Splatana Stamper,Horizontal slash,31717
+4700,95,Splatana Stamper,Charged slash,57090
+4700,95,Splatana Stamper,Charged slash (direct hit),69777
+4700,96,Splattershot,Shot,11665
+4700,96,Splattershot Jr.,Shot,9721
+4700,96,Squelcher,Shot,17498
+4700,96,Splat Roller,Horizontal swing,38605
+4700,96,Splat Roller,Vertical swing,64807
+4700,96,Splat Roller,Inkling on the go,38884
+4700,96,Dynamo Roller,Horizontal swing,77769
+4700,96,Dynamo Roller,Vertical swing,116653
+4700,96,Dynamo Roller,Inkling on the go,194422
+4700,96,E-liter,Full charge,194422
+4700,96,E-liter,Minimum charge,16201
+4700,96,Squiffer,Full charge,81009
+4700,96,Squiffer,Minimum charge,16201
+4700,96,Slosher,Single slosh,51846
+4700,96,Sloshing Machine,Direct hit,64807
+4700,96,Sloshing Machine,Explosion,38884
+4700,96,Heavy Splatling,Shot,14581
+4700,96,Mini Splatling,Shot,12637
+4700,96,Splat Dualies,Shot,12637
+4700,96,Glooga Dualies,Pre-Dodge Roll,17498
+4700,96,Glooga Dualies,Post-Dodge Roll,25274
+4700,96,Splat Brella,All shots hit,58326
+4700,96,Splat Brella,Single shot,11665
+4700,96,Splat Brella,Launched brella,48605
+4700,96,Tenta Brella,All shots hit,116653
+4700,96,Tenta Brella,Single shot,16525
+4700,96,Tenta Brella,Launched brella,81009
+4700,96,Blaster,Direct hit,71288
+4700,96,Blaster,Explosion (max),49901
+4700,96,Blaster,Explosion (min),35644
+4700,96,Rapid Blaster Pro,Direct hit,58326
+4700,96,Rapid Blaster Pro,Explosion,29163
+4700,96,Octobrush,Brush swing,19442
+4700,96,Octobrush,Inking on the go,12961
+4700,96,Tri-Stringer,Explosion,12961
+4700,96,Tri-Stringer,Full charge,38884
+4700,96,Splatana Stamper,Horizontal slash,32403
+4700,96,Splatana Stamper,Charged slash,58326
+4700,96,Splatana Stamper,Charged slash (direct hit),71288
+4700,97,Splattershot,Shot,11918
+4700,97,Splattershot Jr.,Shot,9932
+4700,97,Squelcher,Shot,17877
+4700,97,Splat Roller,Horizontal swing,49660
+4700,97,Splat Roller,Vertical swing,66214
+4700,97,Splat Roller,Inkling on the go,39728
+4700,97,Dynamo Roller,Horizontal swing,79457
+4700,97,Dynamo Roller,Vertical swing,119186
+4700,97,Dynamo Roller,Inkling on the go,198643
+4700,97,E-liter,Full charge,198643
+4700,97,E-liter,Minimum charge,16553
+4700,97,Squiffer,Full charge,82768
+4700,97,Squiffer,Minimum charge,16553
+4700,97,Slosher,Single slosh,52971
+4700,97,Sloshing Machine,Direct hit,66214
+4700,97,Sloshing Machine,Explosion,39728
+4700,97,Heavy Splatling,Shot,14898
+4700,97,Mini Splatling,Shot,12911
+4700,97,Splat Dualies,Shot,12911
+4700,97,Glooga Dualies,Pre-Dodge Roll,17877
+4700,97,Glooga Dualies,Post-Dodge Roll,25823
+4700,97,Splat Brella,All shots hit,59593
+4700,97,Splat Brella,Single shot,11918
+4700,97,Splat Brella,Launched brella,49660
+4700,97,Tenta Brella,All shots hit,119186
+4700,97,Tenta Brella,Single shot,16884
+4700,97,Tenta Brella,Launched brella,82768
+4700,97,Blaster,Direct hit,72836
+4700,97,Blaster,Explosion (max),50985
+4700,97,Blaster,Explosion (min),36418
+4700,97,Rapid Blaster Pro,Direct hit,59593
+4700,97,Rapid Blaster Pro,Explosion,29796
+4700,97,Octobrush,Brush swing,19864
+4700,97,Octobrush,Inking on the go,13242
+4700,97,Tri-Stringer,Explosion,13242
+4700,97,Tri-Stringer,Full charge,39728
+4700,97,Splatana Stamper,Horizontal slash,33107
+4700,97,Splatana Stamper,Charged slash,59593
+4700,97,Splatana Stamper,Charged slash (direct hit),72836
+4700,98,Splattershot,Shot,12178
+4700,98,Splattershot Jr.,Shot,10148
+4700,98,Squelcher,Shot,18268
+4700,98,Splat Roller,Horizontal swing,50744
+4700,98,Splat Roller,Vertical swing,67659
+4700,98,Splat Roller,Inkling on the go,40595
+4700,98,Dynamo Roller,Horizontal swing,81191
+4700,98,Dynamo Roller,Vertical swing,121786
+4700,98,Dynamo Roller,Inkling on the go,202978
+4700,98,E-liter,Full charge,202978
+4700,98,E-liter,Minimum charge,16914
+4700,98,Squiffer,Full charge,84574
+4700,98,Squiffer,Minimum charge,16914
+4700,98,Slosher,Single slosh,54127
+4700,98,Sloshing Machine,Direct hit,67659
+4700,98,Sloshing Machine,Explosion,40595
+4700,98,Heavy Splatling,Shot,15223
+4700,98,Mini Splatling,Shot,13193
+4700,98,Splat Dualies,Shot,13193
+4700,98,Glooga Dualies,Pre-Dodge Roll,18268
+4700,98,Glooga Dualies,Post-Dodge Roll,26387
+4700,98,Splat Brella,All shots hit,60893
+4700,98,Splat Brella,Single shot,12178
+4700,98,Splat Brella,Launched brella,50744
+4700,98,Tenta Brella,All shots hit,121786
+4700,98,Tenta Brella,Single shot,17253
+4700,98,Tenta Brella,Launched brella,84574
+4700,98,Blaster,Direct hit,74425
+4700,98,Blaster,Explosion (max),52097
+4700,98,Blaster,Explosion (min),37212
+4700,98,Rapid Blaster Pro,Direct hit,60893
+4700,98,Rapid Blaster Pro,Explosion,30446
+4700,98,Octobrush,Brush swing,20297
+4700,98,Octobrush,Inking on the go,13531
+4700,98,Tri-Stringer,Explosion,13531
+4700,98,Tri-Stringer,Full charge,40595
+4700,98,Splatana Stamper,Horizontal slash,33829
+4700,98,Splatana Stamper,Charged slash,60893
+4700,98,Splatana Stamper,Charged slash (direct hit),74425
+4700,99,Splattershot,Shot,12444
+4700,99,Splattershot Jr.,Shot,10370
+4700,99,Squelcher,Shot,18667
+4700,99,Splat Roller,Horizontal swing,51853
+4700,99,Splat Roller,Vertical swing,69137
+4700,99,Splat Roller,Inkling on the go,41482
+4700,99,Dynamo Roller,Horizontal swing,82965
+4700,99,Dynamo Roller,Vertical swing,124447
+4700,99,Dynamo Roller,Inkling on the go,207413
+4700,99,E-liter,Full charge,207413
+4700,99,E-liter,Minimum charge,17284
+4700,99,Squiffer,Full charge,86422
+4700,99,Squiffer,Minimum charge,17284
+4700,99,Slosher,Single slosh,55310
+4700,99,Sloshing Machine,Direct hit,69137
+4700,99,Sloshing Machine,Explosion,41482
+4700,99,Heavy Splatling,Shot,15555
+4700,99,Mini Splatling,Shot,13481
+4700,99,Splat Dualies,Shot,13481
+4700,99,Glooga Dualies,Pre-Dodge Roll,18667
+4700,99,Glooga Dualies,Post-Dodge Roll,26963
+4700,99,Splat Brella,All shots hit,62223
+4700,99,Splat Brella,Single shot,12444
+4700,99,Splat Brella,Launched brella,51853
+4700,99,Tenta Brella,All shots hit,124447
+4700,99,Tenta Brella,Single shot,17630
+4700,99,Tenta Brella,Launched brella,86422
+4700,99,Blaster,Direct hit,76051
+4700,99,Blaster,Explosion (max),53236
+4700,99,Blaster,Explosion (min),38025
+4700,99,Rapid Blaster Pro,Direct hit,62223
+4700,99,Rapid Blaster Pro,Explosion,31111
+4700,99,Octobrush,Brush swing,20741
+4700,99,Octobrush,Inking on the go,13827
+4700,99,Tri-Stringer,Explosion,13827
+4700,99,Tri-Stringer,Full charge,41482
+4700,99,Splatana Stamper,Horizontal slash,34568
+4700,99,Splatana Stamper,Charged slash,62223
+4700,99,Splatana Stamper,Charged slash (direct hit),76051
+4700,100,Splattershot,Shot,12862
+4700,100,Splattershot Jr.,Shot,10719
+4700,100,Squelcher,Shot,19294
+4700,100,Splat Roller,Horizontal swing,53595
+4700,100,Splat Roller,Vertical swing,71460
+4700,100,Splat Roller,Inkling on the go,42876
+4700,100,Dynamo Roller,Horizontal swing,85752
+4700,100,Dynamo Roller,Vertical swing,128628
+4700,100,Dynamo Roller,Inkling on the go,214381
+4700,100,E-liter,Full charge,214381
+4700,100,E-liter,Minimum charge,17865
+4700,100,Squiffer,Full charge,89325
+4700,100,Squiffer,Minimum charge,17865
+4700,100,Slosher,Single slosh,57168
+4700,100,Sloshing Machine,Direct hit,71460
+4700,100,Sloshing Machine,Explosion,42876
+4700,100,Heavy Splatling,Shot,16078
+4700,100,Mini Splatling,Shot,13934
+4700,100,Splat Dualies,Shot,13934
+4700,100,Glooga Dualies,Pre-Dodge Roll,19294
+4700,100,Glooga Dualies,Post-Dodge Roll,27869
+4700,100,Splat Brella,All shots hit,64314
+4700,100,Splat Brella,Single shot,12862
+4700,100,Splat Brella,Launched brella,53595
+4700,100,Tenta Brella,All shots hit,128628
+4700,100,Tenta Brella,Single shot,18222
+4700,100,Tenta Brella,Launched brella,89325
+4700,100,Blaster,Direct hit,78606
+4700,100,Blaster,Explosion (max),55024
+4700,100,Blaster,Explosion (min),39303
+4700,100,Rapid Blaster Pro,Direct hit,64314
+4700,100,Rapid Blaster Pro,Explosion,32157
+4700,100,Octobrush,Brush swing,21438
+4700,100,Octobrush,Inking on the go,14292
+4700,100,Tri-Stringer,Explosion,14292
+4700,100,Tri-Stringer,Full charge,42876
+4700,100,Splatana Stamper,Horizontal slash,35730
+4700,100,Splatana Stamper,Charged slash,64314
+4700,100,Splatana Stamper,Charged slash (direct hit),78606

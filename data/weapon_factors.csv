@@ -1,0 +1,40 @@
+family,attack,factor
+Splattershot,Shot,0.108
+Splattershot Jr.,Shot,0.09
+Squelcher,Shot,0.162
+Splat Roller,Horizontal swing,0.45
+Splat Roller,Vertical swing,0.6
+Splat Roller,Inkling on the go,0.36
+Dynamo Roller,Horizontal swing,0.72
+Dynamo Roller,Vertical swing,1.08
+Dynamo Roller,Inkling on the go,1.8
+E-liter,Full charge,1.8
+E-liter,Minimum charge,0.15
+Squiffer,Full charge,0.75
+Squiffer,Minimum charge,0.15
+Slosher,Single slosh,0.48
+Sloshing Machine,Direct hit,0.6
+Sloshing Machine,Explosion,0.36
+Heavy Splatling,Shot,0.135
+Mini Splatling,Shot,0.117
+Splat Dualies,Shot,0.117
+Glooga Dualies,Pre-Dodge Roll,0.162
+Glooga Dualies,Post-Dodge Roll,0.234
+Splat Brella,All shots hit,0.54
+Splat Brella,Single shot,0.108
+Splat Brella,Launched brella,0.45
+Tenta Brella,All shots hit,1.08
+Tenta Brella,Single shot,0.153
+Tenta Brella,Launched brella,0.75
+Blaster,Direct hit,0.66
+Blaster,Explosion (max),0.462
+Blaster,Explosion (min),0.33
+Rapid Blaster Pro,Direct hit,0.54
+Rapid Blaster Pro,Explosion,0.27
+Octobrush,Brush swing,0.18
+Octobrush,Inking on the go,0.12
+Tri-Stringer,Explosion,0.12
+Tri-Stringer,Full charge,0.36
+Splatana Stamper,Horizontal slash,0.3
+Splatana Stamper,Charged slash,0.54
+Splatana Stamper,Charged slash (direct hit),0.66

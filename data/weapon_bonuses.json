@@ -1,0 +1,75 @@
+{
+ "note": "Weapon bonuses: a weapon holds up to 3, each has 3 levels. levels = damage % at level 1/2/3 ('mult' entries multiply on top: 100 = x2). Confirmed values: Long Range 15@L1/24@L3, Concentrated Attack 10@L1, Risky Reward 50, Ice-Breaker x2..x5 range. Guesses to correct in-game: Long Range L2 (20), Close Combat levels, Concentrated L2/L3 (13/16), Risky Reward L2/L3 (60/70), Ice-Breaker L2 (x3.5).",
+ "maxEquipped": 3,
+ "bonuses": [
+  {
+   "id": "long-range",
+   "name": "Long Range",
+   "mode": "mult",
+   "levels": [
+    15,
+    20,
+    24
+   ],
+   "requires": "long",
+   "description": "Damage dealt to far-off Salmonids is increased.",
+   "icon": null,
+   "group": "long-range"
+  },
+  {
+   "id": "close-combat",
+   "name": "Close Combat",
+   "mode": "mult",
+   "levels": [
+    8,
+    12,
+    16
+   ],
+   "requires": "close",
+   "description": "Damage dealt to nearby Salmonids is increased.",
+   "icon": null,
+   "group": "close-combat"
+  },
+  {
+   "id": "ice-breaker",
+   "name": "Ice-Breaker",
+   "mode": "mult",
+   "levels": [
+    100,
+    250,
+    400
+   ],
+   "requires": "frozen",
+   "description": "Frozen Salmonids take multiplied damage.",
+   "icon": null,
+   "group": "ice-breaker"
+  },
+  {
+   "id": "risky-reward",
+   "name": "Risky Reward",
+   "mode": "add",
+   "levels": [
+    50,
+    60,
+    70
+   ],
+   "requires": "danger",
+   "description": "Damage is increased while you are in Danger.",
+   "icon": null
+  },
+  {
+   "id": "concentrated-attack",
+   "name": "Concentrated Attack",
+   "mode": "mult",
+   "levels": [
+    10,
+    13,
+    16
+   ],
+   "description": "Damage increases when you land 3 or more consecutive attacks.",
+   "icon": null,
+   "group": "concentrated-attack",
+   "requires": "streak"
+  }
+ ]
+}
