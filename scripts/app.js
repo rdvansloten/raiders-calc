@@ -397,6 +397,32 @@ function clampInputs() {
   return { pbase, pextra, wbase, wplus };
 }
 
+// shrink the player stat figures so Damage and HP stay side by side
+function fitStatBox() {
+  const lines = Array.from(document.querySelectorAll(".stat-line"));
+  const nums = [$("stat-damage"), $("stat-hp")];
+  nums.forEach(n => { n.style.fontSize = ""; });
+  for (let i = 0; i < 10 && lines.some(l => l.scrollWidth > l.clientWidth); i++) {
+    for (const n of nums) {
+      const cur = parseFloat(getComputedStyle(n).fontSize);
+      n.style.fontSize = Math.max(12, cur * 0.92) + "px";
+    }
+  }
+}
+window.addEventListener("resize", fitStatBox);
+
+// shrink the title only when it would overflow; default size otherwise
+function fitTitle() {
+  const h1 = document.querySelector("header h1");
+  if (!h1) return;
+  h1.style.fontSize = "";
+  for (let i = 0; i < 10 && h1.scrollWidth > h1.clientWidth; i++) {
+    const cur = parseFloat(getComputedStyle(h1).fontSize);
+    h1.style.fontSize = Math.max(16, cur * 0.94) + "px";
+  }
+}
+window.addEventListener("resize", fitTitle);
+
 // shrink the total/base figures so both always share one line
 function fitResultLine() {
   const line = document.querySelector(".result-line");
@@ -510,6 +536,7 @@ function update() {
     (bonusFactor !== 1 ? `, × ${bonusFactor.toFixed(3)} bonuses = ${fmt(dmg * bonusFactor)}` : "");
   fitBreakdown();
   fitResultLine();
+  fitStatBox();
 
   const tbody = $("attack-table");
   tbody.innerHTML = "";
@@ -732,6 +759,7 @@ async function boot() {
     .forEach(id => $(id).addEventListener("input", update));
 }
 
+fitTitle();
 boot().catch(err => {
   $("result").textContent = "Failed to load";
   $("breakdown").textContent = String(err) +

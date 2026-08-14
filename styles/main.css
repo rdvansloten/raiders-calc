@@ -62,7 +62,7 @@ header h1 {
   font-size: clamp(2.2rem, 6vw, 3rem);
   font-weight: 700; color: var(--orange);
   letter-spacing: 0.01em; margin: 0;
-  text-wrap: balance;
+  white-space: nowrap;
 }
 header h1 .x { color: var(--teal); }
 .tagline { margin: 0.4rem auto 0; color: var(--muted); font-size: 0.95rem; max-width: 52ch; }
@@ -178,18 +178,12 @@ header h1 .x { color: var(--teal); }
   color: var(--orange); font-variant-numeric: tabular-nums;
 }
 .stat-note { font-size: 0.72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.stat-duo { flex-direction: row; flex-wrap: wrap; gap: 0; }
-.stat-half { flex: 1 1 130px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.05rem; padding: 0.1rem 0; }
+.stat-duo { flex-direction: row; flex-wrap: nowrap; gap: 0; }
+.stat-half { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.05rem; padding: 0.1rem 0; }
 .stat-half:not(:last-child) { padding-right: 1.2rem; }
 .stat-line { display: flex; align-items: baseline; justify-content: center; gap: 0.4rem; }
+.stat-line { max-width: 100%; overflow: hidden; }
 .stat-half + .stat-half { border-left: 1.5px solid var(--line); padding-left: 1.2rem; }
-@media (max-width: 480px) {
-  .stat-duo { flex-direction: column; gap: 0.5rem; }
-  .stat-half + .stat-half {
-    border-left: none; padding-left: 0;
-    border-top: 1.5px solid var(--line); padding-top: 0.5rem;
-  }
-}
 .stat-value.hp-value { color: var(--teal-deep); }
 
 .row { display: flex; flex-wrap: wrap; gap: 0.9rem 1.1rem; }
