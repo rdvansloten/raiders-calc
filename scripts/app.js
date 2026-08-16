@@ -468,6 +468,8 @@ function update() {
   const baseHP = playerHP(pbase, pextra);
   const hpMult = 1 + Math.min(400, Math.max(0, +$("hpbonus").value || 0)) / 100;
   const dispHP = Math.floor(baseHP * hpMult);  // the game floors displayed HP
+  $("conc-note-bonus").hidden = !(state.weaponBonusLevels["concentrated-attack"] > 0);
+  $("conc-note-relic").hidden = !(state.relicLevels["regal-scepter"] > 0);
   $("stat-damage").textContent = fmt(pd);
   $("stat-hp").textContent = fmt(dispHP);
   $("stat-hp-base").textContent =
