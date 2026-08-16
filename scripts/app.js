@@ -587,6 +587,7 @@ function optimizeBuild() {
   const bwd = state.weapon.baseDamage[Math.min(100, wbase + wplus) - 1];
   const tankMult = 1 + Math.min(200, Math.max(0, +$("tankbonus").value || 0)) / 100;
   const dmg = (pd + bwd) * state.weapon.attacks[atkIdx].factor * tankMult;
+  const userFerment = $("ferment").value === "1";
 
   const subsets = arr => arr.reduce((acc, x) => acc.concat(acc.map(s => s.concat([x]))), [[]]);
   let best = null;
@@ -642,7 +643,9 @@ function optimizeBuild() {
             }
             let mult = 1;
             for (const pct of Object.values(groups)) mult *= 1 + pct / 100;
-            const ferment = tank.id === "tactic" ? 1.2 : 1;  // via tank power
+            // Ferment: kept if the player has it set, or granted by the
+            // Tactical tank power; never taken away by the optimizer
+            const ferment = (userFerment || tank.id === "tactic") ? 1.2 : 1;
             const total = dmg * (1 + add / 100) * mult * ferment;
             if (!best || total > best.total)
               best = { total, tank, bonuses, relicSet, partSel, range, hasRisky };
@@ -670,13 +673,12 @@ async function applyOptimalBuild() {
   $("streak").value = "3";
   $("inkspent").value = best.relicSet.some(r => r.id === "bronze-press") ? "1" : "0";
   $("airborne").value = Object.keys(best.partSel).some(k => k.includes("airborne")) ? "1" : "0";
-  $("ferment").value = best.tank.id === "tactic" ? "1" : "0";
   $("tankpower").value = best.tank.id === "speed" ? "0" : "1";
   renderTanks(); renderRelics(); renderGadgets(); renderWeaponBonuses();
   update();
   showNotice(`Optimal build applied: ${best.tank.name}, dealing ${fmt(best.total)}. ` +
-    "Assumes best-case statuses (Frozen and 3 consecutive hits reachable; " +
-    "Ferment only counted on the Tactical Tank power).");
+    "Assumes best-case statuses (Frozen and 3 consecutive hits reachable); " +
+    "your Ferment setting is kept as is.");
 }
 
 /* ---------- apply a saved/linked build ---------- */
