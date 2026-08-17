@@ -366,6 +366,8 @@ input:disabled, select:disabled {
 .variant .vpct.upto-note { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
 .variant.sel { border-color: var(--teal); background: var(--mint); }
 .variant.sel .vpct { color: var(--orange-deep); }
+.variant.upgraded { border-color: var(--orange); }
+.variant.upgraded .vslots { color: var(--orange-deep); font-weight: 600; }
 .variant:disabled { opacity: 0.35; cursor: not-allowed; }
 
 /* result */

@@ -97,6 +97,11 @@ def main():
     cache.mkdir(parents=True, exist_ok=True)
     out.mkdir(exist_ok=True)
 
+    overrides = {}
+    override_path = root / "data" / "source" / "gadget_overrides.json"
+    if override_path.exists():
+        overrides = json.loads(override_path.read_text()).get("overrides", {})
+
     index = []
     for page, tank in GADGETS.items():
         doc = fetch(page, cache, refresh)
@@ -108,6 +113,10 @@ def main():
                 continue
             part["variants"].sort(key=lambda v: (v["pct"], v["slots"]))
             entry = {"id": slug(part["name"]), **part}
+            user_variants = overrides.get(gid, {}).get(entry["id"])
+            if user_variants:  # user-verified in-game data beats the wiki
+                entry["variants"] = sorted(user_variants,
+                                           key=lambda v: (v["pct"], v["slots"]))
             if part["name"] in PART_REQUIRES:
                 entry["requires"] = PART_REQUIRES[part["name"]]
             parts.append(entry)

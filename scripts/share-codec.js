@@ -21,13 +21,16 @@ const SHARE_WEAPONS = [
 const SHARE_BONUSES = ["long-range", "close-combat", "ice-breaker",
                        "risky-reward", "concentrated-attack"];
 const SHARE_RELICS = ["regal-scepter", "antique-corkscrew", "family-size-cutter",
-                      "bronze-press", "distant-gazer", "ancient-salmon-run-slab"];
+                      "bronze-press", "distant-gazer", "ancient-salmon-run-slab",
+                      "golden-pot", "golden-frying-pan", "golden-steamer-set"];
 const SHARE_PARTS = ["blast_boot/damage-surge", "dash_bomb/damage-surge",
                      "jump_bomb/airborne-damage-up", "flywire/damage-surge",
                      "flywire/airborne-damage-up"];
 // streak is last; it decodes to inputs.streak "3"/"0" instead of "1"/"0"
+// tankpower flag = Power surge active; tankferment = Tactical power active
+// (links minted when tankpower was a single on/off bit are remapped by tank)
 const SHARE_FLAGS = ["danger", "airborne", "hpfull", "inkspent", "frozen",
-                     "ferment", "streak", "tankpower"];
+                     "ferment", "streak", "tankpower", "tankferment"];
 
 // table sizes at the time v1/v2 links were minted; frozen forever so those
 // links keep decoding after the live tables grow
@@ -60,11 +63,26 @@ function bitReader(bytes) {
 }
 
 function flagValue(inp, id) {
-  return id === "streak" ? (inp.streak === "3" ? 1 : 0) : (inp[id] === "1" ? 1 : 0);
+  if (id === "streak") return inp.streak === "3" ? 1 : 0;
+  if (id === "tankpower") return inp.tankpower === "power" || inp.tankpower === "1" ? 1 : 0;
+  if (id === "tankferment") return inp.tankpower === "tactic" ? 1 : 0;
+  return inp[id] === "1" ? 1 : 0;
 }
 
 function setFlag(snap, id, bit) {
-  snap.inputs[id] = id === "streak" ? (bit ? "3" : "0") : String(bit);
+  if (id === "streak") { snap.inputs.streak = bit ? "3" : "0"; return; }
+  if (id === "tankpower") {
+    // pre-split links stored one on/off bit whose meaning depended on the
+    // tank; map Tactical's old "on" to the Ferment power, else Power surge
+    if (bit) snap.inputs.tankpower = snap.tankId === "tactic" ? "tactic" : "power";
+    else if (!snap.inputs.tankpower) snap.inputs.tankpower = "0";
+    return;
+  }
+  if (id === "tankferment") {
+    if (bit) snap.inputs.tankpower = "tactic";
+    return;
+  }
+  snap.inputs[id] = String(bit);
 }
 
 function encodeCompact(snap) {

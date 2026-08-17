@@ -14,42 +14,43 @@
     {
      "stars": 1,
      "slots": 2,
-     "pct": 10.0
+     "pct": 10
     },
     {
      "stars": 2,
      "slots": 3,
-     "pct": 20.0
+     "pct": 20
     },
     {
      "stars": 1,
      "slots": 5,
-     "pct": 25.0
+     "pct": 25
     },
     {
      "stars": 3,
      "slots": 4,
-     "pct": 33.0
+     "pct": 33
     },
     {
      "stars": 2,
      "slots": 6,
-     "pct": 40.0
+     "pct": 40
     },
     {
      "stars": 4,
      "slots": 5,
-     "pct": 50.0
+     "pct": 50
     },
     {
      "stars": 3,
      "slots": 7,
-     "pct": 60.0
+     "pct": 60
     },
     {
      "stars": 5,
      "slots": 8,
-     "pct": 100.0
+     "upgradedSlots": 6,
+     "pct": 100
     }
    ]
   }

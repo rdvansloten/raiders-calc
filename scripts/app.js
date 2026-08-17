@@ -141,6 +141,14 @@ function enforceRelicRules() {
 }
 
 const MAX_GADGETS = 3;  // Ultra tank: 3 gadgets, at most 1 from the linked tank
+const NON_STACKING_PARTS = new Set(["damage-surge", "airborne-damage-up"]);  // one instance counts
+
+// gadget part selections store variant index, with bit 3 marking "upgraded"
+// (cheaper slot cost) for parts that support it; all parts have <= 8 variants
+function partSelDecode(val, part) {
+  if (part && part.variants.length <= 8) return { idx: val & 7, up: val >= 8 };
+  return { idx: val, up: false };
+}
 
 function pruneGadgetParts() {
   // keep selections from the tank's own gadgets plus at most one borrowed
@@ -159,6 +167,14 @@ function pruneGadgetParts() {
     if (!kept.has(gid) && kept.size >= MAX_GADGETS) { delete state.gadgetPartSel[key]; continue; }
     kept.add(gid);
     if (g.tank === borrow && g.tank !== state.tankId) borrowed = gid;
+  }
+  // non-stacking parts: keep only the first selected instance across gadgets
+  const seenParts = new Set();
+  for (const key of Object.keys(state.gadgetPartSel)) {
+    const pid = key.split("/")[1];
+    if (!NON_STACKING_PARTS.has(pid)) continue;
+    if (seenParts.has(pid)) delete state.gadgetPartSel[key];
+    else seenParts.add(pid);
   }
 }
 
@@ -189,7 +205,8 @@ function renderTanks() {
     `${currentTank().name}: no ${r.banned.join("/")} relics${limits ? ", " + limits : ""}.`;
 }
 
-const RELIC_CATS = [["speed", "Speed"], ["power", "Power"], ["tactic", "Tactical"]];
+const RELIC_CATS = [["speed", "Speed"], ["power", "Power"], ["tactic", "Tactical"],
+                    ["pro", "Pro relics"]];
 
 
 function renderRelics() {
@@ -214,10 +231,14 @@ function renderRelics() {
 
 function relicButton(relic) {
     const level = state.relicLevels[relic.id] || 0;
+    const maxLevel = relic.maxLevel || 3;
     const reason = level === 0 ? relicAllowance(relic) : null;
     const pct = level > 0 ? relic.levels[level - 1] : relic.levels[2];
-    const valueText = level > 0 ? `+${pct}%` : `up to +${pct}%`;
-    const pips = [1, 2, 3].map(n => `<i${n <= level ? ' class="on"' : ""}></i>`).join("");
+    const valueText = relic.effectText
+      ? relic.effectText
+      : level > 0 ? `+${pct}%` : `up to +${pct}%`;
+    const pips = Array.from({ length: maxLevel }, (_, n) =>
+      `<i${n + 1 <= level ? ' class="on"' : ""}></i>`).join("");
     const b = document.createElement("button");
     b.type = "button";
     b.className = "variant" + (level > 0 ? " sel" : "");
@@ -227,10 +248,10 @@ function relicButton(relic) {
     b.setAttribute("aria-label", `${relic.name}, level ${level} of 3`);
     b.innerHTML = `<span class="bname">${relic.power || relic.category}</span>
       <span class="bsub">${relic.name}</span>
-      <span class="vpct${level > 0 ? "" : " upto-note"}">${valueText}</span>
+      <span class="vpct${level > 0 && !relic.effectText ? "" : " upto-note"}">${valueText}</span>
       <span class="pips" aria-hidden="true">${pips}</span>`;
     b.addEventListener("click", () => {
-      const next = (level + 1) % 4;  // 4th click unequips
+      const next = (level + 1) % (maxLevel + 1);  // final click unequips
       if (next === 0) delete state.relicLevels[relic.id];
       else if (level > 0 || relicAllowance(relic) === null) state.relicLevels[relic.id] = next;
       renderRelics(); update();
@@ -272,7 +293,8 @@ function renderGadgets() {
     group.appendChild(title);
     for (const part of data.parts) {
       const key = `${g.id}/${part.id}`;
-      const selIdx = state.gadgetPartSel[key];
+      const stored = state.gadgetPartSel[key];
+      const selInfo = stored === undefined ? null : partSelDecode(stored, part);
       const pname = document.createElement("div");
       pname.className = "part-name";
       pname.textContent = part.name;
@@ -280,22 +302,32 @@ function renderGadgets() {
       group.appendChild(pname);
       const list = document.createElement("div");
       list.className = "variant-list";
+      const dupSelected = NON_STACKING_PARTS.has(part.id) &&
+        Object.keys(state.gadgetPartSel).some(k =>
+          k.endsWith("/" + part.id) && k !== key);
       part.variants.forEach((v, i) => {
-        const sel = selIdx === i;
+        const sel = selInfo !== null && selInfo.idx === i;
+        const upgraded = sel && selInfo.up;
         const row = document.createElement("button");
         row.type = "button";
-        row.className = "variant" + (sel ? " sel" : "");
-        row.disabled = blockReason !== null;
-        if (row.disabled) row.title = blockReason;
+        row.className = "variant" + (sel ? " sel" : "") + (upgraded ? " upgraded" : "");
+        row.disabled = blockReason !== null || dupSelected;
+        if (dupSelected) row.title = `${part.name} does not stack; already active on another gadget`;
+        else if (row.disabled) row.title = blockReason;
+        else if (v.upgradedSlots != null) row.title = "Tap again when selected to upgrade";
         row.setAttribute("aria-pressed", String(sel));
+        const slotsText = upgraded
+          ? `${v.upgradedSlots} slot${v.upgradedSlots > 1 ? "s" : ""} upgraded`
+          : `${v.slots} slot${v.slots > 1 ? "s" : ""}`;
         row.innerHTML =
           `<span class="stars r${v.stars}" aria-label="${v.stars} of 5 stars">${"★".repeat(v.stars)}</span>` +
           `<span class="vpct">+${v.pct}%</span>` +
-          `<span class="vslots">${v.slots} slot${v.slots > 1 ? "s" : ""}</span>`;
+          `<span class="vslots">${slotsText}</span>`;
         row.addEventListener("click", () => {
-          // one variant per part: picking a row replaces any other pick
-          if (sel) delete state.gadgetPartSel[key];
-          else state.gadgetPartSel[key] = i;
+          // pick -> (upgrade if available) -> unselect; other rows replace
+          if (!sel) state.gadgetPartSel[key] = i;
+          else if (!upgraded && v.upgradedSlots != null) state.gadgetPartSel[key] = i + 8;
+          else delete state.gadgetPartSel[key];
           renderGadgets(); update();
         });
         list.appendChild(row);
@@ -334,7 +366,7 @@ function renderWeaponBonuses() {
     else if (bonus.description) b.title = bonus.description;
     b.setAttribute("aria-label", `${bonus.name}, level ${level} of 3`);
     b.innerHTML = `<span class="bname">${bonus.name}</span>
-      <span class="vpct${level > 0 ? "" : " upto-note"}">${valueText}</span>
+      <span class="vpct${level > 0 && !relic.effectText ? "" : " upto-note"}">${valueText}</span>
       <span class="pips" aria-hidden="true">${pips}</span>`;
     b.addEventListener("click", () => {
       const next = (level + 1) % 4;  // 4th click resets to not equipped
@@ -503,12 +535,15 @@ function update() {
     hpfull: $("hpfull").value === "1",
     inkspent: $("inkspent").value === "1",
   };
-  // tank powers: Power adds damage, Tactical inflicts Ferment, Speed nothing
+  // tank powers: native, or granted by an equipped Pro relic
   const tp = $("tankpower");
-  if (state.tankId === "speed") tp.value = "0";
-  tp.disabled = state.tankId === "speed";
-  tp.options[1].textContent = state.tankId === "tactic" ? "On (Ferment)" : "On (+20%)";
-  if (state.tankId === "tactic" && tp.value === "1") {
+  const powerAllowed = state.tankId === "power" || relicEquipped("golden-pot");
+  const tacticAllowed = state.tankId === "tactic" || relicEquipped("golden-frying-pan");
+  tp.querySelector('option[value="power"]').disabled = !powerAllowed;
+  tp.querySelector('option[value="tactic"]').disabled = !tacticAllowed;
+  if ((tp.value === "power" && !powerAllowed) ||
+      (tp.value === "tactic" && !tacticAllowed)) tp.value = "0";
+  if (tp.value === "tactic") {
     $("ferment").value = "1";       // the Tactical power guarantees Ferment
     $("ferment").disabled = true;
   } else {
@@ -517,8 +552,8 @@ function update() {
   // additive pool sums once; multiplier groups sum WITHIN the group
   // (weapon bonus + matching relic), then each group multiplies the total
   let add = 0;
-  if (state.tankId === "power" && $("tankpower").value === "1")
-    add += 20;  // Power Tank Surge, additive pool
+  if ($("tankpower").value === "power")
+    add += relicEquipped("golden-pot") ? 30 : 20;  // surge; Power Pro upgrades it
   const groups = {};
   const applyBonus = b => {
     if (b.mode === "mult") groups[b.group || b.id] = (groups[b.group || b.id] || 0) + b.pct;
@@ -543,7 +578,8 @@ function update() {
     const part = state.gadgetData[gid].parts.find(p => p.id === pid);
     if (!part) continue;
     if (part.requires && !conditions[part.requires]) continue;
-    add += part.variants[Math.min(idx, part.variants.length - 1)].pct;
+    const info = partSelDecode(idx, part);
+    add += part.variants[Math.min(info.idx, part.variants.length - 1)].pct;
   }
   let multFactor = 1;
   for (const pct of Object.values(groups)) multFactor *= 1 + pct / 100;
@@ -616,7 +652,13 @@ function optimizeBuild() {
         for (const gadgetSet of gadgetCombos) {
           const hasRisky = bonuses.some(b => b.id === "risky-reward") ||
                            relicSet.some(r => r.id === "ancient-salmon-run-slab");
+          const hasPot = relicSet.some(r => r.id === "golden-pot");
+          const hasPan = relicSet.some(r => r.id === "golden-frying-pan");
+          const powers = ["0"];
+          if (tank.id === "power" || hasPot) powers.push("power");
+          if (tank.id === "tactic" || hasPan) powers.push("tactic");
           const rangeOptions = state.weapon.longRange ? ["", "close", "long"] : ["", "close"];
+          for (const pw of powers)
           for (const range of rangeOptions) {
             const conditions = {
               danger: hasRisky, hpfull: !hasRisky,
@@ -625,7 +667,7 @@ function optimizeBuild() {
             };
             let add = 0;
             const groups = {};
-            if (tank.id === "power") add += 20;  // tank power surge
+            if (pw === "power") add += hasPot ? 30 : 20;  // surge
             const apply = item => {
               if (item.mode === "mult") groups[item.group || item.id] = (groups[item.group || item.id] || 0) + item.pct;
               else add += item.pct;
@@ -635,22 +677,33 @@ function optimizeBuild() {
             for (const r of relicSet)
               if (!r.requires || conditions[r.requires]) apply({ ...r, pct: r.levels[2] });
             const partSel = {};
+            const bestUnique = {};  // non-stacking parts: only the best instance
             for (const g of gadgetSet) {
               for (const part of state.gadgetData[g.id].parts) {
                 if (part.requires && !conditions[part.requires]) continue;
                 const bestIdx = part.variants.reduce((m, v, i) => v.pct > part.variants[m].pct ? i : m, 0);
+                const pct = part.variants[bestIdx].pct;
+                if (NON_STACKING_PARTS.has(part.id)) {
+                  const cur = bestUnique[part.id];
+                  if (!cur || pct > cur.pct) bestUnique[part.id] = { key: `${g.id}/${part.id}`, idx: bestIdx, pct };
+                  continue;
+                }
                 partSel[`${g.id}/${part.id}`] = bestIdx;
                 add += part.variants[bestIdx].pct;
               }
             }
+            for (const u of Object.values(bestUnique)) {
+              partSel[u.key] = u.idx;
+              add += u.pct;
+            }
             let mult = 1;
             for (const pct of Object.values(groups)) mult *= 1 + pct / 100;
             // Ferment: kept if the player has it set, or granted by the
-            // Tactical tank power; never taken away by the optimizer
-            const ferment = (userFerment || tank.id === "tactic") ? 1.2 : 1;
+            // active Tactical power; never taken away by the optimizer
+            const ferment = (userFerment || pw === "tactic") ? 1.2 : 1;
             const total = dmg * (1 + add / 100) * mult * ferment;
             if (!best || total > best.total)
-              best = { total, tank, bonuses, relicSet, partSel, range, hasRisky };
+              best = { total, tank, bonuses, relicSet, partSel, range, hasRisky, pw };
           }
         }
       }
@@ -666,7 +719,7 @@ async function applyOptimalBuild() {
   state.weaponBonusLevels = {};
   for (const b of best.bonuses) state.weaponBonusLevels[b.id] = 3;
   state.relicLevels = {};
-  for (const r of best.relicSet) state.relicLevels[r.id] = 3;
+  for (const r of best.relicSet) state.relicLevels[r.id] = Math.min(3, r.maxLevel || 3);
   state.gadgetPartSel = { ...best.partSel };
   $("range").value = best.range;
   $("danger").value = best.hasRisky ? "1" : "0";
@@ -675,7 +728,7 @@ async function applyOptimalBuild() {
   $("streak").value = "3";
   $("inkspent").value = best.relicSet.some(r => r.id === "bronze-press") ? "1" : "0";
   $("airborne").value = Object.keys(best.partSel).some(k => k.includes("airborne")) ? "1" : "0";
-  $("tankpower").value = best.tank.id === "speed" ? "0" : "1";
+  $("tankpower").value = best.pw;
   renderTanks(); renderRelics(); renderGadgets(); renderWeaponBonuses();
   update();
   showNotice(`Optimal build applied: ${best.tank.name}, dealing ${fmt(best.total)}. ` +
@@ -712,7 +765,8 @@ async function applySnapshot(saved) {
     for (const [key, idx] of Object.entries(saved.gadgetPartSel || {})) {
       const [gid, pid] = key.split("/");
       const part = state.gadgetData[gid] && state.gadgetData[gid].parts.find(p => p.id === pid);
-      if (part && Number.isInteger(idx) && idx >= 0 && idx < part.variants.length)
+      if (part && Number.isInteger(idx) && idx >= 0 && idx < 16 &&
+          partSelDecode(idx, part).idx < part.variants.length)
         state.gadgetPartSel[key] = idx;
     }
     for (const [id, lvl] of Object.entries(saved.weaponBonusLevels || {})) {

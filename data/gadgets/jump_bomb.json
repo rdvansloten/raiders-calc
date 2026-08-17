@@ -14,22 +14,43 @@
     {
      "stars": 1,
      "slots": 2,
-     "pct": 6.0
+     "pct": 6
+    },
+    {
+     "stars": 2,
+     "slots": 3,
+     "pct": 12
     },
     {
      "stars": 1,
      "slots": 5,
-     "pct": 15.0
+     "pct": 15
     },
     {
      "stars": 3,
      "slots": 4,
-     "pct": 20.0
+     "pct": 20
+    },
+    {
+     "stars": 2,
+     "slots": 6,
+     "pct": 24
+    },
+    {
+     "stars": 4,
+     "slots": 5,
+     "pct": 30
     },
     {
      "stars": 3,
      "slots": 7,
-     "pct": 35.0
+     "pct": 35
+    },
+    {
+     "stars": 5,
+     "slots": 8,
+     "upgradedSlots": 6,
+     "pct": 60
     }
    ],
    "requires": "airborne"

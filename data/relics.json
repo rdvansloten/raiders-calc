@@ -1,5 +1,5 @@
 {
- "note": "Damage-affecting relics only. Each has 3 levels; only level-3 values are confirmed (Bronze Press Damage Up 40@L3 user-verified in game), L1/L2 are guesses. mode 'mult' + group: percentages in the same group (relic + weapon bonus) SUM, then the group multiplies the total - per the research thread's stacking tests. mode 'add' joins the additive pool. requires gates on a status toggle.",
+ "note": "Damage-affecting relics only. Each has 3 levels; only level-3 values are confirmed (Bronze Press Damage Up 40@L3 user-verified in game), L1/L2 are guesses. mode 'mult' + group: percentages in the same group (relic + weapon bonus) SUM, then the group multiplies the total - per the research thread's stacking tests. mode 'add' joins the additive pool. requires gates on a status toggle. category 'pro' relics ignore tank category rules but use relic slots; grantsPower gates the tank power dropdown; Golden Pot upgrades the surge to 30% (user-verified: 5252 -> 6303 (+20%) native, -> 6826 (+30%) with Pot).",
  "maxEquipped": 5,
  "relics": [
   {
@@ -94,6 +94,54 @@
    "requires": "danger",
    "description": "Damage is increased while you are in Danger.",
    "icon": null
+  },
+  {
+   "id": "golden-pot",
+   "name": "Golden Pot",
+   "category": "pro",
+   "power": "Power Pro",
+   "mode": "add",
+   "levels": [
+    0,
+    0,
+    0
+   ],
+   "maxLevel": 1,
+   "grantsPower": "power",
+   "effectText": "+30% surge",
+   "description": "Any tank can use the Power Tank power; the surge becomes +30%."
+  },
+  {
+   "id": "golden-frying-pan",
+   "name": "Golden Frying Pan",
+   "category": "pro",
+   "power": "Tactical Pro",
+   "mode": "add",
+   "levels": [
+    0,
+    0,
+    0
+   ],
+   "maxLevel": 1,
+   "grantsPower": "tactic",
+   "effectText": "Ferment power",
+   "description": "Any tank can use the Tactical Tank power (Ferment)."
+  },
+  {
+   "id": "golden-steamer-set",
+   "name": "Golden Steamer Set",
+   "category": "pro",
+   "power": "Speed Pro",
+   "mode": "add",
+   "levels": [
+    0,
+    0,
+    0
+   ],
+   "maxLevel": 1,
+   "grantsPower": "speed",
+   "effectText": "Speed power",
+   "description": "Any tank can use the Speed Tank power (no damage effect)."
   }
  ]
 }
