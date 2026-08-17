@@ -108,8 +108,8 @@
    ],
    "maxLevel": 1,
    "grantsPower": "power",
-   "effectText": "+30% surge",
-   "description": "Any tank can use the Power Tank power; the surge becomes +30%."
+   "effectText": "Power surge",
+   "description": "Grants the Power Tank power to any tank (+20% surge); on the Power Tank itself it upgrades the surge to +30%."
   },
   {
    "id": "golden-frying-pan",
@@ -126,22 +126,6 @@
    "grantsPower": "tactic",
    "effectText": "Ferment power",
    "description": "Any tank can use the Tactical Tank power (Ferment)."
-  },
-  {
-   "id": "golden-steamer-set",
-   "name": "Golden Steamer Set",
-   "category": "pro",
-   "power": "Speed Pro",
-   "mode": "add",
-   "levels": [
-    0,
-    0,
-    0
-   ],
-   "maxLevel": 1,
-   "grantsPower": "speed",
-   "effectText": "Speed power",
-   "description": "Any tank can use the Speed Tank power (no damage effect)."
   }
  ]
 }

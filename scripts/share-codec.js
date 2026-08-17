@@ -22,7 +22,8 @@ const SHARE_BONUSES = ["long-range", "close-combat", "ice-breaker",
                        "risky-reward", "concentrated-attack"];
 const SHARE_RELICS = ["regal-scepter", "antique-corkscrew", "family-size-cutter",
                       "bronze-press", "distant-gazer", "ancient-salmon-run-slab",
-                      "golden-pot", "golden-frying-pan", "golden-steamer-set"];
+                      "golden-pot", "golden-frying-pan",
+                      "golden-steamer-set"];  // retired from the app, slot kept
 const SHARE_PARTS = ["blast_boot/damage-surge", "dash_bomb/damage-surge",
                      "jump_bomb/airborne-damage-up", "flywire/damage-surge",
                      "flywire/airborne-damage-up"];

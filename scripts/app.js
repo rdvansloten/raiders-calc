@@ -205,8 +205,8 @@ function renderTanks() {
     `${currentTank().name}: no ${r.banned.join("/")} relics${limits ? ", " + limits : ""}.`;
 }
 
-const RELIC_CATS = [["speed", "Speed"], ["power", "Power"], ["tactic", "Tactical"],
-                    ["pro", "Pro relics"]];
+const RELIC_CATS = [["pro", "Generic"], ["speed", "Speed"], ["power", "Power"],
+                    ["tactic", "Tactical"]];
 
 
 function renderRelics() {
@@ -553,7 +553,9 @@ function update() {
   // (weapon bonus + matching relic), then each group multiplies the total
   let add = 0;
   if ($("tankpower").value === "power")
-    add += relicEquipped("golden-pot") ? 30 : 20;  // surge; Power Pro upgrades it
+    add += state.tankId === "power" && relicEquipped("golden-pot")
+      ? 30   // Power Pro upgrades the native surge
+      : 20;  // base surge (native, or granted by Power Pro on another tank)
   const groups = {};
   const applyBonus = b => {
     if (b.mode === "mult") groups[b.group || b.id] = (groups[b.group || b.id] || 0) + b.pct;
@@ -667,7 +669,7 @@ function optimizeBuild() {
             };
             let add = 0;
             const groups = {};
-            if (pw === "power") add += hasPot ? 30 : 20;  // surge
+            if (pw === "power") add += (tank.id === "power" && hasPot) ? 30 : 20;  // surge
             const apply = item => {
               if (item.mode === "mult") groups[item.group || item.id] = (groups[item.group || item.id] || 0) + item.pct;
               else add += item.pct;
