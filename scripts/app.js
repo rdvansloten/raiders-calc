@@ -234,9 +234,11 @@ function relicButton(relic) {
     const maxLevel = relic.maxLevel || 3;
     const reason = level === 0 ? relicAllowance(relic) : null;
     const pct = level > 0 ? relic.levels[level - 1] : relic.levels[2];
-    const valueText = relic.effectText
+    let valueText = relic.effectText
       ? relic.effectText
       : level > 0 ? `+${pct}%` : `up to +${pct}%`;
+    if (relic.id === "golden-pot")
+      valueText = `Power surge (+${state.tankId === "power" ? 30 : 20}%)`;
     const pips = Array.from({ length: maxLevel }, (_, n) =>
       `<i${n + 1 <= level ? ' class="on"' : ""}></i>`).join("");
     const b = document.createElement("button");
@@ -266,8 +268,8 @@ function renderGadgets() {
   const own = state.gadgetsIndex.filter(g => g.tank === state.tankId);
   const borrowable = state.gadgetsIndex.filter(g => g.tank === borrow);
   if (borrowable.length) {
-    const note = document.createElement("h3");
-    note.className = "gadget-title borrow-title";
+    const note = document.createElement("p");
+    note.className = "hint borrow-note";
     const catName = { speed: "Speed", power: "Power", tactic: "Tactical" }[borrow];
     note.textContent = `Borrowable (Ultra): one ${catName} gadget`;
     borrowable.borrowNote = note;
@@ -366,7 +368,7 @@ function renderWeaponBonuses() {
     else if (bonus.description) b.title = bonus.description;
     b.setAttribute("aria-label", `${bonus.name}, level ${level} of 3`);
     b.innerHTML = `<span class="bname">${bonus.name}</span>
-      <span class="vpct${level > 0 && !relic.effectText ? "" : " upto-note"}">${valueText}</span>
+      <span class="vpct${level > 0 ? "" : " upto-note"}">${valueText}</span>
       <span class="pips" aria-hidden="true">${pips}</span>`;
     b.addEventListener("click", () => {
       const next = (level + 1) % 4;  // 4th click resets to not equipped

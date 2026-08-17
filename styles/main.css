@@ -276,9 +276,8 @@ input:disabled, select:disabled {
   margin: 0 0 0.5rem;
   font-size: 0.95rem; font-weight: 600; color: var(--teal-deep);
 }
-.borrow-title {
+.borrow-note {
   margin: 0.4rem 0 -0.3rem;
-  color: var(--muted);
   border-top: 1px dashed var(--line);
   padding-top: 0.8rem;
 }
