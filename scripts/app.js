@@ -537,15 +537,14 @@ function update() {
     hpfull: $("hpfull").value === "1",
     inkspent: $("inkspent").value === "1",
   };
-  // tank powers: native, or granted by an equipped Pro relic
-  const tp = $("tankpower");
-  const powerAllowed = state.tankId === "power" || relicEquipped("golden-pot");
-  const tacticAllowed = state.tankId === "tactic" || relicEquipped("golden-frying-pan");
-  tp.querySelector('option[value="power"]').disabled = !powerAllowed;
-  tp.querySelector('option[value="tactic"]').disabled = !tacticAllowed;
-  if ((tp.value === "power" && !powerAllowed) ||
-      (tp.value === "tactic" && !tacticAllowed)) tp.value = "0";
-  if (tp.value === "tactic") {
+  // one on/off switch: the tank and equipped Pro relics decide the effects.
+  // Native power (upgraded by its own Pro relic) plus any granted base powers.
+  const powerOn = $("tankpower").value === "1";
+  const surgeActive = powerOn && (state.tankId === "power" || relicEquipped("golden-pot"));
+  const surgePct = state.tankId === "power" && relicEquipped("golden-pot") ? 30 : 20;
+  const fermentViaPower = powerOn &&
+    (state.tankId === "tactic" || relicEquipped("golden-frying-pan"));
+  if (fermentViaPower) {
     $("ferment").value = "1";       // the Tactical power guarantees Ferment
     $("ferment").disabled = true;
   } else {
@@ -554,10 +553,7 @@ function update() {
   // additive pool sums once; multiplier groups sum WITHIN the group
   // (weapon bonus + matching relic), then each group multiplies the total
   let add = 0;
-  if ($("tankpower").value === "power")
-    add += state.tankId === "power" && relicEquipped("golden-pot")
-      ? 30   // Power Pro upgrades the native surge
-      : 20;  // base surge (native, or granted by Power Pro on another tank)
+  if (surgeActive) add += surgePct;
   const groups = {};
   const applyBonus = b => {
     if (b.mode === "mult") groups[b.group || b.id] = (groups[b.group || b.id] || 0) + b.pct;
@@ -658,9 +654,7 @@ function optimizeBuild() {
                            relicSet.some(r => r.id === "ancient-salmon-run-slab");
           const hasPot = relicSet.some(r => r.id === "golden-pot");
           const hasPan = relicSet.some(r => r.id === "golden-frying-pan");
-          const powers = ["0"];
-          if (tank.id === "power" || hasPot) powers.push("power");
-          if (tank.id === "tactic" || hasPan) powers.push("tactic");
+          const powers = ["0", "1"];
           const rangeOptions = state.weapon.longRange ? ["", "close", "long"] : ["", "close"];
           for (const pw of powers)
           for (const range of rangeOptions) {
@@ -671,7 +665,8 @@ function optimizeBuild() {
             };
             let add = 0;
             const groups = {};
-            if (pw === "power") add += (tank.id === "power" && hasPot) ? 30 : 20;  // surge
+            if (pw === "1" && (tank.id === "power" || hasPot))
+              add += (tank.id === "power" && hasPot) ? 30 : 20;  // surge
             const apply = item => {
               if (item.mode === "mult") groups[item.group || item.id] = (groups[item.group || item.id] || 0) + item.pct;
               else add += item.pct;
@@ -704,7 +699,8 @@ function optimizeBuild() {
             for (const pct of Object.values(groups)) mult *= 1 + pct / 100;
             // Ferment: kept if the player has it set, or granted by the
             // active Tactical power; never taken away by the optimizer
-            const ferment = (userFerment || pw === "tactic") ? 1.2 : 1;
+            const fermentViaPower = pw === "1" && (tank.id === "tactic" || hasPan);
+            const ferment = (userFerment || fermentViaPower) ? 1.2 : 1;
             const total = dmg * (1 + add / 100) * mult * ferment;
             if (!best || total > best.total)
               best = { total, tank, bonuses, relicSet, partSel, range, hasRisky, pw };
@@ -745,7 +741,7 @@ async function applyOptimalBuild() {
 const INPUT_DEFAULTS = { pbase: "50", pextra: "0", wbase: "50", wplus: "50",
                          tankbonus: "200", hpbonus: "400", range: "", danger: "0",
                          airborne: "0", streak: "0", hpfull: "1", inkspent: "0",
-                         frozen: "0", ferment: "0", tankpower: "0", attack: "0" };
+                         frozen: "0", ferment: "0", tankpower: "1", attack: "0" };
 
 async function applySnapshot(saved) {
   // reset to defaults, then layer the snapshot on top (validating everything)

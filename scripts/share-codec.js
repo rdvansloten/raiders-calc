@@ -65,22 +65,21 @@ function bitReader(bytes) {
 
 function flagValue(inp, id) {
   if (id === "streak") return inp.streak === "3" ? 1 : 0;
-  if (id === "tankpower") return inp.tankpower === "power" || inp.tankpower === "1" ? 1 : 0;
-  if (id === "tankferment") return inp.tankpower === "tactic" ? 1 : 0;
+  if (id === "tankpower")
+    return inp.tankpower && inp.tankpower !== "0" ? 1 : 0;
+  if (id === "tankferment") return 0;  // retired: power selection is now on/off
   return inp[id] === "1" ? 1 : 0;
 }
 
 function setFlag(snap, id, bit) {
   if (id === "streak") { snap.inputs.streak = bit ? "3" : "0"; return; }
   if (id === "tankpower") {
-    // pre-split links stored one on/off bit whose meaning depended on the
-    // tank; map Tactical's old "on" to the Ferment power, else Power surge
-    if (bit) snap.inputs.tankpower = snap.tankId === "tactic" ? "tactic" : "power";
+    if (bit) snap.inputs.tankpower = "1";
     else if (!snap.inputs.tankpower) snap.inputs.tankpower = "0";
     return;
   }
   if (id === "tankferment") {
-    if (bit) snap.inputs.tankpower = "tactic";
+    if (bit) snap.inputs.tankpower = "1";  // legacy per-power links: just "on"
     return;
   }
   snap.inputs[id] = String(bit);
