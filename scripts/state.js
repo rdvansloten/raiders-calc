@@ -67,7 +67,9 @@ function savePresets(list) {
 }
 
 async function getJSON(path) {
-  const res = await fetch(path);
+  // data files carry the same deploy stamp as the scripts, so a new deploy
+  // can never pair fresh code with stale cached JSON
+  const res = await fetch(path + "?v=" + (window.DATA_VERSION || "dev"));
   if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
   return res.json();
 }
