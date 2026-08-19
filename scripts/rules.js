@@ -5,12 +5,25 @@
 function playerDamage(base, extra) {
   const table = state.players.levels;
   if (base < 50) return table[base - 1].damage;
-  return table[49].damage + state.players.postSoftcap.damagePerLevel * extra;
+  const ps = state.players.postSoftcap;
+  // every 500th extra level grants a bonus point on top of the usual +2
+  // (verified: level-up 50+998 -> 50+999 showed damage 6,497 -> 6,500)
+  const milestones = ps.damageMilestoneEvery
+    ? Math.floor((extra + 1) / ps.damageMilestoneEvery) * (ps.damageMilestoneBonus || 1)
+    : 0;
+  return table[49].damage + ps.damagePerLevel * extra + milestones;
 }
 function playerHP(base, extra) {
   const table = state.players.levels;
   if (base < 50) return table[base - 1].hp;
-  return table[49].hp + state.players.postSoftcap.hpPerLevel * extra;
+  const ps = state.players.postSoftcap;
+  // +0.5 per level, plus an extra +0.5 at every 500th level; note the HP
+  // milestone fires at +500/+1000 while the damage one fires at +499/+999
+  // (verified: +998 -> +999 showed HP 999.5 -> 1000, damage 6497 -> 6500)
+  const milestones = ps.hpMilestoneEvery
+    ? Math.floor(extra / ps.hpMilestoneEvery) * (ps.hpMilestoneBonus || 0.5)
+    : 0;
+  return table[49].hp + ps.hpPerLevel * extra + milestones;
 }
 
 function currentTank() {

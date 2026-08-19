@@ -7,6 +7,13 @@
    "totalMultiplier": 9.5904,
    "displayed": 297866,
    "source": "player report Aug 2026: E-liter Full charge (1.8) x tank 3.0 x All Set 1.2 x Long Range weapon+relic 1.48"
+  },
+  {
+   "weaponLevel": 100,
+   "playerDamage": 6500,
+   "totalMultiplier": 198.44352,
+   "displayed": 8235491,
+   "source": "player test Aug 2026, imgur QXr2qC2: E-liter Full charge (1.8) x tank 3.0 x maximized chain 36.7488 (surge30+risky70+bronze40+surge100+ABDU60, close 1.32, conc 1.16, IB x5, ferment 1.2) at player 50+999. playerDamage 6500 confirmed by the level-up screen (6497 -> 6500 at +998 -> +999); milestone rule derived from it."
   }
  ]
 }

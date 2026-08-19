@@ -255,7 +255,11 @@
  "postSoftcap": {
   "hpPerLevel": 0.5,
   "damagePerLevel": 2,
-  "maxExtra": 9999
+  "maxExtra": 9999,
+  "damageMilestoneEvery": 500,
+  "damageMilestoneBonus": 1,
+  "hpMilestoneEvery": 500,
+  "hpMilestoneBonus": 0.5
  },
  "tankBonuses": {
   "weaponDamageMaxPct": 200,
