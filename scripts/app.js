@@ -213,7 +213,7 @@ const RELIC_CATS = [["pro", "Generic"], ["speed", "Speed"], ["power", "Power"],
 
 
 function renderRelics() {
-  const wrap = $("relics");
+  const wrap = $("relics-list");
   wrap.innerHTML = "";
   for (const [cat, catLabel] of RELIC_CATS) {
     if (currentTank().relicRules.banned.includes(cat)) continue;  // hide unusable rows
@@ -265,7 +265,7 @@ function relicButton(relic) {
 }
 
 function renderGadgets() {
-  const wrap = $("gadgets");
+  const wrap = $("gadgets-list");
   wrap.innerHTML = "";
   const borrow = currentTank().gadgetBorrow;
   const own = state.gadgetsIndex.filter(g => g.tank === state.tankId);
@@ -802,6 +802,32 @@ function renderExcludeList() {
   updateExcludeSummary();
 }
 
+const ANCHOR_IDS = ["player", "tank", "weapon-card", "relics", "gadgets",
+                    "enemy-status", "maximize-damage", "attacks-card", "damage"];
+
+function addAnchorLinks() {
+  for (const id of ANCHOR_IDS) {
+    const section = document.getElementById(id);
+    const heading = section && section.querySelector(".chip");
+    if (!heading) continue;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "anchor-link";
+    btn.textContent = "#";
+    btn.title = "Copy link to this section";
+    btn.setAttribute("aria-label", "Copy link to this section");
+    btn.addEventListener("click", async e => {
+      e.stopPropagation();
+      const url = `${location.origin}${location.pathname}#${id}`;
+      try { await navigator.clipboard.writeText(url); }
+      catch (err) { window.prompt("Copy this link:", url); return; }
+      btn.textContent = "\u2713";
+      setTimeout(() => { btn.textContent = "#"; }, 1200);
+    });
+    heading.appendChild(btn);
+  }
+}
+
 function updateExcludeSummary() {
   const n = state.maxExclude.size;
   $("exclude-summary").textContent = n ? `Exclude buffs (${n} excluded)` : "Exclude buffs";
@@ -953,6 +979,7 @@ async function boot() {
   }));
 
   renderWeaponSelect();
+  addAnchorLinks();
 
   // a share link's build wins over the previous session's state
   const params = new URLSearchParams(location.search);

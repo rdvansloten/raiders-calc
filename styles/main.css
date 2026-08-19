@@ -130,6 +130,7 @@ header h1 .x { color: var(--teal); }
 .preset-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
 .card {
+  scroll-margin-top: 1rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -165,6 +166,17 @@ header h1 .x { color: var(--teal); }
   padding: 0 0.75rem; width: 12ch; height: 50px;
 }
 .count { opacity: 0.85; font-weight: 500; }
+.anchor-link {
+  font: inherit; font-size: 0.75em;
+  background: none; border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+}
+.anchor-link:hover { color: var(--teal-deep); }
+.chip-name .anchor-link { color: rgba(255, 255, 255, 0.75); }
+.chip-name .anchor-link:hover { color: #fff; }
 
 .stat-row { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.7rem; }
 .stat {
@@ -298,7 +310,7 @@ input:disabled, select:disabled {
 .tank.sel .icon { outline: 3px solid var(--teal); outline-offset: 2px; }
 
 /* relics */
-#relics { display: flex; flex-direction: column; gap: 0.9rem; }
+#relics-list { display: flex; flex-direction: column; gap: 0.9rem; }
 .variant-list.relic-list {
   grid-template-columns: repeat(auto-fit, minmax(min(324px, 100%), 1fr));
 }

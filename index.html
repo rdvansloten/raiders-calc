@@ -76,7 +76,7 @@
       </nav>
 
       <div id="view-create" class="view">
-        <section class="card">
+        <section class="card" id="player">
           <h2 class="chip chip-name">
             <button
               type="button"
@@ -185,7 +185,7 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="tank">
           <h2 class="chip">Tank</h2>
           <div class="field">
             <div
@@ -239,7 +239,7 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="weapon-card">
           <h2 class="chip">Weapon</h2>
           <div class="row">
             <div class="field grow">
@@ -289,11 +289,11 @@
           <p class="hint">Tap the box to increase or reset bonus level.</p>
         </section>
 
-        <section class="card">
+        <section class="card" id="relics">
           <h2 class="chip">
             Relics <span id="relic-count" class="count"></span>
           </h2>
-          <div id="relics"></div>
+          <div id="relics-list"></div>
           <p class="hint" id="conc-note-relic" hidden>
             Concentrated Attack is nulled when using AoE attacks.
           </p>
@@ -301,12 +301,12 @@
           <p class="hint" id="relic-rule-hint"></p>
         </section>
 
-        <section class="card">
+        <section class="card" id="gadgets">
           <h2 class="chip">Gadget power-ups</h2>
-          <div id="gadgets" class="gadget-groups"></div>
+          <div id="gadgets-list" class="gadget-groups"></div>
         </section>
 
-        <section class="card">
+        <section class="card" id="enemy-status">
           <h2 class="chip">Enemy status</h2>
           <div class="row">
             <div class="field">
@@ -330,7 +330,7 @@
           </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="maximize-damage">
           <h2 class="chip">Maximize damage</h2>
           <div class="row">
             <div class="field">
@@ -375,7 +375,7 @@
           </div>
         </section>
 
-        <section class="card result-card">
+        <section class="card result-card" id="damage">
           <div class="result-line">
             <p class="result-figure">
               <span class="fig-label">total dmg</span> <span id="result"></span>
