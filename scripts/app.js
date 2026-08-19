@@ -764,8 +764,10 @@ async function maximizeDamage() {
   $("tankpower").value = best.pw;
   renderTanks(); renderRelics(); renderGadgets(); renderWeaponBonuses();
   update();
-  showNotice(`Maximized: ${best.w.name}${weaponChanged ? " (weapon changed)" : ""} on ` +
-    `${best.tank.name}, dealing ${fmt(best.total)}. Assumes best-case statuses.`);
+  const result = $("maximize-result");
+  result.textContent = `Maximized: ${best.w.name}${weaponChanged ? " (weapon changed)" : ""} on ` +
+    `${best.tank.name}, dealing ${fmt(best.total)}. Assumes best-case statuses.`;
+  result.hidden = false;
 }
 
 function renderExcludeList() {
