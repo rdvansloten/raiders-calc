@@ -158,7 +158,7 @@ header h1 .x { color: var(--teal); }
   font: inherit; color: inherit; background: none; border: none;
   padding: 0.28rem 0.75rem; cursor: pointer; border-radius: 8px;
 }
-.chip-name button::after { content: " ✎"; opacity: 0.55; font-size: 1em; }
+.chip-name button:not(.anchor-link)::after { content: " ✎"; opacity: 0.55; font-size: 1em; }
 .chip-name button:hover { background: var(--teal-deep); }
 .chip-name input {
   font: inherit; color: var(--ink); background-color: var(--field);
@@ -175,8 +175,6 @@ header h1 .x { color: var(--teal); }
   vertical-align: middle;
 }
 .anchor-link:hover { color: var(--teal-deep); }
-.chip-name .anchor-link { color: rgba(255, 255, 255, 0.75); }
-.chip-name .anchor-link:hover { color: #fff; }
 
 .stat-row { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.7rem; }
 .stat {
