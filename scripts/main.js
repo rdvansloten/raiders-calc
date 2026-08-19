@@ -88,7 +88,7 @@ async function boot() {
   if (params.get("build")) {
     fromLink = decodeCompact(params.get("build")) || decodeBuild(params.get("build"));
     if (fromLink && params.get("name")) fromLink.playerName = params.get("name");
-    history.replaceState({}, "", location.pathname);
+    history.replaceState({}, "", location.pathname + location.hash);
   }
   await applySnapshot(fromLink || loadSavedState());
   if (fromLink && fromLink.olderVersion)
@@ -151,6 +151,13 @@ async function boot() {
    "danger", "airborne", "streak", "hpfull", "inkspent", "frozen", "ferment",
    "tankpower", "pin-tank", "pin-weapon"]
     .forEach(id => $(id).addEventListener("input", update));
+
+  // the browser's native anchor jump happens before the async data renders,
+  // so the page grows underneath it; re-scroll once layout is final
+  if (location.hash) {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
 }
 
 fitTitle();
