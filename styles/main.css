@@ -166,9 +166,18 @@ header h1 .x { color: var(--teal); }
   padding: 0 0.75rem; width: 12ch; height: 50px;
 }
 .count { opacity: 0.85; font-weight: 500; }
+/* section anchor copiers: fully self-contained, no inheritance from the
+   heading or pill they happen to sit next to */
 .anchor-link {
-  font: inherit; font-size: 0.75em;
-  background: none; border: none;
+  font-family: "Fredoka", "Avenir Next", system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  background: none;
+  border: none;
   color: var(--muted);
   cursor: pointer;
   padding: 0 0.3rem;
