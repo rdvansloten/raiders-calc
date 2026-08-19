@@ -4,7 +4,7 @@
 
 function clampInputs() {
   let pbase = Math.min(50, Math.max(1, Math.round(+$("pbase").value || 1)));
-  let pextra = Math.min(9999, Math.max(0, Math.round(+$("pextra").value || 0)));
+  let pextra = Math.min(999, Math.max(0, Math.round(+$("pextra").value || 0)));
   if (pbase < 50) pextra = 0;              // "+N" levels only exist past the level-50 softcap
   $("pextra").disabled = pbase < 50;
 
@@ -14,7 +14,7 @@ function clampInputs() {
   wplus = Math.min(50, wplus);        // 50+50 = level 100 cap
   $("wplus").disabled = wbase < 50;
   if (document.activeElement !== $("pbase")) $("pbase").value = pbase;
-  if (document.activeElement !== $("pextra") || +$("pextra").value > 9999) $("pextra").value = pextra;
+  if (document.activeElement !== $("pextra") || +$("pextra").value > 999) $("pextra").value = pextra;
   if (document.activeElement !== $("wbase")) $("wbase").value = wbase;
   if ((+$("wplus").value || 0) !== wplus) $("wplus").value = wplus;
   return { pbase, pextra, wbase, wplus };

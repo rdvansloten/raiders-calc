@@ -97,7 +97,7 @@ function encodeCompact(snap) {
   w.push(wi, 6);
   w.push(Math.min(3, +inp.attack || 0), 2);
   w.push(Math.min(63, +inp.pbase || 50), 6);
-  w.push(Math.min(9999, +inp.pextra || 0), 14);
+  w.push(Math.min(999, +inp.pextra || 0), 14);
   w.push(Math.min(63, +inp.wbase || 50), 6);
   w.push(Math.min(63, +inp.wplus || 0), 6);
   w.push(Math.min(200, +inp.tankbonus || 0), 8);

@@ -255,7 +255,7 @@
  "postSoftcap": {
   "hpPerLevel": 0.5,
   "damagePerLevel": 2,
-  "maxExtra": 9999,
+  "maxExtra": 999,
   "damageMilestoneEvery": 500,
   "damageMilestoneBonus": 1,
   "hpMilestoneEvery": 500,

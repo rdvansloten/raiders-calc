@@ -99,7 +99,7 @@ async function maximizeDamage() {
     return;
 
   const pbase = Math.min(50, Math.max(1, Math.round(+$("pbase").value || 1)));
-  const pextra = pbase < 50 ? 0 : Math.min(9999, Math.max(0, Math.round(+$("pextra").value || 0)));
+  const pextra = pbase < 50 ? 0 : Math.min(999, Math.max(0, Math.round(+$("pextra").value || 0)));
   const wbase = Math.min(50, Math.max(1, Math.round(+$("wbase").value || 1)));
   const wplus = wbase < 50 ? 0 : Math.min(50, Math.max(0, Math.round(+$("wplus").value || 0)));
   const pd = playerDamage(pbase, pextra);

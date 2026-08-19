@@ -198,7 +198,7 @@ def slugify(name):
 (data_dir / "player_levels.json").write_text(json.dumps({
     "source": SOURCE,
     "levels": [{"level": l, "hp": hp[l], "damage": player[l]} for l in range(1, 51)],
-    "postSoftcap": {"hpPerLevel": 0.5, "damagePerLevel": 2, "maxExtra": 9999,
+    "postSoftcap": {"hpPerLevel": 0.5, "damagePerLevel": 2, "maxExtra": 999,
                     "damageMilestoneEvery": 500, "damageMilestoneBonus": 1,
                     "hpMilestoneEvery": 500, "hpMilestoneBonus": 0.5},
     "tankBonuses": {"weaponDamageMaxPct": 200, "hpMaxPct": 400},
