@@ -19,6 +19,7 @@ const state = {
   gadgetPartSel: {},      // "gadgetId/partId" -> variant index
   weaponBonusLevels: {},  // id -> level 1..3 (absent = not equipped)
   playerName: "Player",
+  maxExclude: new Set(),  // buff keys the maximizer must not use
 };
 
 /* ---------- persistence ---------- */
@@ -26,14 +27,16 @@ const state = {
 const STORAGE_KEY = "raiders-calc-v1";
 const SAVED_INPUTS = ["pbase", "pextra", "wbase", "wplus", "tankbonus", "hpbonus",
                       "range", "danger", "airborne", "streak", "hpfull", "inkspent",
-                      "frozen", "ferment", "tankpower", "attack"];
+                      "frozen", "ferment", "tankpower", "pin-tank", "pin-weapon",
+                      "attack"];
 
 function snapshot() {
   const s = { inputs: {}, weapon: $("weapon").value, tankId: state.tankId,
               relicLevels: { ...state.relicLevels },
               gadgetPartSel: { ...state.gadgetPartSel },
               weaponBonusLevels: { ...state.weaponBonusLevels },
-              playerName: state.playerName };
+              playerName: state.playerName,
+              maxExclude: [...state.maxExclude] };
   for (const id of SAVED_INPUTS) s.inputs[id] = $(id).value;
   return s;
 }
@@ -608,43 +611,33 @@ function update() {
   saveState();
 }
 
-/* ---------- build optimizer ---------- */
+/* ---------- damage maximizer ---------- */
 
-// Finds the highest-damage legal build for the current weapon, attack, and
-// levels by brute force over tanks, weapon bonuses, relics, and gadget parts.
-// Statuses are assumed best-case and consistent (Danger beats HP full when
-// Risky Reward is equipped; Frozen assumed reachable via Freeze effects;
-// Ferment only via the Tactical tank power).
-function optimizeBuild() {
-  const pbase = Math.min(50, Math.max(1, Math.round(+$("pbase").value || 1)));
-  const pextra = pbase < 50 ? 0 : Math.min(9999, Math.max(0, Math.round(+$("pextra").value || 0)));
-  const wbase = Math.min(50, Math.max(1, Math.round(+$("wbase").value || 1)));
-  const wplus = wbase < 50 ? 0 : Math.min(50, Math.max(0, Math.round(+$("wplus").value || 0)));
-  const atkIdx = Math.min(+$("attack").value || 0, state.weapon.attacks.length - 1);
-  const pd = playerDamage(pbase, pextra);
-  const bwd = state.weapon.baseDamage[Math.min(100, wbase + wplus) - 1];
-  const tankMult = 1 + Math.min(200, Math.max(0, +$("tankbonus").value || 0)) / 100;
-  const dmg = (pd + bwd) * state.weapon.attacks[atkIdx].factor * tankMult;
+// Enumerates every legal combination of tank, weapon bonuses, relics, gadget
+// parts, active power, and range band, and returns the best total-damage
+// multiplier. Statuses are assumed best-case and consistent (Danger beats HP
+// full when Risky Reward is equipped; Frozen and 3-hit streaks reachable;
+// Ferment kept if set by the player, else only via the Tactical power).
+function bestBonusFactor(tanks, allowLong) {
+  const ex = state.maxExclude;
   const userFerment = $("ferment").value === "1";
-
   const subsets = arr => arr.reduce((acc, x) => acc.concat(acc.map(s => s.concat([x]))), [[]]);
   let best = null;
 
-  for (const tank of state.tanks.tanks) {
-    // relic combos legal for this tank
-    const eligible = state.relics.relics.filter(r => !tank.relicRules.banned.includes(r.category));
+  for (const tank of tanks) {
+    const eligible = state.relics.relics.filter(r =>
+      !tank.relicRules.banned.includes(r.category) && !ex.has("relic:" + r.id));
     const relicCombos = subsets(eligible).filter(set => {
       if (set.length > state.relics.maxEquipped) return false;
       for (const [cat, limit] of Object.entries(tank.relicRules.limits))
         if (set.filter(r => r.category === cat).length > limit) return false;
       return true;
     });
-    // gadget combos: max 3, at most 1 borrowed; taking a gadget takes all its parts
     const accessible = state.gadgetsIndex.filter(g => g.tank === tank.id || g.tank === tank.gadgetBorrow);
     const gadgetCombos = subsets(accessible).filter(set =>
       set.length <= MAX_GADGETS &&
       set.filter(g => g.tank !== tank.id).length <= 1);
-    const bonusCombos = subsets(state.weaponBonuses.bonuses)
+    const bonusCombos = subsets(state.weaponBonuses.bonuses.filter(b => !ex.has("bonus:" + b.id)))
       .filter(set => set.length <= state.weaponBonuses.maxEquipped);
 
     for (const bonuses of bonusCombos) {
@@ -654,9 +647,8 @@ function optimizeBuild() {
                            relicSet.some(r => r.id === "ancient-salmon-run-slab");
           const hasPot = relicSet.some(r => r.id === "golden-pot");
           const hasPan = relicSet.some(r => r.id === "golden-frying-pan");
-          const powers = ["0", "1"];
-          const rangeOptions = state.weapon.longRange ? ["", "close", "long"] : ["", "close"];
-          for (const pw of powers)
+          const rangeOptions = allowLong ? ["", "close", "long"] : ["", "close"];
+          for (const pw of ex.has("power") ? ["0"] : ["0", "1"])
           for (const range of rangeOptions) {
             const conditions = {
               danger: hasRisky, hpfull: !hasRisky,
@@ -679,6 +671,7 @@ function optimizeBuild() {
             const bestUnique = {};  // non-stacking parts: only the best instance
             for (const g of gadgetSet) {
               for (const part of state.gadgetData[g.id].parts) {
+                if (ex.has("part:" + part.id)) continue;
                 if (part.requires && !conditions[part.requires]) continue;
                 const bestIdx = part.variants.reduce((m, v, i) => v.pct > part.variants[m].pct ? i : m, 0);
                 const pct = part.variants[bestIdx].pct;
@@ -697,13 +690,11 @@ function optimizeBuild() {
             }
             let mult = 1;
             for (const pct of Object.values(groups)) mult *= 1 + pct / 100;
-            // Ferment: kept if the player has it set, or granted by the
-            // active Tactical power; never taken away by the optimizer
             const fermentViaPower = pw === "1" && (tank.id === "tactic" || hasPan);
             const ferment = (userFerment || fermentViaPower) ? 1.2 : 1;
-            const total = dmg * (1 + add / 100) * mult * ferment;
-            if (!best || total > best.total)
-              best = { total, tank, bonuses, relicSet, partSel, range, hasRisky, pw };
+            const factor = (1 + add / 100) * mult * ferment;
+            if (!best || factor > best.factor)
+              best = { factor, tank, bonuses, relicSet, partSel, range, hasRisky, pw };
           }
         }
       }
@@ -712,9 +703,51 @@ function optimizeBuild() {
   return best;
 }
 
-async function applyOptimalBuild() {
-  const best = optimizeBuild();
+async function maximizeDamage() {
+  const pinTank = $("pin-tank").value === "pin";
+  const pinWeapon = $("pin-weapon").value === "pin";
+  if (!window.confirm("Maximize damage? This overwrites your current selections."))
+    return;
+
+  const pbase = Math.min(50, Math.max(1, Math.round(+$("pbase").value || 1)));
+  const pextra = pbase < 50 ? 0 : Math.min(9999, Math.max(0, Math.round(+$("pextra").value || 0)));
+  const wbase = Math.min(50, Math.max(1, Math.round(+$("wbase").value || 1)));
+  const wplus = wbase < 50 ? 0 : Math.min(50, Math.max(0, Math.round(+$("wplus").value || 0)));
+  const pd = playerDamage(pbase, pextra);
+  const bwd = state.weapon.baseDamage[Math.min(100, wbase + wplus) - 1];
+  const tankMult = 1 + Math.min(200, Math.max(0, +$("tankbonus").value || 0)) / 100;
+
+  const tanks = pinTank ? [currentTank()] : state.tanks.tanks;
+  const factors = { long: bestBonusFactor(tanks, true), short: bestBonusFactor(tanks, false) };
+
+  let candidates;
+  if (pinWeapon) {
+    const atkIdx = Math.min(+$("attack").value || 0, state.weapon.attacks.length - 1);
+    candidates = [{ w: state.weapon, atkIdx }];
+  } else {
+    for (const wi of state.weaponsIndex)
+      if (!state.weaponCache[wi.slug])
+        state.weaponCache[wi.slug] = await getJSON(`data/weapons/${wi.slug}.json`);
+    candidates = state.weaponsIndex.flatMap(wi => {
+      const w = state.weaponCache[wi.slug];
+      return w.attacks.map((_, atkIdx) => ({ w, atkIdx }));
+    });
+  }
+
+  let best = null;
+  for (const { w, atkIdx } of candidates) {
+    const f = w.longRange ? factors.long : factors.short;
+    const total = (pd + bwd) * w.attacks[atkIdx].factor * tankMult * f.factor;
+    if (!best || total > best.total) best = { total, w, atkIdx, ...f };
+  }
   if (!best) return;
+
+  const weaponChanged = best.w.slug !== state.weapon.slug;
+  if (weaponChanged) {
+    $("weapon").value = best.w.slug;
+    await loadWeapon(best.w.slug);
+  }
+  $("attack").value = String(best.atkIdx);
   state.tankId = best.tank.id;
   state.weaponBonusLevels = {};
   for (const b of best.bonuses) state.weaponBonusLevels[b.id] = 3;
@@ -731,9 +764,47 @@ async function applyOptimalBuild() {
   $("tankpower").value = best.pw;
   renderTanks(); renderRelics(); renderGadgets(); renderWeaponBonuses();
   update();
-  showNotice(`Optimal build applied: ${best.tank.name}, dealing ${fmt(best.total)}. ` +
-    "Assumes best-case statuses (Frozen and 3 consecutive hits reachable); " +
-    "your Ferment setting is kept as is.");
+  showNotice(`Maximized: ${best.w.name}${weaponChanged ? " (weapon changed)" : ""} on ` +
+    `${best.tank.name}, dealing ${fmt(best.total)}. Assumes best-case statuses.`);
+}
+
+function renderExcludeList() {
+  const wrap = $("exclude-list");
+  if (!wrap || !state.weaponBonuses) return;
+  wrap.innerHTML = "";
+  const sections = [
+    ["Weapon bonuses", state.weaponBonuses.bonuses.map(b => ["bonus:" + b.id, b.name])],
+    ["Relics", state.relics.relics.map(r => ["relic:" + r.id, `${r.power} (${r.name})`])],
+    ["Gadget parts", [...new Set(state.gadgetsIndex.flatMap(g =>
+      state.gadgetData[g.id].parts.map(p => JSON.stringify(["part:" + p.id, p.name]))))]
+      .map(s => JSON.parse(s))],
+    ["Tank power", [["power", "Activate Tank Power"]]],
+  ];
+  for (const [title, items] of sections) {
+    const h = document.createElement("h4");
+    h.textContent = title;
+    wrap.appendChild(h);
+    for (const [key, name] of items) {
+      const label = document.createElement("label");
+      const box = document.createElement("input");
+      box.type = "checkbox";
+      box.checked = state.maxExclude.has(key);
+      box.addEventListener("change", () => {
+        if (box.checked) state.maxExclude.add(key);
+        else state.maxExclude.delete(key);
+        updateExcludeSummary();
+        saveState();
+      });
+      label.append(box, document.createTextNode(name));
+      wrap.appendChild(label);
+    }
+  }
+  updateExcludeSummary();
+}
+
+function updateExcludeSummary() {
+  const n = state.maxExclude.size;
+  $("exclude-summary").textContent = n ? `Exclude buffs (${n} excluded)` : "Exclude buffs";
 }
 
 /* ---------- apply a saved/linked build ---------- */
@@ -741,7 +812,8 @@ async function applyOptimalBuild() {
 const INPUT_DEFAULTS = { pbase: "50", pextra: "0", wbase: "50", wplus: "50",
                          tankbonus: "200", hpbonus: "400", range: "", danger: "0",
                          airborne: "0", streak: "0", hpfull: "1", inkspent: "0",
-                         frozen: "0", ferment: "0", tankpower: "1", attack: "0" };
+                         frozen: "0", ferment: "0", tankpower: "1",
+                         "pin-tank": "free", "pin-weapon": "pin", attack: "0" };
 
 async function applySnapshot(saved) {
   // reset to defaults, then layer the snapshot on top (validating everything)
@@ -781,7 +853,10 @@ async function applySnapshot(saved) {
         $(id).value = saved.inputs[id];
     if (typeof saved.playerName === "string" && saved.playerName.trim())
       state.playerName = saved.playerName.trim().slice(0, 20);
+    state.maxExclude = new Set(Array.isArray(saved.maxExclude)
+      ? saved.maxExclude.filter(k => typeof k === "string") : []);
   }
+  renderExcludeList();
 
   $("pname-btn").textContent = state.playerName;
   renderTanks();
@@ -935,7 +1010,7 @@ async function boot() {
     catch (err) { window.prompt("Copy this link:", url); }
   };
   $("copy-link").addEventListener("click", copyCurrentLink);
-  $("optimize").addEventListener("click", applyOptimalBuild);
+  $("maximize").addEventListener("click", maximizeDamage);
   $("copy-link-create").addEventListener("click", copyCurrentLink);
   $("danger").addEventListener("input", () => {
     if ($("danger").value === "1") $("hpfull").value = "0";
@@ -945,7 +1020,8 @@ async function boot() {
   });
   $("weapon").addEventListener("change", async () => { await loadWeapon($("weapon").value); update(); });
   ["attack", "pbase", "pextra", "wbase", "wplus", "tankbonus", "hpbonus", "range",
-   "danger", "airborne", "streak", "hpfull", "inkspent", "frozen", "ferment", "tankpower"]
+   "danger", "airborne", "streak", "hpfull", "inkspent", "frozen", "ferment",
+   "tankpower", "pin-tank", "pin-weapon"]
     .forEach(id => $(id).addEventListener("input", update));
 }
 

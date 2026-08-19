@@ -237,6 +237,39 @@ input:disabled, select:disabled {
 .pairbox { display: grid; grid-template-columns: 1fr auto 1.2fr; gap: 0.35rem; align-items: center; }
 .pairbox .plus { color: var(--muted); font-weight: 600; }
 .status-block { margin-top: 1rem; }
+.exclude-dd summary {
+  font: inherit; color: var(--ink);
+  background-color: var(--field);
+  border: 1.5px solid var(--field-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  list-style: none;
+}
+.exclude-dd summary::after { content: " \25BE"; color: var(--muted); }
+.exclude-dd[open] summary::after { content: " \25B4"; }
+.exclude-list {
+  border: 1.5px solid var(--field-border); border-top: none;
+  border-radius: 0 0 8px 8px;
+  background: var(--field);
+  padding: 0.6rem 0.8rem;
+  display: flex; flex-direction: column; gap: 0.35rem;
+  max-height: 16rem; overflow-y: auto;
+}
+.exclude-list h4 {
+  margin: 0.3rem 0 0;
+  font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted);
+}
+.exclude-list label {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.9rem; cursor: pointer;
+}
+.exclude-list input[type="checkbox"] {
+  width: 1.1rem; height: 1.1rem; min-width: 0; min-height: 0;
+  accent-color: var(--teal);
+  appearance: auto; -webkit-appearance: auto;
+}
 
 /* tanks */
 .tank-grid { display: flex; gap: 0.8rem; flex-wrap: wrap; }

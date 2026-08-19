@@ -330,6 +330,35 @@
           </div>
         </section>
 
+        <section class="card">
+          <h2 class="chip">Maximize damage</h2>
+          <div class="row">
+            <div class="field">
+              <span class="lab">Tank</span>
+              <select id="pin-tank">
+                <option value="free" selected>Any tank</option>
+                <option value="pin">Keep current tank</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="lab">Weapon</span>
+              <select id="pin-weapon">
+                <option value="pin" selected>Keep current weapon</option>
+                <option value="free">Any weapon</option>
+              </select>
+            </div>
+          </div>
+          <details class="exclude-dd status-block">
+            <summary id="exclude-summary">Exclude buffs</summary>
+            <div id="exclude-list" class="exclude-list"></div>
+          </details>
+          <div class="export-row status-block">
+            <button type="button" id="maximize" class="action-btn">
+              Maximize damage
+            </button>
+          </div>
+        </section>
+
         <section class="card" id="attacks-card">
           <h2 class="chip">All attacks</h2>
           <div class="tablewrap">
@@ -385,9 +414,6 @@
 
       <footer>
         <div class="footer-actions">
-          <button type="button" id="optimize" class="reset-btn">
-            Maximize damage
-          </button>
           <button type="button" id="copy-link-create" class="reset-btn">
             Copy share link
           </button>
